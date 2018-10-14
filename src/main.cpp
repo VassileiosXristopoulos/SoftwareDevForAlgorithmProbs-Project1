@@ -12,11 +12,14 @@
 #include <vector>
 #include "../header/DataSetMap.h"
 #include "../header/Item.h"
+#include "../header/HashTable.h"
+
 
 //TODO : make a class where I will save all input set (i.e. map of vectors) with get element, (set element)
 using namespace std;
-
+int d;
 int main(int argv,char **argc){
+    srand(time(NULL));
     int a, b , k, L;
     string FileLine;
     string inputFile, queryFile, outputFile;
@@ -32,6 +35,10 @@ int main(int argv,char **argc){
         queryFile = "Input/" + string(argc[4]);
         k = atoi(argc[6]);
         L = atoi(argc[8]);
+        if( k<=0 || L<=0 ){
+            cout << "k and/or L arguments not given properly" << endl;
+            return 1;
+        }
         outputFile = "Input/" + string(argc[10]);
     }
     else if( argv == 9){
@@ -45,29 +52,40 @@ int main(int argv,char **argc){
         L = 5;
         outputFile = "Input/" + string(argc[10]);
     }
+    else {
+        cout << "Wrong arguments!" << endl;
+        return 1;
+    }
 
 
 
 
    // DataSetMap *Map = new DataSetMap();
+
    vector<Item>Map;
     ifstream input(inputFile.c_str());
-    while ( std::getline(input, FileLine) ){
+    while ( std::getline(input, FileLine) ) { // TODO: implement functionality of checking first line for mode
         istringstream iss(FileLine);
         if (!(iss >> a >> b)) { break; } // error
-        string line = FileLine.substr(0, FileLine.size()-1);
-        vector <string> element;
-        size_t pos  = line.find(' ');
+        string line = FileLine.substr(0, FileLine.size() - 1);
+        vector<string> element;
+        size_t pos = line.find(' ');
         size_t startPos = 0;
-        while( pos != string::npos){
-            element.push_back( line.substr( startPos, pos - startPos));
+        while (pos != string::npos) {
+            element.push_back(line.substr(startPos, pos - startPos));
             startPos = pos + 1;
             pos = line.find(' ', startPos);
         }
-        Item * item = new Item(element);
+        Item *item = new Item(element);
         Map.push_back(*item);
-     //   Map->Insert(*item);
+        d = element.size();
+        //Map->Insert(*item);
         //hash table insert( item );
+
     }
+    HashTable ** TableArray = new HashTable*[L];
+   // for(int i=0;i<L ; i++){
+        TableArray[0] = new HashTable(k);
+   // }
 
 }

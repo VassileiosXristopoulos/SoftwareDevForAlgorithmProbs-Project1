@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/DataSetMap.h
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
 iostream
 -
 cstdio
@@ -15,40 +15,16 @@ string
 -
 vector
 -
-map
--
+
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/hashFunction.h
 Item.h
 /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
 
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
-iostream
--
-cstdio
--
-string
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/hashFunction.cpp
+random
 -
 vector
 -
-
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/main.cpp
-iostream
--
-sstream
--
-string
--
-fstream
--
-zconf.h
--
-iterator
--
-cstdlib
--
-vector
--
-../header/DataSetMap.h
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/DataSetMap.h
-../header/Item.h
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
+../header/hashFunction.h
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/hashFunction.h
 

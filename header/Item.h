@@ -13,12 +13,13 @@ class Item {
 private:
     string name;
     vector<int>content;
-    float g_value;
+    int *g_vector;
 public:
     Item(vector<string>&element);
     ~Item();
     vector<int>& getContent();
     string getName();
+    void setGVector(vector<int>& h_i);
 };
 
 

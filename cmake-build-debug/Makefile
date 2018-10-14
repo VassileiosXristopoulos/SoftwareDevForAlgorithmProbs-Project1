@@ -150,6 +150,33 @@ src/DataSetMap.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/DataSetMap.cpp.s
 .PHONY : src/DataSetMap.cpp.s
 
+src/HashTable.o: src/HashTable.cpp.o
+
+.PHONY : src/HashTable.o
+
+# target to build an object file
+src/HashTable.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/HashTable.cpp.o
+.PHONY : src/HashTable.cpp.o
+
+src/HashTable.i: src/HashTable.cpp.i
+
+.PHONY : src/HashTable.i
+
+# target to preprocess a source file
+src/HashTable.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/HashTable.cpp.i
+.PHONY : src/HashTable.cpp.i
+
+src/HashTable.s: src/HashTable.cpp.s
+
+.PHONY : src/HashTable.s
+
+# target to generate assembly for a file
+src/HashTable.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/HashTable.cpp.s
+.PHONY : src/HashTable.cpp.s
+
 src/Item.o: src/Item.cpp.o
 
 .PHONY : src/Item.o
@@ -176,6 +203,33 @@ src/Item.s: src/Item.cpp.s
 src/Item.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Item.cpp.s
 .PHONY : src/Item.cpp.s
+
+src/hashFunction.o: src/hashFunction.cpp.o
+
+.PHONY : src/hashFunction.o
+
+# target to build an object file
+src/hashFunction.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hashFunction.cpp.o
+.PHONY : src/hashFunction.cpp.o
+
+src/hashFunction.i: src/hashFunction.cpp.i
+
+.PHONY : src/hashFunction.i
+
+# target to preprocess a source file
+src/hashFunction.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hashFunction.cpp.i
+.PHONY : src/hashFunction.cpp.i
+
+src/hashFunction.s: src/hashFunction.cpp.s
+
+.PHONY : src/hashFunction.s
+
+# target to generate assembly for a file
+src/hashFunction.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hashFunction.cpp.s
+.PHONY : src/hashFunction.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -216,9 +270,15 @@ help:
 	@echo "... src/DataSetMap.o"
 	@echo "... src/DataSetMap.i"
 	@echo "... src/DataSetMap.s"
+	@echo "... src/HashTable.o"
+	@echo "... src/HashTable.i"
+	@echo "... src/HashTable.s"
 	@echo "... src/Item.o"
 	@echo "... src/Item.i"
 	@echo "... src/Item.s"
+	@echo "... src/hashFunction.o"
+	@echo "... src/hashFunction.i"
+	@echo "... src/hashFunction.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

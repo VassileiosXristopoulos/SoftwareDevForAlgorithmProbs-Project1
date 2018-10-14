@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/test.dir/src/main.cpp.o"
   "CMakeFiles/test.dir/src/DataSetMap.cpp.o"
   "CMakeFiles/test.dir/src/Item.cpp.o"
+  "CMakeFiles/test.dir/src/HashTable.cpp.o"
+  "CMakeFiles/test.dir/src/hashFunction.cpp.o"
   "test.pdb"
   "test"
 )

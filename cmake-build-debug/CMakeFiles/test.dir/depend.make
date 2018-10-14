@@ -5,10 +5,21 @@ CMakeFiles/test.dir/src/DataSetMap.cpp.o: ../header/DataSetMap.h
 CMakeFiles/test.dir/src/DataSetMap.cpp.o: ../header/Item.h
 CMakeFiles/test.dir/src/DataSetMap.cpp.o: ../src/DataSetMap.cpp
 
+CMakeFiles/test.dir/src/HashTable.cpp.o: ../header/HashTable.h
+CMakeFiles/test.dir/src/HashTable.cpp.o: ../header/Item.h
+CMakeFiles/test.dir/src/HashTable.cpp.o: ../header/hashFunction.h
+CMakeFiles/test.dir/src/HashTable.cpp.o: ../src/HashTable.cpp
+
 CMakeFiles/test.dir/src/Item.cpp.o: ../header/Item.h
 CMakeFiles/test.dir/src/Item.cpp.o: ../src/Item.cpp
 
+CMakeFiles/test.dir/src/hashFunction.cpp.o: ../header/Item.h
+CMakeFiles/test.dir/src/hashFunction.cpp.o: ../header/hashFunction.h
+CMakeFiles/test.dir/src/hashFunction.cpp.o: ../src/hashFunction.cpp
+
 CMakeFiles/test.dir/src/main.cpp.o: ../header/DataSetMap.h
+CMakeFiles/test.dir/src/main.cpp.o: ../header/HashTable.h
 CMakeFiles/test.dir/src/main.cpp.o: ../header/Item.h
+CMakeFiles/test.dir/src/main.cpp.o: ../header/hashFunction.h
 CMakeFiles/test.dir/src/main.cpp.o: ../src/main.cpp
 
