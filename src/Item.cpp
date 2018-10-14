@@ -18,7 +18,7 @@ Item::Item(vector<string> &element){
     }
    // cout<<endl;
 }
-Item::~Item() {}
+
 
 vector<int> &Item::getContent() {
     return content;
@@ -31,5 +31,19 @@ void Item::setGVector(vector<int>& h_i) {
         g_vector[i] = h_i[i];
     }
 }
+
+Item::~Item() {
+
+}
+
+void Item::printContent() {
+    for(int i=0;i<content.size();i++){
+        cout<<content[i]<<" ";
+    }
+
+}
+
+
+
 
 

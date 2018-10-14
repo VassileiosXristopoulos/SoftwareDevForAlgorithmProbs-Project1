@@ -13,7 +13,7 @@ private:
 public:
     hashFunction();
     ~hashFunction();
-    int hash(Item item);
+    int hash(Item* item);
 };
 
 

@@ -20,11 +20,11 @@ using namespace std;
 int d;
 int main(int argv,char **argc){
     srand(time(NULL));
-    int a, b , k, L;
+    int a, b , k, L, n=0;
     string FileLine;
     string inputFile, queryFile, outputFile;
 
-    if( argv == 11 ){
+    if( argv == 11 ){ // TODO: ask/implement different ways of getting arguments (asking user)
         if(argc[2]==NULL || argc[4]==NULL || argc[6]==NULL || argc[8]==NULL || argc[10]==NULL ){
             cout << "Invalid Arguments" << endl;
             return 1;
@@ -62,7 +62,7 @@ int main(int argv,char **argc){
 
    // DataSetMap *Map = new DataSetMap();
 
-   vector<Item>Map;
+   vector<Item*>Map;
     ifstream input(inputFile.c_str());
     while ( std::getline(input, FileLine) ) { // TODO: implement functionality of checking first line for mode
         istringstream iss(FileLine);
@@ -77,15 +77,20 @@ int main(int argv,char **argc){
             pos = line.find(' ', startPos);
         }
         Item *item = new Item(element);
-        Map.push_back(*item);
+        Map.push_back(item);
         d = element.size();
+        n++;
         //Map->Insert(*item);
         //hash table insert( item );
 
     }
     HashTable ** TableArray = new HashTable*[L];
-   // for(int i=0;i<L ; i++){
-        TableArray[0] = new HashTable(k);
-   // }
+    for(int i=0; i<L ; i++){
+        TableArray[i] = new HashTable(k,n/2);
+        for(int j=0; j<Map.size(); j++){
+            TableArray[i]->add(Map[j]);
+        }
+    }
+    TableArray[0]->print();
 
 }

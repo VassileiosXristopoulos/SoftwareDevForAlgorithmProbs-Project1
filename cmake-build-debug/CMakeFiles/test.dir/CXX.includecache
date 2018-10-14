@@ -6,6 +6,28 @@
 
 #IncludeRegexTransform: 
 
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/DataSetMap.h
+iostream
+-
+cstdio
+-
+string
+-
+vector
+-
+map
+-
+Item.h
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
+
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/HashTable.h
+vector
+-
+Item.h
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
+hashFunction.h
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/hashFunction.h
+
 /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
 iostream
 -
@@ -20,11 +42,27 @@ vector
 Item.h
 /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
 
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/hashFunction.cpp
-random
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/main.cpp
+iostream
+-
+sstream
+-
+string
+-
+fstream
+-
+zconf.h
+-
+iterator
+-
+cstdlib
 -
 vector
 -
-../header/hashFunction.h
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/hashFunction.h
+../header/DataSetMap.h
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/DataSetMap.h
+../header/Item.h
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
+../header/HashTable.h
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/HashTable.h
 

@@ -18,7 +18,7 @@ hashFunction::hashFunction() {
         v[i] = distribution(generator);
     }
     float random = ((float) rand()) / (float) RAND_MAX;
-    t = 1 + random * 2; // 1 - (-1) // TODO: check for errors, range is [-1,1]
+    t = 4 + random * 4; // 4 - 0 // TODO: check for errors, range is [0,4]
 
 }
 
@@ -26,11 +26,11 @@ hashFunction::~hashFunction() {
 
 }
 
-int hashFunction::hash(Item item) {
-    vector<int>p_item = item.getContent();
+int hashFunction::hash(Item* item) {
+    vector<int>p_item = item->getContent();
     float sum=t;
     for(int i=0; i<p_item.size() ;i++){
         sum += ( (float) p_item[i] )*v[i];
     }
-    return (int)floor(sum/((float)4)); // TODO: declare w
+    return abs((int)floor(sum/((float)4))); // TODO: declare w
 }

@@ -20,6 +20,7 @@ public:
     vector<int>& getContent();
     string getName();
     void setGVector(vector<int>& h_i);
+    void printContent();
 };
 
 
