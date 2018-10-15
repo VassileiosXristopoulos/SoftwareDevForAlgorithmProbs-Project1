@@ -58,15 +58,13 @@ int main(int argv,char **argc){
     }
 
 
-
-
-   // DataSetMap *Map = new DataSetMap();
-
    vector<Item*>Map;
     ifstream input(inputFile.c_str());
+    string mode;
+    std::getline(input,mode); //get mode (i.e. first line)
     while ( std::getline(input, FileLine) ) { // TODO: implement functionality of checking first line for mode
         istringstream iss(FileLine);
-        if (!(iss >> a >> b)) { break; } // error
+        //if (!(iss >> a >> b)) { break; } // error
         string line = FileLine.substr(0, FileLine.size() - 1);
         vector<string> element;
         size_t pos = line.find(' ');
@@ -77,11 +75,14 @@ int main(int argv,char **argc){
             pos = line.find(' ', startPos);
         }
         Item *item = new Item(element);
+        if(element.size()<=0){
+            cout <<"element empty!!"<<endl;
+            continue;
+        }
         Map.push_back(item);
+
         d = element.size();
         n++;
-        //Map->Insert(*item);
-        //hash table insert( item );
 
     }
     HashTable ** TableArray = new HashTable*[L];
@@ -91,6 +92,25 @@ int main(int argv,char **argc){
             TableArray[i]->add(Map[j]);
         }
     }
-    TableArray[0]->print();
+  //  TableArray[0]->print();
+    ifstream query_input(queryFile.c_str());
+    string radius;
+    std::getline(query_input,radius); // get radius (i.e. first line)
+    while ( std::getline(query_input, FileLine) ) { // TODO: implement functionality of checking first line for mode
+        istringstream iss(FileLine);
+      //  if (!(iss >> a >> b)) { break; } // error
+        string line = FileLine.substr(0, FileLine.size() - 1);
+        vector<string> element;
+        size_t pos = line.find(' ');
+        size_t startPos = 0;
+        while (pos != string::npos) {
+            element.push_back(line.substr(startPos, pos - startPos));
+            startPos = pos + 1;
+            pos = line.find(' ', startPos);
+        }
+        Item *item = new Item(element);
+        TableArray[0]->findCloser(item);
+        //TODO: search for similar with "item"
 
+    }
 }

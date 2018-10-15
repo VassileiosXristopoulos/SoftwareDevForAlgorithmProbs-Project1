@@ -46,9 +46,58 @@ void HashTable::print() {
         cout<<"---------------------BUCKET "<< i <<"-------------------"<<endl;
         for(int j=0; j<Table[i].size(); j++){
             cout<<"             ----ELEMENT "<< j << "------"<<endl;
-            cout<<"Name: "<< Table[i][j]->getName() << "Vector :";
+            cout<<"Name: "<< Table[i][j]->getName() << " Vector :";
             Table[i][j]->printContent();
             cout<<endl;
         }
     }
+}
+
+void HashTable::findCloser(Item *item) {
+    double min_dist=-1;
+    Item* closest_item=NULL;
+    int bucket = hash(item);
+    for(int i=0; i<Table[bucket].size(); i++){
+        bool match = true;
+
+        for(int j=0;j<item->getGVector().size(); j++){
+            if( item->getGVector()[j] != Table[bucket][i]->getGVector()[j]){
+                match=false;
+                break;
+            }
+
+        }
+        if(match){
+           /* cout << "Item : " << item->getName() <<" with vector: ";
+            item->printContent();
+            cout<<endl;
+            cout << "has same g(p) with Item: " << Table[bucket][i]->getName()<<" with vector: ";
+            Table[bucket][i]->printContent();*/
+           // cout<<endl<<endl;
+            double distance=0;
+            vector<int>query_vector=item->getContent();
+            vector<int>data_vector=Table[bucket][i]->getContent();
+            for(int j=0;j<query_vector.size(); j++){
+                distance+= pow(data_vector[i]-query_vector[i],2);
+            }
+            distance = sqrt(distance);
+            if(min_dist == -1){
+                min_dist = distance;
+                closest_item = Table[bucket][i];
+            }
+            else{
+                if(min_dist>distance){
+                    min_dist = distance;
+                    closest_item = Table[bucket][i];
+                }
+            }
+        }
+
+    }
+    if(min_dist>0 && closest_item!=NULL){
+        cout<<"Closest item to "<<item->getName()<<" is item "<<closest_item->getName()<<" with distance: "
+                                                                                         ""<<min_dist<<endl;
+    }
+
+
 }

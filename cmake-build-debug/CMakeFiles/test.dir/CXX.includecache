@@ -6,20 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/DataSetMap.h
-iostream
--
-cstdio
--
-string
--
-vector
--
-map
--
-Item.h
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
-
 /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/HashTable.h
 vector
 -
@@ -42,27 +28,17 @@ vector
 Item.h
 /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
 
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/main.cpp
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/HashTable.cpp
 iostream
 -
-sstream
--
-string
--
-fstream
--
-zconf.h
--
-iterator
+ctime
 -
 cstdlib
 -
-vector
+cmath
 -
-../header/DataSetMap.h
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/DataSetMap.h
-../header/Item.h
-/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
 ../header/HashTable.h
 /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/HashTable.h
+../header/Item.h
+/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
 

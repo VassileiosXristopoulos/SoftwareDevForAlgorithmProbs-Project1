@@ -6,7 +6,7 @@
 #include "../header/Item.h"
 
 Item::Item(vector<string> &element){
-    g_vector = new int[element.size()];
+
     name = element.at(0);
     element.erase(element.begin());
 
@@ -28,7 +28,7 @@ string Item::getName(){
 }
 void Item::setGVector(vector<int>& h_i) {
     for(int i=0;i<h_i.size(); i++){
-        g_vector[i] = h_i[i];
+        g_vector.push_back(h_i[i]);
     }
 }
 
@@ -41,6 +41,10 @@ void Item::printContent() {
         cout<<content[i]<<" ";
     }
 
+}
+
+vector<int> & Item::getGVector() {
+    return g_vector;
 }
 
 

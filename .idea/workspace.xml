@@ -13,17 +13,15 @@
   <component name="ChangeListManager">
     <list default="true" id="996e8eee-dcdb-43cb-9ebd-72abe6bf98fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/src/HashTable.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/src/HashTable.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/src/Item.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/src/Item.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/src/hashFunction.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/src/hashFunction.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Input/input_small" beforeDir="false" afterPath="$PROJECT_DIR$/Input/input_small" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Input/query_small" beforeDir="false" afterPath="$PROJECT_DIR$/Input/query_small" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/src/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/test" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header/HashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/HashTable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Item.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/hashFunction.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/hashFunction.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HashTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hashFunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashFunction.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../cmake-build-debug/" />
@@ -59,10 +57,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Build All (disassembly)" value="2" />
+          <entry key="Build All (disassembly)" value="3" />
           <entry key="cpp" value="10" />
           <entry key="filesystem" value="1" />
-          <entry key="h" value="14" />
+          <entry key="h" value="16" />
           <entry key="input_small" value="1" />
           <entry key="query_small" value="1" />
           <entry key="test (disassembly)" value="4" />
@@ -72,34 +70,46 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="5" />
-          <entry key="Disassembly" value="6" />
-          <entry key="ObjectiveC" value="25" />
+          <entry key="Disassembly" value="7" />
+          <entry key="ObjectiveC" value="27" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="5326" />
-          <entry key="h" value="1427" />
-          <entry key="mm" value="192" />
+          <entry key="cpp" value="6743" />
+          <entry key="h" value="1489" />
+          <entry key="mm" value="265" />
           <entry key="txt" value="169" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="169" />
-          <entry key="ObjectiveC" value="6945" />
+          <entry key="ObjectiveC" value="8497" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+            <state relative-caret-position="254">
+              <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+              <folding>
+                <element signature="e#45#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/HashTable.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
               <folding>
                 <element signature="e#45#64#0" expanded="true" />
               </folding>
@@ -110,22 +120,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header/HashTable.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="392">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding>
                 <element signature="e#96#113#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HashTable.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-              <folding>
-                <element signature="e#45#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hashFunction.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
+            <state relative-caret-position="162">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="e#44#61#0" expanded="true" />
               </folding>
@@ -155,8 +153,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Item.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+            <state relative-caret-position="519">
+              <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
                 <element signature="e#45#63#0" expanded="true" />
               </folding>
@@ -176,8 +174,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header/Item.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="356">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding>
                 <element signature="e#85#104#0" expanded="true" />
               </folding>
@@ -193,6 +191,7 @@
       <find>cout</find>
       <find>extern</find>
       <find>d</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,10 +209,10 @@
         <option value="$PROJECT_DIR$/header/hashFunction.h" />
         <option value="$PROJECT_DIR$/src/hashFunction.cpp" />
         <option value="$PROJECT_DIR$/header/HashTable.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/header/Item.h" />
         <option value="$PROJECT_DIR$/src/Item.cpp" />
         <option value="$PROJECT_DIR$/src/HashTable.cpp" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
       </list>
     </option>
   </component>
@@ -277,7 +276,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Build All">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-d input_small -q input_query_small -k 3 -L 5 -o output_small" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="test" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="test" RUN_TARGET_NAME="test">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-d input_small -q query_small -k 3 -L 5 -o output_small" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="test" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="test" RUN_TARGET_NAME="test">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -302,12 +301,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539374044241</updated>
-      <workItem from="1539374048517" duration="34093000" />
+      <workItem from="1539374048517" duration="40157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34093000" />
+    <option name="totallyTimeSpent" value="40157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -319,12 +318,12 @@
       <window_info anchor="bottom" id="CMake" sideWeight="0.4997236" weight="0.32975295" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Messages" sideWeight="0.49806523" visible="true" weight="0.32975295" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.49806523" weight="0.32975295" />
       <window_info anchor="bottom" id="Terminal" sideWeight="0.4997236" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.501382" side_tool="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498618" weight="0.32975295" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.498618" visible="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997236" weight="0.39957035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -341,55 +340,61 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.cpp</url>
+          <line>110</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>((unsigned long)(r_vector[0]*h_i[0]))%M</expression-string>
+        <expression-string>item</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>( long)(r_vector[0]*h_i[0])</expression-string>
+        <expression-string>TableArray[0]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(unsigned long)(r_vector[0]*h_i[0])</expression-string>
+        <expression-string>radius</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>unsigned long(r_vector[0]*h_i[0])%M</expression-string>
+        <expression-string>d</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(r_vector[0]*h_i[0])%M</expression-string>
+        <expression-string>element</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>r_vector[0]%M</expression-string>
+        <expression-string>name</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>r_vector[0]</expression-string>
+        <expression-string>FileLine.substr(0,FileLine.size()-1)</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>h_i[0]</expression-string>
+        <expression-string>FileLine</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((long int)(r_vector[0]*h_i[0]))</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((long)(r_vector[0]*h_i[0]))</expression-string>
+        <expression-string>fileLine</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -520,7 +525,7 @@
     <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
-          <caret line="913" column="7" lean-forward="true" selection-start-line="913" selection-start-column="7" selection-end-line="913" selection-end-column="7" />
+          <caret line="779" selection-start-line="779" selection-end-line="779" />
         </state>
       </provider>
     </entry>
@@ -533,58 +538,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hashFunction.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
+        <state relative-caret-position="162">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="e#44#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header/HashTable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding>
-            <element signature="e#96#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header/Item.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="e#85#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Item.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state relative-caret-position="519">
+          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
           <folding>
             <element signature="e#45#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HashTable.cpp">
+    <entry file="file://$PROJECT_DIR$/header/Item.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        <state relative-caret-position="356">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
-            <element signature="e#45#64#0" expanded="true" />
+            <element signature="e#85#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header/HashTable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="e#96#113#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+        <state relative-caret-position="254">
+          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <folding>
+            <element signature="e#45#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HashTable.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
           <folding>
             <element signature="e#45#64#0" expanded="true" />
           </folding>
