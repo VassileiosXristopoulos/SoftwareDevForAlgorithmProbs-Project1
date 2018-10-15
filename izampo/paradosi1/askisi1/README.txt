@@ -1,1 +1,0 @@
-g++ -o askisi1 atom.cpp down_quark.cpp electron.cpp gluon.cpp main.cpp neutron.cpp nucleus.cpp proton.cpp up_quark.cpp

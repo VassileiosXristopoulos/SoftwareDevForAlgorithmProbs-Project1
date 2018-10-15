@@ -1,1 +1,0 @@
-g++ -g -o prog antineutrino.cpp boson.cpp electron.cpp fermion.cpp main.cpp neutrino.cpp neutron.cpp particle.cpp photon.cpp positron.cpp proton.cpp
