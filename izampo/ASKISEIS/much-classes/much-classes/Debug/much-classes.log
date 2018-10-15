@@ -1,0 +1,28 @@
+﻿Build started 4/12/2016 5:45:16 μμ.
+     1>Project "C:\Users\Vassilis\Desktop\izampo\ASKISEIS\much-classes\much-classes\much-classes.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\askisi1\atom.cpp ..\..\..\askisi1\down_quark.cpp ..\..\..\askisi1\electron.cpp ..\..\..\askisi1\gluon.cpp ..\..\..\askisi1\main.cpp ..\..\..\askisi1\neutron.cpp ..\..\..\askisi1\nucleus.cpp ..\..\..\askisi1\proton.cpp ..\..\..\askisi1\up_quark.cpp
+         up_quark.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: '..\..\..\askisi1\up_quark.cpp': No such file or directory
+         proton.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: '..\..\..\askisi1\proton.cpp': No such file or directory
+         nucleus.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: '..\..\..\askisi1\nucleus.cpp': No such file or directory
+         neutron.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: '..\..\..\askisi1\neutron.cpp': No such file or directory
+         main.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: '..\..\..\askisi1\main.cpp': No such file or directory
+         gluon.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: '..\..\..\askisi1\gluon.cpp': No such file or directory
+         electron.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: '..\..\..\askisi1\electron.cpp': No such file or directory
+         down_quark.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: '..\..\..\askisi1\down_quark.cpp': No such file or directory
+         atom.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: '..\..\..\askisi1\atom.cpp': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\Users\Vassilis\Desktop\izampo\ASKISEIS\much-classes\much-classes\much-classes.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.43

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inheritance_task", "inheritance_task\inheritance_task.vcxproj", "{BFD7814E-CEF6-4EEA-84FD-A7FE0F089927}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFD7814E-CEF6-4EEA-84FD-A7FE0F089927}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BFD7814E-CEF6-4EEA-84FD-A7FE0F089927}.Debug|Win32.Build.0 = Debug|Win32
+		{BFD7814E-CEF6-4EEA-84FD-A7FE0F089927}.Release|Win32.ActiveCfg = Release|Win32
+		{BFD7814E-CEF6-4EEA-84FD-A7FE0F089927}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

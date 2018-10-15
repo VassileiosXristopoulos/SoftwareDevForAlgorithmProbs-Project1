@@ -1,0 +1,1 @@
+g++ -o askisi2 atom.cpp main.cpp
