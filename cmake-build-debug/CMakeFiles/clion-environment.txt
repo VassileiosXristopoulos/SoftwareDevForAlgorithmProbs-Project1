@@ -1,3 +1,4 @@
+ToolSet: w64 5.0@X:\di-project\MinGW
 Options: 
 
 Options:

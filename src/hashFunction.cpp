@@ -6,7 +6,6 @@
 #include "../header/hashFunction.h"
 extern int d;
 hashFunction::hashFunction() {
-
     if(d<=0){
         cout << "d must be positive while constructing hashFunction" << endl;
         exit(0);

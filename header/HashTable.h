@@ -23,7 +23,7 @@ public:
     int hash(Item* item);
     void add(Item* item);
     void print();
-    void findCloser(Item *item);
+    vector<Item*> findCloser(Item *item);
 };
 
 

@@ -9,6 +9,7 @@
 #include "../header/HashTable.h"
 #include "../header/Item.h"
 using namespace std;
+extern int r;
 HashTable::HashTable(int k, int size) { //TODO: implement hash table fundamental functionality
 
     TableSize = size;
@@ -53,22 +54,24 @@ void HashTable::print() {
     }
 }
 
-void HashTable::findCloser(Item *item) {
+vector< pair<Item*,double> > HashTable::findCloser(Item *item) {
     double min_dist=-1;
-    Item* closest_item=NULL;
+    Item* closest_item= nullptr;
     int bucket = hash(item);
+
+    vector< pair<Item*,double> >ret;
     for(int i=0; i<Table[bucket].size(); i++){
         bool match = true;
 
-        for(int j=0;j<item->getGVector().size(); j++){
-            if( item->getGVector()[j] != Table[bucket][i]->getGVector()[j]){
-                match=false;
+        for(int j=0;j<item->getGVector().size(); j++) {
+            if (item->getGVector()[j] != Table[bucket][i]->getGVector()[j]) {
+                match = false;
                 break;
             }
-
         }
+
         if(match){
-           /* cout << "Item : " << item->getName() <<" with vector: ";
+         /*   cout << "Item : " << item->getName() <<" with vector: ";
             item->printContent();
             cout<<endl;
             cout << "has same g(p) with Item: " << Table[bucket][i]->getName()<<" with vector: ";
@@ -81,7 +84,12 @@ void HashTable::findCloser(Item *item) {
                 distance+= pow(data_vector[i]-query_vector[i],2);
             }
             distance = sqrt(distance);
+            if(distance<r && item->getName().compare(Table[bucket][i]->getName())!=0){
+                pair<Item*,double>myPair=make_pair(Table[bucket][i],distance);
+                ret.push_back(myPair);
+            }
             if(min_dist == -1){
+
                 min_dist = distance;
                 closest_item = Table[bucket][i];
             }
@@ -93,11 +101,16 @@ void HashTable::findCloser(Item *item) {
             }
         }
 
+
     }
-    if(min_dist>0 && closest_item!=NULL){
+    if(min_dist>0 ){
         cout<<"Closest item to "<<item->getName()<<" is item "<<closest_item->getName()<<" with distance: "
                                                                                          ""<<min_dist<<endl;
+        pair<Item*,double>myPair=make_pair(closest_item,min_dist);
+        ret.push_back(myPair);
     }
+
+    return ret;
 
 
 }

@@ -1,1 +1,3 @@
-/usr/bin/c++   -std=c++11  -g   CMakeFiles/test.dir/src/main.cpp.o CMakeFiles/test.dir/src/DataSetMap.cpp.o CMakeFiles/test.dir/src/Item.cpp.o CMakeFiles/test.dir/src/HashTable.cpp.o CMakeFiles/test.dir/src/hashFunction.cpp.o  -o test 
+"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\test.dir/objects.a
+X:\di-project\MinGW\bin\ar.exe cr CMakeFiles\test.dir/objects.a @CMakeFiles\test.dir\objects1.rsp
+X:\di-project\MinGW\bin\g++.exe  -std=c++11  -g   -Wl,--whole-archive CMakeFiles\test.dir/objects.a -Wl,--no-whole-archive  -o test.exe -Wl,--out-implib,libtest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test.dir\linklibs.rsp

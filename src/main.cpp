@@ -1,4 +1,4 @@
-//
+
 // Created by vassilis on 12/10/2018.
 //
 
@@ -6,7 +6,7 @@
 #include <sstream>
 #include <string>
 #include <fstream>
-#include <zconf.h>
+#include <ctime>
 #include <iterator>
 #include <cstdlib>
 #include <vector>
@@ -14,10 +14,10 @@
 #include "../header/Item.h"
 #include "../header/HashTable.h"
 
-
+#include <direct.h>
 //TODO : make a class where I will save all input set (i.e. map of vectors) with get element, (set element)
 using namespace std;
-int d;
+int d,r;
 int main(int argv,char **argc){
     srand(time(NULL));
     int a, b , k, L, n=0;
@@ -29,10 +29,10 @@ int main(int argv,char **argc){
             cout << "Invalid Arguments" << endl;
             return 1;
         }
-        string s = "Input/";
+        string s = "Input\\";
 
-        inputFile = "Input/" + string(argc[2]);
-        queryFile = "Input/" + string(argc[4]);
+        inputFile = "Input\\" + string(argc[2]);
+        queryFile = "Input\\" + string(argc[4]);
         k = atoi(argc[6]);
         L = atoi(argc[8]);
         if( k<=0 || L<=0 ){
@@ -59,10 +59,18 @@ int main(int argv,char **argc){
 
 
    vector<Item*>Map;
-    ifstream input(inputFile.c_str());
+    char buff[FILENAME_MAX];
+    getcwd( buff, FILENAME_MAX );
+    std::string current_working_dir(buff);
+    std::cout << "Current Directory: " << current_working_dir << std::endl;
+    string input_file = "X:\\di-project\\SoftwareDevForAlgorithmProbs-Project1\\Input\\input_small.txt";
+
+    ifstream input(input_file.c_str());
+
     string mode;
     std::getline(input,mode); //get mode (i.e. first line)
     while ( std::getline(input, FileLine) ) { // TODO: implement functionality of checking first line for mode
+      //  cout<<"in`"<<endl;
         istringstream iss(FileLine);
         //if (!(iss >> a >> b)) { break; } // error
         string line = FileLine.substr(0, FileLine.size() - 1);
@@ -74,7 +82,9 @@ int main(int argv,char **argc){
             startPos = pos + 1;
             pos = line.find(' ', startPos);
         }
+
         Item *item = new Item(element);
+
         if(element.size()<=0){
             cout <<"element empty!!"<<endl;
             continue;
@@ -92,11 +102,19 @@ int main(int argv,char **argc){
             TableArray[i]->add(Map[j]);
         }
     }
+    cout << "out!!"<<endl;
   //  TableArray[0]->print();
-    ifstream query_input(queryFile.c_str());
+    string output_file = "X:\\di-project\\SoftwareDevForAlgorithmProbs-Project1\\Input\\query_small.txt";
+    ifstream query_input(output_file.c_str());
     string radius;
     std::getline(query_input,radius); // get radius (i.e. first line)
+    //int r = stoi(radius);
+    r=stoi(radius.substr(radius.find(":") + 1));
+   // vector<vector<Item*>>ClosestItems;
+    pair<Item *,double>closestNeighboor(NULL,-1.0);
+    vector<pair<Item *,double>> closerNneighboors;
     while ( std::getline(query_input, FileLine) ) { // TODO: implement functionality of checking first line for mode
+       // cout <<"in"<<endl;
         istringstream iss(FileLine);
       //  if (!(iss >> a >> b)) { break; } // error
         string line = FileLine.substr(0, FileLine.size() - 1);
@@ -109,8 +127,28 @@ int main(int argv,char **argc){
             pos = line.find(' ', startPos);
         }
         Item *item = new Item(element);
-        TableArray[0]->findCloser(item);
+        //vector<Item*>ClosestNeighboors;
+        vector<Item*>ClosestRNeighboors;
+        for(int i=0;i<L;i++){
+            //vector<pair<Item *,double>>neighboors=TableArray[i]->findCloser(item);
+            if(neighboors.size()>0){
+                if()
+              //  ClosestNeighboors.push_back(neighboors[0]);
+                for(int k=1;k<neighboors.size();k++){
+                    ClosestRNeighboors.push_back(neighboors[k]);
+                }
+            }
+        }
+
+
         //TODO: search for similar with "item"
+
+    }
+}
+
+int getMin(vector<int>Vector){
+    int min;
+    for(int i=0;i<Vector.size();i++){
 
     }
 }
