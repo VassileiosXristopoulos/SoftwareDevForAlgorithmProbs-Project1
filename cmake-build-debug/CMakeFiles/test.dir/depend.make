@@ -18,11 +18,16 @@ CMakeFiles/test.dir/src/HashTable.cpp.o: ../header/ComputationMethods.h
 CMakeFiles/test.dir/src/HashTable.cpp.o: ../header/HashNode.h
 CMakeFiles/test.dir/src/HashTable.cpp.o: ../header/HashTable.h
 CMakeFiles/test.dir/src/HashTable.cpp.o: ../header/Item.h
+CMakeFiles/test.dir/src/HashTable.cpp.o: ../header/cosineHashfunction.h
 CMakeFiles/test.dir/src/HashTable.cpp.o: ../header/hashFunction.h
 CMakeFiles/test.dir/src/HashTable.cpp.o: ../src/HashTable.cpp
 
 CMakeFiles/test.dir/src/Item.cpp.o: ../header/Item.h
 CMakeFiles/test.dir/src/Item.cpp.o: ../src/Item.cpp
+
+CMakeFiles/test.dir/src/cosineHashfunction.cpp.o: ../header/Item.h
+CMakeFiles/test.dir/src/cosineHashfunction.cpp.o: ../header/cosineHashfunction.h
+CMakeFiles/test.dir/src/cosineHashfunction.cpp.o: ../src/cosineHashfunction.cpp
 
 CMakeFiles/test.dir/src/hashFunction.cpp.o: ../header/Item.h
 CMakeFiles/test.dir/src/hashFunction.cpp.o: ../header/hashFunction.h
@@ -32,6 +37,7 @@ CMakeFiles/test.dir/src/main.cpp.o: ../header/DataSetMap.h
 CMakeFiles/test.dir/src/main.cpp.o: ../header/HashNode.h
 CMakeFiles/test.dir/src/main.cpp.o: ../header/HashTable.h
 CMakeFiles/test.dir/src/main.cpp.o: ../header/Item.h
+CMakeFiles/test.dir/src/main.cpp.o: ../header/cosineHashfunction.h
 CMakeFiles/test.dir/src/main.cpp.o: ../header/hashFunction.h
 CMakeFiles/test.dir/src/main.cpp.o: ../src/main.cpp
 

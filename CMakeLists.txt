@@ -9,7 +9,8 @@ set(SOURCE_FILES "src/main.cpp"
         "src/HashTable.cpp"
         "src/hashFunction.cpp"
         "src/HashNode.cpp"
-        "src/ComputationMethods.cpp")
+        "src/ComputationMethods.cpp"
+        "src/cosineHashfunction.cpp")
 
 
 add_executable(test ${SOURCE_FILES})

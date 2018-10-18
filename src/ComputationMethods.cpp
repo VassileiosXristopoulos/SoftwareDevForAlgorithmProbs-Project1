@@ -3,6 +3,7 @@
 //
 
 #include <cmath>
+#include <algorithm>
 #include "../header/ComputationMethods.h"
 
 
@@ -15,4 +16,17 @@ double ComputationMethods::EucledianDistance(vector<int> x, vector<int> y) {
         distance += pow(x[j] - y[j], 2);
     }
     return sqrt(distance);
+}
+
+int ComputationMethods::intVectortoInteger(vector<int> table) {
+    int retval = 0;
+    int i =0;
+    vector<int>starting = table;
+    std::reverse(table.begin(),table.end());
+    for (vector<int>::iterator it = table.begin() ; it != table.end(); it++,i++){
+        if(*it.base()==1 ){
+            retval |= 1<<i;
+        }
+    }
+    return retval;
 }

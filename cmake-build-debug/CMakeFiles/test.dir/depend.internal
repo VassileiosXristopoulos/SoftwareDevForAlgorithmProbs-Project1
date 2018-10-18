@@ -19,11 +19,16 @@ CMakeFiles/test.dir/src/HashTable.cpp.o
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/HashNode.h
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/HashTable.h
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
+ /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/cosineHashfunction.h
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/hashFunction.h
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/HashTable.cpp
 CMakeFiles/test.dir/src/Item.cpp.o
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Item.cpp
+CMakeFiles/test.dir/src/cosineHashfunction.cpp.o
+ /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
+ /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/cosineHashfunction.h
+ /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/cosineHashfunction.cpp
 CMakeFiles/test.dir/src/hashFunction.cpp.o
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/hashFunction.h
@@ -33,5 +38,6 @@ CMakeFiles/test.dir/src/main.cpp.o
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/HashNode.h
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/HashTable.h
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/Item.h
+ /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/cosineHashfunction.h
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/header/hashFunction.h
  /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/main.cpp

@@ -12,6 +12,7 @@ class ComputationMethods {
 public:
     static int my_mod(int x,int y);
     static double EucledianDistance(vector<int>x, vector<int>y);
+    static int intVectortoInteger(vector<int>table);
 };
 
 

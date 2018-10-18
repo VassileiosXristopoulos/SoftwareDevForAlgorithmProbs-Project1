@@ -32,9 +32,6 @@ hashFunction::~hashFunction() {
 int hashFunction::hash(Item* item) {
     vector<int>p_item = item->getContent();
     float sum=t;
-    if(item->getName().compare("item_idS2")==0){
-        cout<<"";
-    }
     for(int i=0; i<p_item.size() ;i++){
         sum += ( (float) p_item[i] )*v[i];
     }

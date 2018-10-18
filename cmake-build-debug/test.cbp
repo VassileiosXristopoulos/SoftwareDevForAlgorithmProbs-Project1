@@ -99,6 +99,9 @@
 		<Unit filename="/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Item.cpp">
 			<Option target="test"/>
 		</Unit>
+		<Unit filename="/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/cosineHashfunction.cpp">
+			<Option target="test"/>
+		</Unit>
 		<Unit filename="/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/hashFunction.cpp">
 			<Option target="test"/>
 		</Unit>

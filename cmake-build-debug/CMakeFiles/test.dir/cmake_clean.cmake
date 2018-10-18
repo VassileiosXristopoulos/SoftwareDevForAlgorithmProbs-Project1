@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/test.dir/src/hashFunction.cpp.o"
   "CMakeFiles/test.dir/src/HashNode.cpp.o"
   "CMakeFiles/test.dir/src/ComputationMethods.cpp.o"
+  "CMakeFiles/test.dir/src/cosineHashfunction.cpp.o"
   "test.pdb"
   "test"
 )

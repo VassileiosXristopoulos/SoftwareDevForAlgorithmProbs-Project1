@@ -73,6 +73,7 @@ int main(int argv,char **argc){
 
     string mode;
     std::getline(input,mode); //get mode (i.e. first line)
+    cout<<mode<<endl;
     while ( std::getline(input, FileLine) ) { // TODO: implement functionality of checking first line for mode
       //  cout<<"in`"<<endl;
         istringstream iss(FileLine);
@@ -105,7 +106,7 @@ int main(int argv,char **argc){
      //   cout <<"HASHTABLE " << i <<endl;
         TableArray[i] = new HashTable(i,k,n/2);
         for(int j=0; j<Map.size(); j++){
-            TableArray[i]->add(Map.at(j));
+            TableArray[i]->add(Map.at(j),mode);
         }
     }
 
@@ -147,14 +148,14 @@ int main(int argv,char **argc){
         vector<pair<Item *,double>> closerNneighboors;
         for(int i=0;i<L;i++){
           //  cout << "HASHTABLE["<<i+1<<"]"<<endl;
-            vector<pair<Item *,double>> Nneighboors=TableArray[i]->findNCloser(item);
-            pair<Item*,double>neighboor = Nneighboors[Nneighboors.size()-1];
+            vector<pair<Item *,double>> Nneighboors=TableArray[i]->findNCloserNeighbrs(item,mode);
+            pair<Item*,double>neighboor = TableArray[i]->findCloserNeighbor(item,mode);
             if(neighboor.second>0){ //last item is the closest neighboor
                 if(closestNeighboor.second==-1 || neighboor.second < closestNeighboor.second){
                     closestNeighboor=neighboor;
                 }
           //  vector<pair<Item*,double >> neighboors=TableArray[i]->findNCloser(item);
-                for(int j=0;j<Nneighboors.size()-1;j++){
+                for(int j=0;j<Nneighboors.size();j++){
 
                     closerNneighboors.push_back(Nneighboors[j]);
                 }

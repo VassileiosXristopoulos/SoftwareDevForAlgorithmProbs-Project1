@@ -258,6 +258,33 @@ src/Item.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Item.cpp.s
 .PHONY : src/Item.cpp.s
 
+src/cosineHashfunction.o: src/cosineHashfunction.cpp.o
+
+.PHONY : src/cosineHashfunction.o
+
+# target to build an object file
+src/cosineHashfunction.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/cosineHashfunction.cpp.o
+.PHONY : src/cosineHashfunction.cpp.o
+
+src/cosineHashfunction.i: src/cosineHashfunction.cpp.i
+
+.PHONY : src/cosineHashfunction.i
+
+# target to preprocess a source file
+src/cosineHashfunction.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/cosineHashfunction.cpp.i
+.PHONY : src/cosineHashfunction.cpp.i
+
+src/cosineHashfunction.s: src/cosineHashfunction.cpp.s
+
+.PHONY : src/cosineHashfunction.s
+
+# target to generate assembly for a file
+src/cosineHashfunction.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/cosineHashfunction.cpp.s
+.PHONY : src/cosineHashfunction.cpp.s
+
 src/hashFunction.o: src/hashFunction.cpp.o
 
 .PHONY : src/hashFunction.o
@@ -336,6 +363,9 @@ help:
 	@echo "... src/Item.o"
 	@echo "... src/Item.i"
 	@echo "... src/Item.s"
+	@echo "... src/cosineHashfunction.o"
+	@echo "... src/cosineHashfunction.i"
+	@echo "... src/cosineHashfunction.s"
 	@echo "... src/hashFunction.o"
 	@echo "... src/hashFunction.i"
 	@echo "... src/hashFunction.s"
