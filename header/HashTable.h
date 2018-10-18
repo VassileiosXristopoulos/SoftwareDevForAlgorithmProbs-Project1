@@ -8,22 +8,26 @@
 #include <vector>
 #include "Item.h"
 #include "hashFunction.h"
+#include "HashNode.h"
 
 using namespace std;
 
 class HashTable {
 private:
+    int uid;
     int TableSize;
-    vector<Item*> *Table;
+    vector< vector<HashNode*> >Table;
     hashFunction **H_vector;
     vector<int> r_vector;
-public:
-    HashTable(int k,int size);
-    ~HashTable();
     int hash(Item* item);
+    vector<int> computeGVector(Item* item);
+public:
+    HashTable(int id,int k,int size);
+    ~HashTable();
     void add(Item* item);
     void print();
-    vector<Item*> findCloser(Item *item);
+    vector< pair<Item*,double> > findNCloser(Item *item);
+
 };
 
 

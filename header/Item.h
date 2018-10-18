@@ -9,11 +9,13 @@
 #include <string>
 #include <vector>
 using namespace std;
+extern int k;
 class Item {
 private:
+    bool called=false;
     string name;
     vector<int>content;
-    vector<int>g_vector;
+    vector<int>g_vector=vector<int>(k);
 public:
     Item(vector<string>&element);
     ~Item();
@@ -22,6 +24,8 @@ public:
     void setGVector(vector<int>& h_i);
     vector<int>& getGVector();
     void printContent();
+    void printGVector();
+  //  int getGVectorSize();
 };
 
 

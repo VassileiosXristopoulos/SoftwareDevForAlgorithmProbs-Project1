@@ -7,6 +7,9 @@ set(SOURCE_FILES "src/main.cpp"
         "src/DataSetMap.cpp"
         "src/Item.cpp"
         "src/HashTable.cpp"
-        "src/hashFunction.cpp")
+        "src/hashFunction.cpp"
+        "src/HashNode.cpp"
+        "src/ComputationMethods.cpp")
+
 
 add_executable(test ${SOURCE_FILES})

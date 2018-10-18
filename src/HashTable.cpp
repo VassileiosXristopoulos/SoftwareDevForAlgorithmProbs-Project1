@@ -8,109 +8,94 @@
 #include <cmath>
 #include "../header/HashTable.h"
 #include "../header/Item.h"
+#include "../header/HashNode.h"
+#include "../header/ComputationMethods.h"
 using namespace std;
-extern int r;
-HashTable::HashTable(int k, int size) { //TODO: implement hash table fundamental functionality
-
+extern int r,L;
+HashTable::HashTable(int id,int k, int size) { //TODO: implement hash table fundamental functionality
+    uid = id;
     TableSize = size;
-    Table = new vector<Item*>[TableSize];
+    Table = vector<vector<HashNode*>>(TableSize);
     H_vector= new hashFunction*[k];
-    for( int i=0; i<k; i++){
-       r_vector.push_back(rand());
-       H_vector[i] = new hashFunction();
+    for( int a=0; a<k; a++){
+       r_vector.push_back(rand()%10+1);
+       H_vector[a] = new hashFunction();
     }
 }
 
-HashTable::~HashTable() {
+HashTable::~HashTable() { //TODO: implement destructor
 
 }
+
 
 int HashTable::hash(Item *item) {
-    unsigned long sum = 0;
+    int sum = 0;
     int M = (int)pow(2.0,32.0) -5;
-    vector<int>h_i(r_vector.size());
+    vector<int>h_i=computeGVector(item);
     for( int i=0; i< r_vector.size() ; i++){
-        h_i[i] = H_vector[i]->hash(item);
-        sum += ((unsigned long)(r_vector[i]*h_i[i]))%M;
+       sum += ComputationMethods::my_mod(((int)r_vector[i])*h_i[i],M);
     }
-    item->setGVector(h_i);
-    return (int)(sum%TableSize) ;
+
+    return ComputationMethods::my_mod(sum,TableSize);
 }
 
 void HashTable::add(Item* item) {
     int key = hash(item);
-    Table[key].push_back(item);
+    Table[key].push_back(new HashNode(item,computeGVector(item)));
 }
 
-void HashTable::print() {
-    for(int i=0;i<TableSize;i++){
-        cout<<"---------------------BUCKET "<< i <<"-------------------"<<endl;
-        for(int j=0; j<Table[i].size(); j++){
-            cout<<"             ----ELEMENT "<< j << "------"<<endl;
-            cout<<"Name: "<< Table[i][j]->getName() << " Vector :";
-            Table[i][j]->printContent();
-            cout<<endl;
-        }
-    }
-}
 
-vector< pair<Item*,double> > HashTable::findCloser(Item *item) {
-    double min_dist=-1;
-    Item* closest_item= nullptr;
+vector< pair<Item*,double> > HashTable::findNCloser(Item *item) {
     int bucket = hash(item);
-
+    vector<int>item_gVector=computeGVector(item);
+    item->setGVector(item_gVector);
     vector< pair<Item*,double> >ret;
-    for(int i=0; i<Table[bucket].size(); i++){
+    pair<Item*,double>min_pair(NULL,-1);
+
+    for(int i=0; i<Table[bucket].size(); i++) {
         bool match = true;
 
-        for(int j=0;j<item->getGVector().size(); j++) {
-            if (item->getGVector()[j] != Table[bucket][i]->getGVector()[j]) {
+        for (int j = 0; j < item->getGVector().size(); j++) {
+           if (item->getGVector()[j] != Table[bucket][i]->getGvector()[j]) {
                 match = false;
                 break;
             }
         }
+        if (match) {
+            Item * datasetItem = Table[bucket][i]->getItem();
 
-        if(match){
-         /*   cout << "Item : " << item->getName() <<" with vector: ";
-            item->printContent();
-            cout<<endl;
-            cout << "has same g(p) with Item: " << Table[bucket][i]->getName()<<" with vector: ";
-            Table[bucket][i]->printContent();*/
-           // cout<<endl<<endl;
-            double distance=0;
-            vector<int>query_vector=item->getContent();
-            vector<int>data_vector=Table[bucket][i]->getContent();
-            for(int j=0;j<query_vector.size(); j++){
-                distance+= pow(data_vector[i]-query_vector[i],2);
-            }
-            distance = sqrt(distance);
-            if(distance<r && item->getName().compare(Table[bucket][i]->getName())!=0){
-                pair<Item*,double>myPair=make_pair(Table[bucket][i],distance);
-                ret.push_back(myPair);
-            }
-            if(min_dist == -1){
+            double distance = ComputationMethods::EucledianDistance(item->getContent(), Table[bucket][i]->getItem()
+            ->getContent());
+            if (item->getName().compare(datasetItem->getName()) != 0) {
+                if (min_pair.second == -1) {
 
-                min_dist = distance;
-                closest_item = Table[bucket][i];
-            }
-            else{
-                if(min_dist>distance){
-                    min_dist = distance;
-                    closest_item = Table[bucket][i];
+                    min_pair.second = distance;
+                    min_pair.first = datasetItem;
+                }
+                else {
+                    if (min_pair.second > distance) {
+                        min_pair.second = distance;
+                        min_pair.first = datasetItem;
+                    }
+                }
+                if (distance < r) {
+                    pair<Item *, double> myPair = make_pair(datasetItem, distance);
+                    ret.push_back(myPair);
+
                 }
             }
         }
 
-
     }
-    if(min_dist>0 ){
-        cout<<"Closest item to "<<item->getName()<<" is item "<<closest_item->getName()<<" with distance: "
-                                                                                         ""<<min_dist<<endl;
-        pair<Item*,double>myPair=make_pair(closest_item,min_dist);
-        ret.push_back(myPair);
-    }
-
+    ret.push_back(min_pair);
     return ret;
-
-
 }
+vector<int> HashTable::computeGVector(Item* item){
+    vector<int> h_i;
+    for( int i=0; i< item->getGVector().size() ; i++) {
+        h_i.push_back(H_vector[i]->hash(item));
+    }
+    return h_i;
+}
+
+

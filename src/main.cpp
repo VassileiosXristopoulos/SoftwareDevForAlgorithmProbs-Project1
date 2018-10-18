@@ -10,17 +10,21 @@
 #include <iterator>
 #include <cstdlib>
 #include <vector>
+#include <algorithm>
+#include <iomanip>
 #include "../header/DataSetMap.h"
 #include "../header/Item.h"
 #include "../header/HashTable.h"
 
-#include <direct.h>
 //TODO : make a class where I will save all input set (i.e. map of vectors) with get element, (set element)
 using namespace std;
-int d,r;
+int d,r,L,k;
+default_random_engine generator;
+normal_distribution<float> distribution(0,1);
 int main(int argv,char **argc){
     srand(time(NULL));
-    int a, b , k, L, n=0;
+
+    int a, b , n=0;
     string FileLine;
     string inputFile, queryFile, outputFile;
 
@@ -29,10 +33,10 @@ int main(int argv,char **argc){
             cout << "Invalid Arguments" << endl;
             return 1;
         }
-        string s = "Input\\";
+        string s = "Input/";
 
-        inputFile = "Input\\" + string(argc[2]);
-        queryFile = "Input\\" + string(argc[4]);
+        inputFile = "../Input/" + string(argc[2]);
+        queryFile = "../Input/" + string(argc[4]);
         k = atoi(argc[6]);
         L = atoi(argc[8]);
         if( k<=0 || L<=0 ){
@@ -57,15 +61,15 @@ int main(int argv,char **argc){
         return 1;
     }
 
-
-   vector<Item*>Map;
+    cout << inputFile << "  " << queryFile<<endl;
+   DataSetMap Map;
     char buff[FILENAME_MAX];
-    getcwd( buff, FILENAME_MAX );
-    std::string current_working_dir(buff);
-    std::cout << "Current Directory: " << current_working_dir << std::endl;
-    string input_file = "X:\\di-project\\SoftwareDevForAlgorithmProbs-Project1\\Input\\input_small.txt";
+   // getcwd( buff, FILENAME_MAX );
+   // std::string current_working_dir(buff);
+   // std::cout << "Current Directory: " << current_working_dir << std::endl;
+   // string input_file = "X:\\di-project\\SoftwareDevForAlgorithmProbs-Project1\\Input\\input_small.txt";
 
-    ifstream input(input_file.c_str());
+    ifstream input(inputFile);
 
     string mode;
     std::getline(input,mode); //get mode (i.e. first line)
@@ -82,41 +86,51 @@ int main(int argv,char **argc){
             startPos = pos + 1;
             pos = line.find(' ', startPos);
         }
-
+        element.push_back(line.substr(startPos, pos - startPos));
         Item *item = new Item(element);
 
         if(element.size()<=0){
             cout <<"element empty!!"<<endl;
             continue;
         }
-        Map.push_back(item);
+        Map.append(item);
 
         d = element.size();
         n++;
 
     }
+
     HashTable ** TableArray = new HashTable*[L];
     for(int i=0; i<L ; i++){
-        TableArray[i] = new HashTable(k,n/2);
+     //   cout <<"HASHTABLE " << i <<endl;
+        TableArray[i] = new HashTable(i,k,n/2);
         for(int j=0; j<Map.size(); j++){
-            TableArray[i]->add(Map[j]);
+            TableArray[i]->add(Map.at(j));
         }
     }
-    cout << "out!!"<<endl;
-  //  TableArray[0]->print();
-    string output_file = "X:\\di-project\\SoftwareDevForAlgorithmProbs-Project1\\Input\\query_small.txt";
-    ifstream query_input(output_file.c_str());
+
+ /*   for(int i=0;i<Map.size();i++){
+        cout << Map[i]->getName() << endl;
+        for(int j=0;j<L;j++){
+            cout << "hashtable " << j << ": ";
+            TableArray[j]->hash(Map[i]);
+            Map[i]->printGVector();
+            cout<<endl;
+        }
+    }*/
+   /* string output_file = "X:\\di-project\\SoftwareDevForAlgorithmProbs-Project1\\Input\\query_small.txt";
+    ifstream query_input(output_file.c_str());*/
+    ifstream input_q(queryFile);
     string radius;
-    std::getline(query_input,radius); // get radius (i.e. first line)
-    //int r = stoi(radius);
+    getline(input_q,radius); // get radius (i.e. first line)
+
     r=stoi(radius.substr(radius.find(":") + 1));
-   // vector<vector<Item*>>ClosestItems;
-    pair<Item *,double>closestNeighboor(NULL,-1.0);
-    vector<pair<Item *,double>> closerNneighboors;
-    while ( std::getline(query_input, FileLine) ) { // TODO: implement functionality of checking first line for mode
-       // cout <<"in"<<endl;
+
+    cout << radius <<endl;
+    double max_div = 0;
+    while ( getline(input_q, FileLine) ) { // TODO: implement functionality of checking first line for mode
         istringstream iss(FileLine);
-      //  if (!(iss >> a >> b)) { break; } // error
+
         string line = FileLine.substr(0, FileLine.size() - 1);
         vector<string> element;
         size_t pos = line.find(' ');
@@ -126,29 +140,70 @@ int main(int argv,char **argc){
             startPos = pos + 1;
             pos = line.find(' ', startPos);
         }
+        element.push_back(line.substr(startPos, pos - startPos));
         Item *item = new Item(element);
-        //vector<Item*>ClosestNeighboors;
-        vector<Item*>ClosestRNeighboors;
+      //  cout << item->getContent().size() <<endl;
+        pair<Item *,double>closestNeighboor(NULL,-1.0);
+        vector<pair<Item *,double>> closerNneighboors;
         for(int i=0;i<L;i++){
-            //vector<pair<Item *,double>>neighboors=TableArray[i]->findCloser(item);
-            if(neighboors.size()>0){
-                if()
-              //  ClosestNeighboors.push_back(neighboors[0]);
-                for(int k=1;k<neighboors.size();k++){
-                    ClosestRNeighboors.push_back(neighboors[k]);
+          //  cout << "HASHTABLE["<<i+1<<"]"<<endl;
+            vector<pair<Item *,double>> Nneighboors=TableArray[i]->findNCloser(item);
+            pair<Item*,double>neighboor = Nneighboors[Nneighboors.size()-1];
+            if(neighboor.second>0){ //last item is the closest neighboor
+                if(closestNeighboor.second==-1 || neighboor.second < closestNeighboor.second){
+                    closestNeighboor=neighboor;
                 }
+          //  vector<pair<Item*,double >> neighboors=TableArray[i]->findNCloser(item);
+                for(int j=0;j<Nneighboors.size()-1;j++){
+
+                    closerNneighboors.push_back(Nneighboors[j]);
+                }
+            }
+        }
+        if(closestNeighboor.second>0){
+            cout << "Query item: " << item->getName() << endl;
+            vector<string>Names;
+          //  for(int l=0;l< closerNneighboors.size(); l++){
+          //      Names.push_back(closerNneighboors[l].first->getName());
+          //  }
+            sort( closerNneighboors.begin(), closerNneighboors.end() );
+            closerNneighboors.erase(unique( closerNneighboors.begin(), closerNneighboors.end() ), closerNneighboors
+           .end() );
+
+
+            cout << "R-near neighbor:"<<endl;
+            if(closerNneighboors.size()==0)
+                cout<<"none"<<endl;
+
+
+            for(int j=0;j<closerNneighboors.size(); j++){
+                if(closerNneighboors[j].first->getName().compare(closestNeighboor.first->getName())!=0){
+                    cout << closerNneighboors[j].first->getName() << " : "<< closerNneighboors[j].second <<endl;
+                }
+
+            }
+            cout << "Nearest neighbor: " <<closestNeighboor.first->getName()<<endl<<
+            "distanceLSH: "<<closestNeighboor.second<<endl;
+            double trueDist = Map.TrueDistance(item);
+            cout << "distanceTrue: "<< trueDist << endl;
+            cout<<endl;
+            double div = closestNeighboor.second/trueDist;
+            if(div > max_div){
+                max_div = div;
+            }
+        }
+        else{
+            if(closerNneighboors.size()>0){
+                cout << "Error occured at finding neighboors. Found Ncloser without finding closer"<<endl;
+                exit(0);
             }
         }
 
 
-        //TODO: search for similar with "item"
-
     }
+    cout << "Max Div: "<<max_div<<endl;
+
+
 }
 
-int getMin(vector<int>Vector){
-    int min;
-    for(int i=0;i<Vector.size();i++){
 
-    }
-}
