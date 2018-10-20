@@ -144,7 +144,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=test
+CMAKE_PROJECT_NAME:STATIC=CUBE
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -204,6 +204,18 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+CUBE_BINARY_DIR:STATIC=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug
+
+//Value Computed by CMake
+CUBE_SOURCE_DIR:STATIC=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1
+
+//Value Computed by CMake
+LSH_BINARY_DIR:STATIC=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug
+
+//Value Computed by CMake
+LSH_SOURCE_DIR:STATIC=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1
 
 //Path to a program.
 ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf

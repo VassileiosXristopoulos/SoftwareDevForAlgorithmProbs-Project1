@@ -6,6 +6,7 @@
 #include <ctime>
 #include <cstdlib>
 #include <cmath>
+#include <algorithm>
 #include "../header/HashTable.h"
 #include "../header/Item.h"
 #include "../header/HashNode.h"
@@ -96,7 +97,7 @@ pair<Item*,double>  HashTable::findCloserNeighbor(Item *item, string mode){
 
 int HashTable::cosineHash(Item* item) {
     vector<int> table = computeCosGvector(item);
-
+    std::reverse(table.begin(),table.end());
     return ComputationMethods::intVectortoInteger(table);
 
 }
@@ -161,24 +162,16 @@ pair<Item*,double> HashTable::findCLoserNeighbor(Item *item,int bucket){
             double distance = ComputationMethods::EucledianDistance(item->getContent(), Table[bucket][i]->getItem()
                     ->getContent());
             if (item->getName().compare(datasetItem->getName()) != 0) {
-
-
-                if (min_pair.second == -1) {
-
+                if (min_pair.second == -1 || min_pair.second > distance ) {
                     min_pair.second = distance;
                     min_pair.first = datasetItem;
                     retrieved++;
-                } else {
-                    if (min_pair.second > distance ) {
-                        min_pair.second = distance;
-                        min_pair.first = datasetItem;
-                        retrieved++;
-                    }
                 }
             }
         }
     }
     return min_pair;
+
 }
 
 

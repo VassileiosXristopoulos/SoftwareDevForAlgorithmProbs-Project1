@@ -18,14 +18,13 @@
 
 //TODO : make a class where I will save all input set (i.e. map of vectors) with get element, (set element)
 using namespace std;
-int d,r,L,k;
+extern int d,n;
+int r,L,k;
 default_random_engine generator;
 normal_distribution<float> distribution(0,1);
 int main(int argv,char **argc){
     srand(time(NULL));
 
-    int a, b , n=0;
-    string FileLine;
     string inputFile, queryFile, outputFile;
 
     if( argv == 11 ){ // TODO: ask/implement different ways of getting arguments (asking user)
@@ -63,70 +62,24 @@ int main(int argv,char **argc){
 
     cout << inputFile << "  " << queryFile<<endl;
    DataSetMap Map;
-    char buff[FILENAME_MAX];
-   // getcwd( buff, FILENAME_MAX );
-   // std::string current_working_dir(buff);
-   // std::cout << "Current Directory: " << current_working_dir << std::endl;
-   // string input_file = "X:\\di-project\\SoftwareDevForAlgorithmProbs-Project1\\Input\\input_small.txt";
-
-    ifstream input(inputFile);
-
-    string mode;
-    std::getline(input,mode); //get mode (i.e. first line)
-    cout<<mode<<endl;
-    while ( std::getline(input, FileLine) ) { // TODO: implement functionality of checking first line for mode
-      //  cout<<"in`"<<endl;
-        istringstream iss(FileLine);
-        //if (!(iss >> a >> b)) { break; } // error
-        string line = FileLine.substr(0, FileLine.size() - 1);
-        vector<string> element;
-        size_t pos = line.find(' ');
-        size_t startPos = 0;
-        while (pos != string::npos) {
-            element.push_back(line.substr(startPos, pos - startPos));
-            startPos = pos + 1;
-            pos = line.find(' ', startPos);
-        }
-        element.push_back(line.substr(startPos, pos - startPos));
-        Item *item = new Item(element);
-
-        if(element.size()<=0){
-            cout <<"element empty!!"<<endl;
-            continue;
-        }
-        Map.append(item);
-
-        d = element.size();
-        n++;
-
-    }
+    string mode = Map.InsertFile(inputFile);
 
     HashTable ** TableArray = new HashTable*[L];
+
     for(int i=0; i<L ; i++){
-     //   cout <<"HASHTABLE " << i <<endl;
         TableArray[i] = new HashTable(i,k,n/2);
         for(int j=0; j<Map.size(); j++){
             TableArray[i]->add(Map.at(j),mode);
         }
     }
 
- /*   for(int i=0;i<Map.size();i++){
-        cout << Map[i]->getName() << endl;
-        for(int j=0;j<L;j++){
-            cout << "hashtable " << j << ": ";
-            TableArray[j]->hash(Map[i]);
-            Map[i]->printGVector();
-            cout<<endl;
-        }
-    }*/
-   /* string output_file = "X:\\di-project\\SoftwareDevForAlgorithmProbs-Project1\\Input\\query_small.txt";
-    ifstream query_input(output_file.c_str());*/
+
     ifstream input_q(queryFile);
     string radius;
     getline(input_q,radius); // get radius (i.e. first line)
 
     r=stoi(radius.substr(radius.find(":") + 1));
-
+    string FileLine;
     cout << radius <<endl;
     double max_div = 0;
     while ( getline(input_q, FileLine) ) { // TODO: implement functionality of checking first line for mode

@@ -111,17 +111,57 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named CUBE
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
+CUBE: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CUBE
+.PHONY : CUBE
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+CUBE/fast:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/build
+.PHONY : CUBE/fast
+
+#=============================================================================
+# Target rules for targets named LSH
+
+# Build rule for target.
+LSH: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LSH
+.PHONY : LSH
+
+# fast build rule for target.
+LSH/fast:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/build
+.PHONY : LSH/fast
+
+src/BinaryMap.o: src/BinaryMap.cpp.o
+
+.PHONY : src/BinaryMap.o
+
+# target to build an object file
+src/BinaryMap.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/BinaryMap.cpp.o
+.PHONY : src/BinaryMap.cpp.o
+
+src/BinaryMap.i: src/BinaryMap.cpp.i
+
+.PHONY : src/BinaryMap.i
+
+# target to preprocess a source file
+src/BinaryMap.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/BinaryMap.cpp.i
+.PHONY : src/BinaryMap.cpp.i
+
+src/BinaryMap.s: src/BinaryMap.cpp.s
+
+.PHONY : src/BinaryMap.s
+
+# target to generate assembly for a file
+src/BinaryMap.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/BinaryMap.cpp.s
+.PHONY : src/BinaryMap.cpp.s
 
 src/ComputationMethods.o: src/ComputationMethods.cpp.o
 
@@ -129,7 +169,8 @@ src/ComputationMethods.o: src/ComputationMethods.cpp.o
 
 # target to build an object file
 src/ComputationMethods.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ComputationMethods.cpp.o
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.o
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/ComputationMethods.cpp.o
 .PHONY : src/ComputationMethods.cpp.o
 
 src/ComputationMethods.i: src/ComputationMethods.cpp.i
@@ -138,7 +179,8 @@ src/ComputationMethods.i: src/ComputationMethods.cpp.i
 
 # target to preprocess a source file
 src/ComputationMethods.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ComputationMethods.cpp.i
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.i
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/ComputationMethods.cpp.i
 .PHONY : src/ComputationMethods.cpp.i
 
 src/ComputationMethods.s: src/ComputationMethods.cpp.s
@@ -147,8 +189,63 @@ src/ComputationMethods.s: src/ComputationMethods.cpp.s
 
 # target to generate assembly for a file
 src/ComputationMethods.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ComputationMethods.cpp.s
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.s
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/ComputationMethods.cpp.s
 .PHONY : src/ComputationMethods.cpp.s
+
+src/CubeEdge.o: src/CubeEdge.cpp.o
+
+.PHONY : src/CubeEdge.o
+
+# target to build an object file
+src/CubeEdge.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeEdge.cpp.o
+.PHONY : src/CubeEdge.cpp.o
+
+src/CubeEdge.i: src/CubeEdge.cpp.i
+
+.PHONY : src/CubeEdge.i
+
+# target to preprocess a source file
+src/CubeEdge.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeEdge.cpp.i
+.PHONY : src/CubeEdge.cpp.i
+
+src/CubeEdge.s: src/CubeEdge.cpp.s
+
+.PHONY : src/CubeEdge.s
+
+# target to generate assembly for a file
+src/CubeEdge.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeEdge.cpp.s
+.PHONY : src/CubeEdge.cpp.s
+
+src/CubeIndex.o: src/CubeIndex.cpp.o
+
+.PHONY : src/CubeIndex.o
+
+# target to build an object file
+src/CubeIndex.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeIndex.cpp.o
+.PHONY : src/CubeIndex.cpp.o
+
+src/CubeIndex.i: src/CubeIndex.cpp.i
+
+.PHONY : src/CubeIndex.i
+
+# target to preprocess a source file
+src/CubeIndex.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeIndex.cpp.i
+.PHONY : src/CubeIndex.cpp.i
+
+src/CubeIndex.s: src/CubeIndex.cpp.s
+
+.PHONY : src/CubeIndex.s
+
+# target to generate assembly for a file
+src/CubeIndex.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeIndex.cpp.s
+.PHONY : src/CubeIndex.cpp.s
 
 src/DataSetMap.o: src/DataSetMap.cpp.o
 
@@ -156,7 +253,8 @@ src/DataSetMap.o: src/DataSetMap.cpp.o
 
 # target to build an object file
 src/DataSetMap.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/DataSetMap.cpp.o
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/DataSetMap.cpp.o
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/DataSetMap.cpp.o
 .PHONY : src/DataSetMap.cpp.o
 
 src/DataSetMap.i: src/DataSetMap.cpp.i
@@ -165,7 +263,8 @@ src/DataSetMap.i: src/DataSetMap.cpp.i
 
 # target to preprocess a source file
 src/DataSetMap.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/DataSetMap.cpp.i
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/DataSetMap.cpp.i
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/DataSetMap.cpp.i
 .PHONY : src/DataSetMap.cpp.i
 
 src/DataSetMap.s: src/DataSetMap.cpp.s
@@ -174,7 +273,8 @@ src/DataSetMap.s: src/DataSetMap.cpp.s
 
 # target to generate assembly for a file
 src/DataSetMap.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/DataSetMap.cpp.s
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/DataSetMap.cpp.s
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/DataSetMap.cpp.s
 .PHONY : src/DataSetMap.cpp.s
 
 src/HashNode.o: src/HashNode.cpp.o
@@ -183,7 +283,7 @@ src/HashNode.o: src/HashNode.cpp.o
 
 # target to build an object file
 src/HashNode.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/HashNode.cpp.o
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/HashNode.cpp.o
 .PHONY : src/HashNode.cpp.o
 
 src/HashNode.i: src/HashNode.cpp.i
@@ -192,7 +292,7 @@ src/HashNode.i: src/HashNode.cpp.i
 
 # target to preprocess a source file
 src/HashNode.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/HashNode.cpp.i
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/HashNode.cpp.i
 .PHONY : src/HashNode.cpp.i
 
 src/HashNode.s: src/HashNode.cpp.s
@@ -201,7 +301,7 @@ src/HashNode.s: src/HashNode.cpp.s
 
 # target to generate assembly for a file
 src/HashNode.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/HashNode.cpp.s
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/HashNode.cpp.s
 .PHONY : src/HashNode.cpp.s
 
 src/HashTable.o: src/HashTable.cpp.o
@@ -210,7 +310,7 @@ src/HashTable.o: src/HashTable.cpp.o
 
 # target to build an object file
 src/HashTable.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/HashTable.cpp.o
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/HashTable.cpp.o
 .PHONY : src/HashTable.cpp.o
 
 src/HashTable.i: src/HashTable.cpp.i
@@ -219,7 +319,7 @@ src/HashTable.i: src/HashTable.cpp.i
 
 # target to preprocess a source file
 src/HashTable.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/HashTable.cpp.i
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/HashTable.cpp.i
 .PHONY : src/HashTable.cpp.i
 
 src/HashTable.s: src/HashTable.cpp.s
@@ -228,8 +328,35 @@ src/HashTable.s: src/HashTable.cpp.s
 
 # target to generate assembly for a file
 src/HashTable.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/HashTable.cpp.s
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/HashTable.cpp.s
 .PHONY : src/HashTable.cpp.s
+
+src/Hypercube.o: src/Hypercube.cpp.o
+
+.PHONY : src/Hypercube.o
+
+# target to build an object file
+src/Hypercube.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/Hypercube.cpp.o
+.PHONY : src/Hypercube.cpp.o
+
+src/Hypercube.i: src/Hypercube.cpp.i
+
+.PHONY : src/Hypercube.i
+
+# target to preprocess a source file
+src/Hypercube.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/Hypercube.cpp.i
+.PHONY : src/Hypercube.cpp.i
+
+src/Hypercube.s: src/Hypercube.cpp.s
+
+.PHONY : src/Hypercube.s
+
+# target to generate assembly for a file
+src/Hypercube.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/Hypercube.cpp.s
+.PHONY : src/Hypercube.cpp.s
 
 src/Item.o: src/Item.cpp.o
 
@@ -237,7 +364,8 @@ src/Item.o: src/Item.cpp.o
 
 # target to build an object file
 src/Item.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Item.cpp.o
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/Item.cpp.o
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/Item.cpp.o
 .PHONY : src/Item.cpp.o
 
 src/Item.i: src/Item.cpp.i
@@ -246,7 +374,8 @@ src/Item.i: src/Item.cpp.i
 
 # target to preprocess a source file
 src/Item.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Item.cpp.i
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/Item.cpp.i
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/Item.cpp.i
 .PHONY : src/Item.cpp.i
 
 src/Item.s: src/Item.cpp.s
@@ -255,7 +384,8 @@ src/Item.s: src/Item.cpp.s
 
 # target to generate assembly for a file
 src/Item.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Item.cpp.s
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/Item.cpp.s
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/Item.cpp.s
 .PHONY : src/Item.cpp.s
 
 src/cosineHashfunction.o: src/cosineHashfunction.cpp.o
@@ -264,7 +394,8 @@ src/cosineHashfunction.o: src/cosineHashfunction.cpp.o
 
 # target to build an object file
 src/cosineHashfunction.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/cosineHashfunction.cpp.o
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cosineHashfunction.cpp.o
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/cosineHashfunction.cpp.o
 .PHONY : src/cosineHashfunction.cpp.o
 
 src/cosineHashfunction.i: src/cosineHashfunction.cpp.i
@@ -273,7 +404,8 @@ src/cosineHashfunction.i: src/cosineHashfunction.cpp.i
 
 # target to preprocess a source file
 src/cosineHashfunction.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/cosineHashfunction.cpp.i
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cosineHashfunction.cpp.i
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/cosineHashfunction.cpp.i
 .PHONY : src/cosineHashfunction.cpp.i
 
 src/cosineHashfunction.s: src/cosineHashfunction.cpp.s
@@ -282,8 +414,36 @@ src/cosineHashfunction.s: src/cosineHashfunction.cpp.s
 
 # target to generate assembly for a file
 src/cosineHashfunction.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/cosineHashfunction.cpp.s
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cosineHashfunction.cpp.s
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/cosineHashfunction.cpp.s
 .PHONY : src/cosineHashfunction.cpp.s
+
+src/cube.o: src/cube.cpp.o
+
+.PHONY : src/cube.o
+
+# target to build an object file
+src/cube.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cube.cpp.o
+.PHONY : src/cube.cpp.o
+
+src/cube.i: src/cube.cpp.i
+
+.PHONY : src/cube.i
+
+# target to preprocess a source file
+src/cube.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cube.cpp.i
+.PHONY : src/cube.cpp.i
+
+src/cube.s: src/cube.cpp.s
+
+.PHONY : src/cube.s
+
+# target to generate assembly for a file
+src/cube.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cube.cpp.s
+.PHONY : src/cube.cpp.s
 
 src/hashFunction.o: src/hashFunction.cpp.o
 
@@ -291,7 +451,8 @@ src/hashFunction.o: src/hashFunction.cpp.o
 
 # target to build an object file
 src/hashFunction.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hashFunction.cpp.o
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hashFunction.cpp.o
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hashFunction.cpp.o
 .PHONY : src/hashFunction.cpp.o
 
 src/hashFunction.i: src/hashFunction.cpp.i
@@ -300,7 +461,8 @@ src/hashFunction.i: src/hashFunction.cpp.i
 
 # target to preprocess a source file
 src/hashFunction.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hashFunction.cpp.i
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hashFunction.cpp.i
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hashFunction.cpp.i
 .PHONY : src/hashFunction.cpp.i
 
 src/hashFunction.s: src/hashFunction.cpp.s
@@ -309,35 +471,36 @@ src/hashFunction.s: src/hashFunction.cpp.s
 
 # target to generate assembly for a file
 src/hashFunction.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hashFunction.cpp.s
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hashFunction.cpp.s
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hashFunction.cpp.s
 .PHONY : src/hashFunction.cpp.s
 
-src/main.o: src/main.cpp.o
+src/lsh.o: src/lsh.cpp.o
 
-.PHONY : src/main.o
+.PHONY : src/lsh.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/lsh.cpp.o:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh.cpp.o
+.PHONY : src/lsh.cpp.o
 
-src/main.i: src/main.cpp.i
+src/lsh.i: src/lsh.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/lsh.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/lsh.cpp.i:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh.cpp.i
+.PHONY : src/lsh.cpp.i
 
-src/main.s: src/main.cpp.s
+src/lsh.s: src/lsh.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/lsh.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/lsh.cpp.s:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh.cpp.s
+.PHONY : src/lsh.cpp.s
 
 # Help Target
 help:
@@ -347,10 +510,20 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
+	@echo "... CUBE"
+	@echo "... LSH"
+	@echo "... src/BinaryMap.o"
+	@echo "... src/BinaryMap.i"
+	@echo "... src/BinaryMap.s"
 	@echo "... src/ComputationMethods.o"
 	@echo "... src/ComputationMethods.i"
 	@echo "... src/ComputationMethods.s"
+	@echo "... src/CubeEdge.o"
+	@echo "... src/CubeEdge.i"
+	@echo "... src/CubeEdge.s"
+	@echo "... src/CubeIndex.o"
+	@echo "... src/CubeIndex.i"
+	@echo "... src/CubeIndex.s"
 	@echo "... src/DataSetMap.o"
 	@echo "... src/DataSetMap.i"
 	@echo "... src/DataSetMap.s"
@@ -360,18 +533,24 @@ help:
 	@echo "... src/HashTable.o"
 	@echo "... src/HashTable.i"
 	@echo "... src/HashTable.s"
+	@echo "... src/Hypercube.o"
+	@echo "... src/Hypercube.i"
+	@echo "... src/Hypercube.s"
 	@echo "... src/Item.o"
 	@echo "... src/Item.i"
 	@echo "... src/Item.s"
 	@echo "... src/cosineHashfunction.o"
 	@echo "... src/cosineHashfunction.i"
 	@echo "... src/cosineHashfunction.s"
+	@echo "... src/cube.o"
+	@echo "... src/cube.i"
+	@echo "... src/cube.s"
 	@echo "... src/hashFunction.o"
 	@echo "... src/hashFunction.i"
 	@echo "... src/hashFunction.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/lsh.o"
+	@echo "... src/lsh.i"
+	@echo "... src/lsh.s"
 .PHONY : help
 
 

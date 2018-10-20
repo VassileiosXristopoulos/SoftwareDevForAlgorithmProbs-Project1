@@ -65,39 +65,76 @@ CMAKE_SOURCE_DIR = /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Projec
 CMAKE_BINARY_DIR = /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/test.dir
+# Target rules for target CMakeFiles/CUBE.dir
 
 # All Build rule for target.
-CMakeFiles/test.dir/all:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target test"
-.PHONY : CMakeFiles/test.dir/all
+CMakeFiles/CUBE.dir/all:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/depend
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target CUBE"
+.PHONY : CMakeFiles/CUBE.dir/all
 
 # Include target in all.
-all: CMakeFiles/test.dir/all
+all: CMakeFiles/CUBE.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
+CMakeFiles/CUBE.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CUBE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/test.dir/rule
+.PHONY : CMakeFiles/CUBE.dir/rule
 
 # Convenience name for target.
-test: CMakeFiles/test.dir/rule
+CUBE: CMakeFiles/CUBE.dir/rule
 
-.PHONY : test
-
-# clean rule for target.
-CMakeFiles/test.dir/clean:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
-.PHONY : CMakeFiles/test.dir/clean
+.PHONY : CUBE
 
 # clean rule for target.
-clean: CMakeFiles/test.dir/clean
+CMakeFiles/CUBE.dir/clean:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/clean
+.PHONY : CMakeFiles/CUBE.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/CUBE.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/LSH.dir
+
+# All Build rule for target.
+CMakeFiles/LSH.dir/all:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/depend
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20 "Built target LSH"
+.PHONY : CMakeFiles/LSH.dir/all
+
+# Include target in all.
+all: CMakeFiles/LSH.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/LSH.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LSH.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/LSH.dir/rule
+
+# Convenience name for target.
+LSH: CMakeFiles/LSH.dir/rule
+
+.PHONY : LSH
+
+# clean rule for target.
+CMakeFiles/LSH.dir/clean:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/clean
+.PHONY : CMakeFiles/LSH.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/LSH.dir/clean
 
 .PHONY : clean
 

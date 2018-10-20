@@ -25,9 +25,7 @@ hashFunction::hashFunction() {
     }
 }
 
-hashFunction::~hashFunction() {
-
-}
+hashFunction::~hashFunction() = default;
 
 int hashFunction::hash(Item* item) {
     vector<int>p_item = item->getContent();
@@ -35,7 +33,7 @@ int hashFunction::hash(Item* item) {
     for(int i=0; i<p_item.size() ;i++){
         sum += ( (float) p_item[i] )*v[i];
     }
-    int ret =(int)(sum/100);
+    auto ret =(int)(sum/100);
 
     return ret; // TODO: declare w
 }

@@ -57,18 +57,18 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
-CMakeFiles/test.dir/src/main.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/main.cpp.o -c /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/main.cpp
+CMakeFiles/test.dir/src/lsh.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/lsh.cpp.o: ../src/lsh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/lsh.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/lsh.cpp.o -c /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/lsh.cpp
 
-CMakeFiles/test.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/main.cpp > CMakeFiles/test.dir/src/main.cpp.i
+CMakeFiles/test.dir/src/lsh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/lsh.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/lsh.cpp > CMakeFiles/test.dir/src/lsh.cpp.i
 
-CMakeFiles/test.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/main.cpp -o CMakeFiles/test.dir/src/main.cpp.s
+CMakeFiles/test.dir/src/lsh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/lsh.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/lsh.cpp -o CMakeFiles/test.dir/src/lsh.cpp.s
 
 CMakeFiles/test.dir/src/DataSetMap.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/DataSetMap.cpp.o: ../src/DataSetMap.cpp
@@ -161,21 +161,77 @@ CMakeFiles/test.dir/src/cosineHashfunction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/cosineHashfunction.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/cosineHashfunction.cpp -o CMakeFiles/test.dir/src/cosineHashfunction.cpp.s
 
+CMakeFiles/test.dir/src/Hypercube.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/Hypercube.cpp.o: ../src/Hypercube.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test.dir/src/Hypercube.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/Hypercube.cpp.o -c /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Hypercube.cpp
+
+CMakeFiles/test.dir/src/Hypercube.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Hypercube.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Hypercube.cpp > CMakeFiles/test.dir/src/Hypercube.cpp.i
+
+CMakeFiles/test.dir/src/Hypercube.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Hypercube.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Hypercube.cpp -o CMakeFiles/test.dir/src/Hypercube.cpp.s
+
+CMakeFiles/test.dir/src/CubeEdge.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/CubeEdge.cpp.o: ../src/CubeEdge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test.dir/src/CubeEdge.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/CubeEdge.cpp.o -c /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/CubeEdge.cpp
+
+CMakeFiles/test.dir/src/CubeEdge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/CubeEdge.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/CubeEdge.cpp > CMakeFiles/test.dir/src/CubeEdge.cpp.i
+
+CMakeFiles/test.dir/src/CubeEdge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/CubeEdge.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/CubeEdge.cpp -o CMakeFiles/test.dir/src/CubeEdge.cpp.s
+
+CMakeFiles/test.dir/src/CubeIndex.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/CubeIndex.cpp.o: ../src/CubeIndex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test.dir/src/CubeIndex.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/CubeIndex.cpp.o -c /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/CubeIndex.cpp
+
+CMakeFiles/test.dir/src/CubeIndex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/CubeIndex.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/CubeIndex.cpp > CMakeFiles/test.dir/src/CubeIndex.cpp.i
+
+CMakeFiles/test.dir/src/CubeIndex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/CubeIndex.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/CubeIndex.cpp -o CMakeFiles/test.dir/src/CubeIndex.cpp.s
+
+CMakeFiles/test.dir/src/BinaryMap.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/BinaryMap.cpp.o: ../src/BinaryMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test.dir/src/BinaryMap.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/BinaryMap.cpp.o -c /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/BinaryMap.cpp
+
+CMakeFiles/test.dir/src/BinaryMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/BinaryMap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/BinaryMap.cpp > CMakeFiles/test.dir/src/BinaryMap.cpp.i
+
+CMakeFiles/test.dir/src/BinaryMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/BinaryMap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/BinaryMap.cpp -o CMakeFiles/test.dir/src/BinaryMap.cpp.s
+
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/src/main.cpp.o" \
+"CMakeFiles/test.dir/src/lsh.cpp.o" \
 "CMakeFiles/test.dir/src/DataSetMap.cpp.o" \
 "CMakeFiles/test.dir/src/Item.cpp.o" \
 "CMakeFiles/test.dir/src/HashTable.cpp.o" \
 "CMakeFiles/test.dir/src/hashFunction.cpp.o" \
 "CMakeFiles/test.dir/src/HashNode.cpp.o" \
 "CMakeFiles/test.dir/src/ComputationMethods.cpp.o" \
-"CMakeFiles/test.dir/src/cosineHashfunction.cpp.o"
+"CMakeFiles/test.dir/src/cosineHashfunction.cpp.o" \
+"CMakeFiles/test.dir/src/Hypercube.cpp.o" \
+"CMakeFiles/test.dir/src/CubeEdge.cpp.o" \
+"CMakeFiles/test.dir/src/CubeIndex.cpp.o" \
+"CMakeFiles/test.dir/src/BinaryMap.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test: CMakeFiles/test.dir/src/main.cpp.o
+test: CMakeFiles/test.dir/src/lsh.cpp.o
 test: CMakeFiles/test.dir/src/DataSetMap.cpp.o
 test: CMakeFiles/test.dir/src/Item.cpp.o
 test: CMakeFiles/test.dir/src/HashTable.cpp.o
@@ -183,9 +239,13 @@ test: CMakeFiles/test.dir/src/hashFunction.cpp.o
 test: CMakeFiles/test.dir/src/HashNode.cpp.o
 test: CMakeFiles/test.dir/src/ComputationMethods.cpp.o
 test: CMakeFiles/test.dir/src/cosineHashfunction.cpp.o
+test: CMakeFiles/test.dir/src/Hypercube.cpp.o
+test: CMakeFiles/test.dir/src/CubeEdge.cpp.o
+test: CMakeFiles/test.dir/src/CubeIndex.cpp.o
+test: CMakeFiles/test.dir/src/BinaryMap.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

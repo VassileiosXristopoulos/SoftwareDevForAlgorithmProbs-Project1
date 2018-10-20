@@ -19,9 +19,10 @@ public:
     DataSetMap();
     ~DataSetMap();
     void append(Item *item);
-    double TrueDistance(Item*item);
+    double TrueDistance(Item*item,string mode);
     int size();
     Item* at(int index);
+    string InsertFile(string file);
 };
 
 
