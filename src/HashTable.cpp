@@ -13,8 +13,9 @@
 #include "../header/ComputationMethods.h"
 using namespace std;
 extern int r,L;
-HashTable::HashTable(int id,int k, int size) { //TODO: implement hash table fundamental functionality
+HashTable::HashTable(int id,int k, int size,string mode) { //TODO: implement hash table fundamental functionality
     uid = id;
+    this->mode = mode;
     TableSize = size;
     Table = vector<vector<HashNode*>>(TableSize);
     H_vector= new hashFunction*[k];
@@ -128,7 +129,7 @@ vector< pair<Item*,double> > HashTable::getNCloserNeighbors(Item *item,int bucke
         if (match) {
             Item * datasetItem = Table[bucket][i]->getItem();
 
-            double distance = ComputationMethods::EucledianDistance(item->getContent(), Table[bucket][i]->getItem()
+            double distance = computeDistance(item->getContent(), Table[bucket][i]->getItem()
                     ->getContent());
             if (item->getName().compare(datasetItem->getName()) != 0) {
                 if (distance < r ) {
@@ -159,7 +160,7 @@ pair<Item*,double> HashTable::findCLoserNeighbor(Item *item,int bucket){
         if (match) {
             Item *datasetItem = Table[bucket][i]->getItem();
 
-            double distance = ComputationMethods::EucledianDistance(item->getContent(), Table[bucket][i]->getItem()
+            double distance = computeDistance(item->getContent(), Table[bucket][i]->getItem()
                     ->getContent());
             if (item->getName().compare(datasetItem->getName()) != 0) {
                 if (min_pair.second == -1 || min_pair.second > distance ) {
@@ -189,6 +190,15 @@ vector<int> HashTable::computeGVector(Item* item){
         h_i.push_back(H_vector[i]->hash(item));
     }
     return h_i;
+}
+
+double HashTable::computeDistance(vector<int> &x, vector<int> &y) {
+    if(mode.compare("eucledian")==0){
+        return ComputationMethods::EucledianDistance(x,y);
+    }
+    else if(mode.compare("cosine")==0){
+        return ComputationMethods::cosineDistance(x,y);
+    }
 }
 
 

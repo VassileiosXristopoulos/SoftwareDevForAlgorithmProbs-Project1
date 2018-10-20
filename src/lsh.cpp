@@ -67,7 +67,7 @@ int main(int argv,char **argc){
     HashTable ** TableArray = new HashTable*[L];
 
     for(int i=0; i<L ; i++){
-        TableArray[i] = new HashTable(i,k,n/2);
+        TableArray[i] = new HashTable(i,k,n/2,mode);
         for(int j=0; j<Map.size(); j++){
             TableArray[i]->add(Map.at(j),mode);
         }
@@ -138,7 +138,7 @@ int main(int argv,char **argc){
             }
             cout << "Nearest neighbor: " <<closestNeighboor.first->getName()<<endl<<
             "distanceLSH: "<<closestNeighboor.second<<endl;
-            double trueDist = Map.TrueDistance(item);
+            double trueDist = Map.TrueDistance(item,mode);
             cout << "distanceTrue: "<< trueDist << endl;
             cout<<endl;
             double div = closestNeighboor.second/trueDist;

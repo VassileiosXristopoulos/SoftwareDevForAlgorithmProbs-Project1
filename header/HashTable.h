@@ -15,6 +15,7 @@ using namespace std;
 
 class HashTable {
 private:
+    string mode;
     int uid;
     int TableSize;
     vector< vector<HashNode*> >Table;
@@ -37,8 +38,9 @@ private:
     vector<pair<Item*,double>>  euclFindNCloserNeighbrs(Item *item);
     vector<pair<Item*,double>>  cosFindNCloserNeighbrs(Item *item);
     vector< pair<Item*,double> > getNCloserNeighbors(Item *item,int bucket);
+    double computeDistance(vector<int>&x,vector<int>&y);
 public:
-    HashTable(int id,int k,int size);
+    HashTable(int id,int k,int size,string mode);
     ~HashTable();
     void add(Item* item,string mode);
     pair< Item*,double > findCloserNeighbor(Item *item, string mode);

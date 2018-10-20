@@ -64,7 +64,7 @@ int main(int argv,char **argc) {
     DataSetMap Map;
     string mode = Map.InsertFile(inputFile);
     //(int)log2(n)
-    Hypercube *hypercube = new Hypercube(13,mode);
+    Hypercube *hypercube = new Hypercube(4,mode);
     for(int i=0;i<Map.size() ;i++){
         hypercube->add(Map.at(i));
     }
@@ -92,7 +92,7 @@ int main(int argv,char **argc) {
         Item *item = new Item(element);
         pair<string,double>closer_item;
         double trueDist = Map.TrueDistance(item,mode);
-        closer_item = hypercube->findCloser(item,100,5);
+        closer_item = hypercube->findCloser(item,10000,1);
         vector<pair<string,double>>Rnearest = hypercube->findEuclRCloser(item,100,5,r);
         cout <<"Query item: "<< item->getName()<<endl;
         cout <<"R-nearest neighbor:"<<endl;
