@@ -14,7 +14,8 @@
 #include <iomanip>
 #include "../header/DataSetMap.h"
 #include "../header/Item.h"
-#include "../header/HashTable.h"
+#include "../header/EucledianHashTable.h"
+#include "../header/CosineHashTable.h"
 
 //TODO : make a class where I will save all input set (i.e. map of vectors) with get element, (set element)
 using namespace std;
@@ -63,15 +64,19 @@ int main(int argv,char **argc){
     cout << inputFile << "  " << queryFile<<endl;
    DataSetMap Map;
     string mode = Map.InsertFile(inputFile);
-
-    HashTable ** TableArray = new HashTable*[L];
-
+    AHashTable * TableArray[L];
     for(int i=0; i<L ; i++){
-        TableArray[i] = new HashTable(i,k,n/2,mode);
+        if(mode.compare("eucledian")==0) {
+            TableArray[i] = new EucledianHashTable(k, n / 2);
+        }
+        else{
+            TableArray[i] = new CosineHashTable( n / 2, k);
+        }
         for(int j=0; j<Map.size(); j++){
-            TableArray[i]->add(Map.at(j),mode);
+            TableArray[i]->add(Map.at(j));
         }
     }
+
 
 
     ifstream input_q(queryFile);
@@ -101,8 +106,8 @@ int main(int argv,char **argc){
         vector<pair<Item *,double>> closerNneighboors;
         for(int i=0;i<L;i++){
           //  cout << "HASHTABLE["<<i+1<<"]"<<endl;
-            vector<pair<Item *,double>> Nneighboors=TableArray[i]->findNCloserNeighbrs(item,mode);
-            pair<Item*,double>neighboor = TableArray[i]->findCloserNeighbor(item,mode);
+            vector<pair<Item *,double>> Nneighboors=TableArray[i]->findNcloserNeighbors(item);
+            pair<Item*,double>neighboor = TableArray[i]->findCloserNeighbor(item);
             if(neighboor.second>0){ //last item is the closest neighboor
                 if(closestNeighboor.second==-1 || neighboor.second < closestNeighboor.second){
                     closestNeighboor=neighboor;

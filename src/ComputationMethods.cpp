@@ -4,8 +4,8 @@
 
 #include <cmath>
 #include <algorithm>
+#include <bitset>
 #include "../header/ComputationMethods.h"
-
 
 int ComputationMethods::my_mod(int x, int y) {
     return (x % y + y) % y;
@@ -23,7 +23,7 @@ int ComputationMethods::intVectortoInteger(vector<int> table) {
     int i =0;
     std::reverse(table.begin(),table.end());
     for (vector<int>::iterator it = table.begin() ; it != table.end(); it++,i++){
-        if(*it.base()==1 ){
+        if(*it){
             retval |= 1<<i;
         }
     }

@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Projec
 CMakeFiles/CUBE.dir/all:
 	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/depend
 	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target CUBE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target CUBE"
 .PHONY : CMakeFiles/CUBE.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/CUBE.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CUBE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CUBE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/CUBE.dir/rule
@@ -108,7 +108,7 @@ clean: CMakeFiles/CUBE.dir/clean
 CMakeFiles/LSH.dir/all:
 	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/depend
 	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20 "Built target LSH"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24 "Built target LSH"
 .PHONY : CMakeFiles/LSH.dir/all
 
 # Include target in all.
@@ -118,7 +118,7 @@ all: CMakeFiles/LSH.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LSH.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LSH.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/LSH.dir/rule

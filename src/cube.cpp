@@ -13,7 +13,8 @@
 #include <iomanip>
 #include "../header/DataSetMap.h"
 #include "../header/Item.h"
-#include "../header/Hypercube.h"
+#include "../header/CosineHypercube.h"
+#include "../header/EucledianHypercube.h"
 
 using namespace std;
 int r,M,k;
@@ -64,7 +65,14 @@ int main(int argv,char **argc) {
     DataSetMap Map;
     string mode = Map.InsertFile(inputFile);
     //(int)log2(n)
-    Hypercube *hypercube = new Hypercube(4,mode);
+    AHypercube *hypercube;
+    if(mode.compare("eucledian")==0)    {
+        hypercube = new EucledianHypercube(4);
+    }
+    else{
+        hypercube = new CosineHypercube(4);
+    }
+
     for(int i=0;i<Map.size() ;i++){
         hypercube->add(Map.at(i));
     }
@@ -93,7 +101,7 @@ int main(int argv,char **argc) {
         pair<string,double>closer_item;
         double trueDist = Map.TrueDistance(item,mode);
         closer_item = hypercube->findCloser(item,10000,1);
-        vector<pair<string,double>>Rnearest = hypercube->findEuclRCloser(item,100,5,r);
+        vector<pair<string,double>>Rnearest = hypercube->findRCloser(item,100,5,r);
         cout <<"Query item: "<< item->getName()<<endl;
         cout <<"R-nearest neighbor:"<<endl;
         for(int i=0 ; i<Rnearest.size(); i++){
