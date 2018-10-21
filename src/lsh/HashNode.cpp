@@ -2,7 +2,7 @@
 // Created by vassilis on 17/10/2018.
 //
 
-#include "../header/HashNode.h"
+#include "../../header/lsh/HashNode.h"
 
 HashNode::HashNode(Item *item,vector<int> gvector) {
     my_item=item;

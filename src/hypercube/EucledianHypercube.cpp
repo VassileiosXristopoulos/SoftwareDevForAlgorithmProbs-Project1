@@ -3,8 +3,8 @@
 //
 
 #include <cmath>
-#include "../header/EucledianHypercube.h"
-#include "../header/ComputationMethods.h"
+#include "../../header/hypercube/EucledianHypercube.h"
+#include "../../header/ComputationMethods.h"
 
 EucledianHypercube::EucledianHypercube(int d) : AHypercube(d) {
         for( int i = 0 ;i< d ; i++){

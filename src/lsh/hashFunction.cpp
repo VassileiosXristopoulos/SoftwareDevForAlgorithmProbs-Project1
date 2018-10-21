@@ -3,7 +3,7 @@
 //
 #include <random>
 #include <vector>
-#include "../header/hashFunction.h"
+#include "../../header/lsh/hashFunction.h"
 extern int d;
 extern default_random_engine generator;
 extern normal_distribution<float> distribution;

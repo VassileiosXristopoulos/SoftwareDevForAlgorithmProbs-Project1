@@ -3,8 +3,8 @@
 //
 
 #include <algorithm>
-#include "../header/AHypercube.h"
-#include "../header/ComputationMethods.h"
+#include "../../header/hypercube/AHypercube.h"
+#include "../../header/ComputationMethods.h"
 AHypercube::AHypercube(int d) {
     for( int i = 0 ;i< pow(2,d) ; i++){
         edges.push_back(new CubeEdge(ComputationMethods::intToIntVector(i,d)));
@@ -13,7 +13,7 @@ AHypercube::AHypercube(int d) {
 }
 
 vector<CubeEdge *> AHypercube::getHamingCLose(int hammingDist, CubeEdge *edge) {
-    vector<int>index = edge->getIndex()->content();
+    vector<int>index = edge->getIndex();
     size_t sizeOfIndex = index.size();
     vector<CubeEdge *> closeEdges;
     vector<vector<int>> indexes; //the indexes are stored correctly, not need to reverse

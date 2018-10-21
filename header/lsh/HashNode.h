@@ -6,7 +6,7 @@
 #define TEST_HASHNODE_H
 
 
-#include "Item.h"
+#include "../Item.h"
 
 class HashNode {
 private:

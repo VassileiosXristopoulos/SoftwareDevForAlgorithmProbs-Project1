@@ -3,7 +3,7 @@
 //
 
 #include <random>
-#include "../header/cosineHashfunction.h"
+#include "../../header/lsh/cosineHashfunction.h"
 extern int d;
 extern default_random_engine generator;
 extern normal_distribution<float> distribution;

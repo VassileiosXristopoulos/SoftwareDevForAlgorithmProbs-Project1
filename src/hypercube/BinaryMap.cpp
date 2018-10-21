@@ -2,7 +2,7 @@
 // Created by vassilis on 20/10/2018.
 //
 
-#include "../header/BinaryMap.h"
+#include "../../header/hypercube/BinaryMap.h"
 
 void BinaryMap::add(int num, char val) {
     Map.insert(pair<int,char>(num,val));

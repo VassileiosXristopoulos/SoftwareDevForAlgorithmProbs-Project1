@@ -7,10 +7,9 @@
 
 
 #include <map>
-#include "hashFunction.h"
-#include "CubeEdge.h"
+#include "../lsh/hashFunction.h"
 #include "BinaryMap.h"
-#include "cosineHashfunction.h"
+#include "../lsh/cosineHashfunction.h"
 #include "AHypercube.h"
 
 class CosineHypercube : public AHypercube {

@@ -1,52 +1,38 @@
 //
-// Created by vassilis on 14/10/2018.
+// Created by vassilis on 21/10/2018.
 //
 
-#include <iostream>
-#include <ctime>
-#include <cstdlib>
-#include <cmath>
 #include <algorithm>
-#include "../header/EucledianHashTable.h"
-#include "../header/Item.h"
-#include "../header/HashNode.h"
-#include "../header/ComputationMethods.h"
-using namespace std;
+#include "../../header/lsh/CosineHashTable.h"
+#include "../../header/ComputationMethods.h"
 extern int r,L;
-EucledianHashTable::EucledianHashTable(int k, int size): AHashTable(size,k) {
-    H_vector= new hashFunction*[k];
+CosineHashTable::CosineHashTable(int size, int k) : AHashTable(size,k){
+    cosine_vector = new cosineHashfunction*[k];
     for( int a=0; a<k; a++){
-       r_vector.push_back(rand()%10+1);
-       H_vector[a] = new hashFunction();
+        cosine_vector[a] = new cosineHashfunction();
     }
 }
 
-
-EucledianHashTable::~EucledianHashTable() { //TODO: implement destructor
-
+vector<int> CosineHashTable::computeGVector(Item *item) {
+    vector<int>ret=vector<int>(k);
+    for(int i=0; i<k ;i++){
+        ret[i] = cosine_vector[i]->hash(item);
+    }
+    return ret;
 }
-void EucledianHashTable::add(Item* item){
+
+int CosineHashTable::hash(Item *item) {
+    vector<int> table = computeGVector(item);
+    std::reverse(table.begin(),table.end());
+    return ComputationMethods::intVectortoInteger(table);
+}
+
+void CosineHashTable::add(Item *item) {
     int key = hash(item);
     Table[key].push_back(new HashNode(item,computeGVector(item)));
 }
 
-
-
-
-int EucledianHashTable::hash(Item *item) {
-    int sum = 0;
-    int M = (int)pow(2.0,32.0) -5;
-    vector<int>h_i=computeGVector(item);
-    for( int i=0; i< r_vector.size() ; i++){
-       sum += ComputationMethods::my_mod(((int)r_vector[i])*h_i[i],M);
-    }
-
-    return ComputationMethods::my_mod(sum,TableSize);
-}
-
-
-
-vector< pair<Item*,double> > EucledianHashTable::findNcloserNeighbors(Item *item){
+vector<pair<Item *, double>>  CosineHashTable::findNcloserNeighbors(Item *item) {
     int bucket = hash(item);
     vector<int>item_gVector=computeGVector(item);
     item->setGVector(item_gVector);
@@ -63,7 +49,7 @@ vector< pair<Item*,double> > EucledianHashTable::findNcloserNeighbors(Item *item
         if (match) {
             Item * datasetItem = Table[bucket][i]->getItem();
 
-            double distance = ComputationMethods::EucledianDistance(item->getContent(), Table[bucket][i]->getItem()
+            double distance = ComputationMethods::cosineDistance(item->getContent(), Table[bucket][i]->getItem()
                     ->getContent());
             if (item->getName().compare(datasetItem->getName()) != 0) {
                 if (distance < r ) {
@@ -78,7 +64,7 @@ vector< pair<Item*,double> > EucledianHashTable::findNcloserNeighbors(Item *item
     return ret;
 }
 
-pair<Item*,double> EucledianHashTable::findCloserNeighbor(Item *item){
+pair<Item *, double> CosineHashTable::findCloserNeighbor(Item *item) {
     int bucket = hash(item);
     vector<int>item_gVector=computeGVector(item);
     item->setGVector(item_gVector);
@@ -97,7 +83,7 @@ pair<Item*,double> EucledianHashTable::findCloserNeighbor(Item *item){
         if (match) {
             Item *datasetItem = Table[bucket][i]->getItem();
 
-            double distance = ComputationMethods::EucledianDistance(item->getContent(), Table[bucket][i]->getItem()
+            double distance = ComputationMethods::cosineDistance(item->getContent(), Table[bucket][i]->getItem()
                     ->getContent());
             if (item->getName().compare(datasetItem->getName()) != 0) {
                 if (min_pair.second == -1 || min_pair.second > distance ) {
@@ -111,16 +97,4 @@ pair<Item*,double> EucledianHashTable::findCloserNeighbor(Item *item){
     return min_pair;
 
 }
-
-vector<int> EucledianHashTable::computeGVector(Item* item){
-    vector<int> h_i;
-    for( int i=0; i< item->getGVector().size() ; i++) {
-        h_i.push_back(H_vector[i]->hash(item));
-    }
-    return h_i;
-}
-
-
-
-
 

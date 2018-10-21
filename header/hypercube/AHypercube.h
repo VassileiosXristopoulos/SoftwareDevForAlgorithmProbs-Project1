@@ -6,7 +6,7 @@
 #define CUBE_AHYPERCUBE_H
 
 
-#include "cosineHashfunction.h"
+#include "../lsh/cosineHashfunction.h"
 #include "BinaryMap.h"
 #include "CubeEdge.h"
 

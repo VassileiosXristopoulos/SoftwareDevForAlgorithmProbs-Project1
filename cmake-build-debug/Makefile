@@ -136,87 +136,6 @@ LSH/fast:
 	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/build
 .PHONY : LSH/fast
 
-src/AHashTable.o: src/AHashTable.cpp.o
-
-.PHONY : src/AHashTable.o
-
-# target to build an object file
-src/AHashTable.cpp.o:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/AHashTable.cpp.o
-.PHONY : src/AHashTable.cpp.o
-
-src/AHashTable.i: src/AHashTable.cpp.i
-
-.PHONY : src/AHashTable.i
-
-# target to preprocess a source file
-src/AHashTable.cpp.i:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/AHashTable.cpp.i
-.PHONY : src/AHashTable.cpp.i
-
-src/AHashTable.s: src/AHashTable.cpp.s
-
-.PHONY : src/AHashTable.s
-
-# target to generate assembly for a file
-src/AHashTable.cpp.s:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/AHashTable.cpp.s
-.PHONY : src/AHashTable.cpp.s
-
-src/AHypercube.o: src/AHypercube.cpp.o
-
-.PHONY : src/AHypercube.o
-
-# target to build an object file
-src/AHypercube.cpp.o:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/AHypercube.cpp.o
-.PHONY : src/AHypercube.cpp.o
-
-src/AHypercube.i: src/AHypercube.cpp.i
-
-.PHONY : src/AHypercube.i
-
-# target to preprocess a source file
-src/AHypercube.cpp.i:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/AHypercube.cpp.i
-.PHONY : src/AHypercube.cpp.i
-
-src/AHypercube.s: src/AHypercube.cpp.s
-
-.PHONY : src/AHypercube.s
-
-# target to generate assembly for a file
-src/AHypercube.cpp.s:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/AHypercube.cpp.s
-.PHONY : src/AHypercube.cpp.s
-
-src/BinaryMap.o: src/BinaryMap.cpp.o
-
-.PHONY : src/BinaryMap.o
-
-# target to build an object file
-src/BinaryMap.cpp.o:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/BinaryMap.cpp.o
-.PHONY : src/BinaryMap.cpp.o
-
-src/BinaryMap.i: src/BinaryMap.cpp.i
-
-.PHONY : src/BinaryMap.i
-
-# target to preprocess a source file
-src/BinaryMap.cpp.i:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/BinaryMap.cpp.i
-.PHONY : src/BinaryMap.cpp.i
-
-src/BinaryMap.s: src/BinaryMap.cpp.s
-
-.PHONY : src/BinaryMap.s
-
-# target to generate assembly for a file
-src/BinaryMap.cpp.s:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/BinaryMap.cpp.s
-.PHONY : src/BinaryMap.cpp.s
-
 src/ComputationMethods.o: src/ComputationMethods.cpp.o
 
 .PHONY : src/ComputationMethods.o
@@ -246,114 +165,6 @@ src/ComputationMethods.cpp.s:
 	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.s
 	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/ComputationMethods.cpp.s
 .PHONY : src/ComputationMethods.cpp.s
-
-src/CosineHashTable.o: src/CosineHashTable.cpp.o
-
-.PHONY : src/CosineHashTable.o
-
-# target to build an object file
-src/CosineHashTable.cpp.o:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/CosineHashTable.cpp.o
-.PHONY : src/CosineHashTable.cpp.o
-
-src/CosineHashTable.i: src/CosineHashTable.cpp.i
-
-.PHONY : src/CosineHashTable.i
-
-# target to preprocess a source file
-src/CosineHashTable.cpp.i:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/CosineHashTable.cpp.i
-.PHONY : src/CosineHashTable.cpp.i
-
-src/CosineHashTable.s: src/CosineHashTable.cpp.s
-
-.PHONY : src/CosineHashTable.s
-
-# target to generate assembly for a file
-src/CosineHashTable.cpp.s:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/CosineHashTable.cpp.s
-.PHONY : src/CosineHashTable.cpp.s
-
-src/CosineHypercube.o: src/CosineHypercube.cpp.o
-
-.PHONY : src/CosineHypercube.o
-
-# target to build an object file
-src/CosineHypercube.cpp.o:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CosineHypercube.cpp.o
-.PHONY : src/CosineHypercube.cpp.o
-
-src/CosineHypercube.i: src/CosineHypercube.cpp.i
-
-.PHONY : src/CosineHypercube.i
-
-# target to preprocess a source file
-src/CosineHypercube.cpp.i:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CosineHypercube.cpp.i
-.PHONY : src/CosineHypercube.cpp.i
-
-src/CosineHypercube.s: src/CosineHypercube.cpp.s
-
-.PHONY : src/CosineHypercube.s
-
-# target to generate assembly for a file
-src/CosineHypercube.cpp.s:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CosineHypercube.cpp.s
-.PHONY : src/CosineHypercube.cpp.s
-
-src/CubeEdge.o: src/CubeEdge.cpp.o
-
-.PHONY : src/CubeEdge.o
-
-# target to build an object file
-src/CubeEdge.cpp.o:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeEdge.cpp.o
-.PHONY : src/CubeEdge.cpp.o
-
-src/CubeEdge.i: src/CubeEdge.cpp.i
-
-.PHONY : src/CubeEdge.i
-
-# target to preprocess a source file
-src/CubeEdge.cpp.i:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeEdge.cpp.i
-.PHONY : src/CubeEdge.cpp.i
-
-src/CubeEdge.s: src/CubeEdge.cpp.s
-
-.PHONY : src/CubeEdge.s
-
-# target to generate assembly for a file
-src/CubeEdge.cpp.s:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeEdge.cpp.s
-.PHONY : src/CubeEdge.cpp.s
-
-src/CubeIndex.o: src/CubeIndex.cpp.o
-
-.PHONY : src/CubeIndex.o
-
-# target to build an object file
-src/CubeIndex.cpp.o:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeIndex.cpp.o
-.PHONY : src/CubeIndex.cpp.o
-
-src/CubeIndex.i: src/CubeIndex.cpp.i
-
-.PHONY : src/CubeIndex.i
-
-# target to preprocess a source file
-src/CubeIndex.cpp.i:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeIndex.cpp.i
-.PHONY : src/CubeIndex.cpp.i
-
-src/CubeIndex.s: src/CubeIndex.cpp.s
-
-.PHONY : src/CubeIndex.s
-
-# target to generate assembly for a file
-src/CubeIndex.cpp.s:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/CubeIndex.cpp.s
-.PHONY : src/CubeIndex.cpp.s
 
 src/DataSetMap.o: src/DataSetMap.cpp.o
 
@@ -385,87 +196,6 @@ src/DataSetMap.cpp.s:
 	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/DataSetMap.cpp.s
 .PHONY : src/DataSetMap.cpp.s
 
-src/EucledianHashTable.o: src/EucledianHashTable.cpp.o
-
-.PHONY : src/EucledianHashTable.o
-
-# target to build an object file
-src/EucledianHashTable.cpp.o:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/EucledianHashTable.cpp.o
-.PHONY : src/EucledianHashTable.cpp.o
-
-src/EucledianHashTable.i: src/EucledianHashTable.cpp.i
-
-.PHONY : src/EucledianHashTable.i
-
-# target to preprocess a source file
-src/EucledianHashTable.cpp.i:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/EucledianHashTable.cpp.i
-.PHONY : src/EucledianHashTable.cpp.i
-
-src/EucledianHashTable.s: src/EucledianHashTable.cpp.s
-
-.PHONY : src/EucledianHashTable.s
-
-# target to generate assembly for a file
-src/EucledianHashTable.cpp.s:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/EucledianHashTable.cpp.s
-.PHONY : src/EucledianHashTable.cpp.s
-
-src/EucledianHypercube.o: src/EucledianHypercube.cpp.o
-
-.PHONY : src/EucledianHypercube.o
-
-# target to build an object file
-src/EucledianHypercube.cpp.o:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/EucledianHypercube.cpp.o
-.PHONY : src/EucledianHypercube.cpp.o
-
-src/EucledianHypercube.i: src/EucledianHypercube.cpp.i
-
-.PHONY : src/EucledianHypercube.i
-
-# target to preprocess a source file
-src/EucledianHypercube.cpp.i:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/EucledianHypercube.cpp.i
-.PHONY : src/EucledianHypercube.cpp.i
-
-src/EucledianHypercube.s: src/EucledianHypercube.cpp.s
-
-.PHONY : src/EucledianHypercube.s
-
-# target to generate assembly for a file
-src/EucledianHypercube.cpp.s:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/EucledianHypercube.cpp.s
-.PHONY : src/EucledianHypercube.cpp.s
-
-src/HashNode.o: src/HashNode.cpp.o
-
-.PHONY : src/HashNode.o
-
-# target to build an object file
-src/HashNode.cpp.o:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/HashNode.cpp.o
-.PHONY : src/HashNode.cpp.o
-
-src/HashNode.i: src/HashNode.cpp.i
-
-.PHONY : src/HashNode.i
-
-# target to preprocess a source file
-src/HashNode.cpp.i:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/HashNode.cpp.i
-.PHONY : src/HashNode.cpp.i
-
-src/HashNode.s: src/HashNode.cpp.s
-
-.PHONY : src/HashNode.s
-
-# target to generate assembly for a file
-src/HashNode.cpp.s:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/HashNode.cpp.s
-.PHONY : src/HashNode.cpp.s
-
 src/Item.o: src/Item.cpp.o
 
 .PHONY : src/Item.o
@@ -496,119 +226,362 @@ src/Item.cpp.s:
 	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/Item.cpp.s
 .PHONY : src/Item.cpp.s
 
-src/cosineHashfunction.o: src/cosineHashfunction.cpp.o
+src/hypercube/AHypercube.o: src/hypercube/AHypercube.cpp.o
 
-.PHONY : src/cosineHashfunction.o
-
-# target to build an object file
-src/cosineHashfunction.cpp.o:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cosineHashfunction.cpp.o
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/cosineHashfunction.cpp.o
-.PHONY : src/cosineHashfunction.cpp.o
-
-src/cosineHashfunction.i: src/cosineHashfunction.cpp.i
-
-.PHONY : src/cosineHashfunction.i
-
-# target to preprocess a source file
-src/cosineHashfunction.cpp.i:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cosineHashfunction.cpp.i
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/cosineHashfunction.cpp.i
-.PHONY : src/cosineHashfunction.cpp.i
-
-src/cosineHashfunction.s: src/cosineHashfunction.cpp.s
-
-.PHONY : src/cosineHashfunction.s
-
-# target to generate assembly for a file
-src/cosineHashfunction.cpp.s:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cosineHashfunction.cpp.s
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/cosineHashfunction.cpp.s
-.PHONY : src/cosineHashfunction.cpp.s
-
-src/cube.o: src/cube.cpp.o
-
-.PHONY : src/cube.o
+.PHONY : src/hypercube/AHypercube.o
 
 # target to build an object file
-src/cube.cpp.o:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cube.cpp.o
-.PHONY : src/cube.cpp.o
+src/hypercube/AHypercube.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/AHypercube.cpp.o
+.PHONY : src/hypercube/AHypercube.cpp.o
 
-src/cube.i: src/cube.cpp.i
+src/hypercube/AHypercube.i: src/hypercube/AHypercube.cpp.i
 
-.PHONY : src/cube.i
+.PHONY : src/hypercube/AHypercube.i
 
 # target to preprocess a source file
-src/cube.cpp.i:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cube.cpp.i
-.PHONY : src/cube.cpp.i
+src/hypercube/AHypercube.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/AHypercube.cpp.i
+.PHONY : src/hypercube/AHypercube.cpp.i
 
-src/cube.s: src/cube.cpp.s
+src/hypercube/AHypercube.s: src/hypercube/AHypercube.cpp.s
 
-.PHONY : src/cube.s
+.PHONY : src/hypercube/AHypercube.s
 
 # target to generate assembly for a file
-src/cube.cpp.s:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/cube.cpp.s
-.PHONY : src/cube.cpp.s
+src/hypercube/AHypercube.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/AHypercube.cpp.s
+.PHONY : src/hypercube/AHypercube.cpp.s
 
-src/hashFunction.o: src/hashFunction.cpp.o
+src/hypercube/BinaryMap.o: src/hypercube/BinaryMap.cpp.o
 
-.PHONY : src/hashFunction.o
+.PHONY : src/hypercube/BinaryMap.o
 
 # target to build an object file
-src/hashFunction.cpp.o:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hashFunction.cpp.o
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hashFunction.cpp.o
-.PHONY : src/hashFunction.cpp.o
+src/hypercube/BinaryMap.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/BinaryMap.cpp.o
+.PHONY : src/hypercube/BinaryMap.cpp.o
 
-src/hashFunction.i: src/hashFunction.cpp.i
+src/hypercube/BinaryMap.i: src/hypercube/BinaryMap.cpp.i
 
-.PHONY : src/hashFunction.i
+.PHONY : src/hypercube/BinaryMap.i
 
 # target to preprocess a source file
-src/hashFunction.cpp.i:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hashFunction.cpp.i
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hashFunction.cpp.i
-.PHONY : src/hashFunction.cpp.i
+src/hypercube/BinaryMap.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/BinaryMap.cpp.i
+.PHONY : src/hypercube/BinaryMap.cpp.i
 
-src/hashFunction.s: src/hashFunction.cpp.s
+src/hypercube/BinaryMap.s: src/hypercube/BinaryMap.cpp.s
 
-.PHONY : src/hashFunction.s
+.PHONY : src/hypercube/BinaryMap.s
 
 # target to generate assembly for a file
-src/hashFunction.cpp.s:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hashFunction.cpp.s
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hashFunction.cpp.s
-.PHONY : src/hashFunction.cpp.s
+src/hypercube/BinaryMap.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/BinaryMap.cpp.s
+.PHONY : src/hypercube/BinaryMap.cpp.s
 
-src/lsh.o: src/lsh.cpp.o
+src/hypercube/CosineHypercube.o: src/hypercube/CosineHypercube.cpp.o
 
-.PHONY : src/lsh.o
+.PHONY : src/hypercube/CosineHypercube.o
 
 # target to build an object file
-src/lsh.cpp.o:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh.cpp.o
-.PHONY : src/lsh.cpp.o
+src/hypercube/CosineHypercube.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/CosineHypercube.cpp.o
+.PHONY : src/hypercube/CosineHypercube.cpp.o
 
-src/lsh.i: src/lsh.cpp.i
+src/hypercube/CosineHypercube.i: src/hypercube/CosineHypercube.cpp.i
 
-.PHONY : src/lsh.i
+.PHONY : src/hypercube/CosineHypercube.i
 
 # target to preprocess a source file
-src/lsh.cpp.i:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh.cpp.i
-.PHONY : src/lsh.cpp.i
+src/hypercube/CosineHypercube.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/CosineHypercube.cpp.i
+.PHONY : src/hypercube/CosineHypercube.cpp.i
 
-src/lsh.s: src/lsh.cpp.s
+src/hypercube/CosineHypercube.s: src/hypercube/CosineHypercube.cpp.s
 
-.PHONY : src/lsh.s
+.PHONY : src/hypercube/CosineHypercube.s
 
 # target to generate assembly for a file
-src/lsh.cpp.s:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh.cpp.s
-.PHONY : src/lsh.cpp.s
+src/hypercube/CosineHypercube.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/CosineHypercube.cpp.s
+.PHONY : src/hypercube/CosineHypercube.cpp.s
+
+src/hypercube/CubeEdge.o: src/hypercube/CubeEdge.cpp.o
+
+.PHONY : src/hypercube/CubeEdge.o
+
+# target to build an object file
+src/hypercube/CubeEdge.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/CubeEdge.cpp.o
+.PHONY : src/hypercube/CubeEdge.cpp.o
+
+src/hypercube/CubeEdge.i: src/hypercube/CubeEdge.cpp.i
+
+.PHONY : src/hypercube/CubeEdge.i
+
+# target to preprocess a source file
+src/hypercube/CubeEdge.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/CubeEdge.cpp.i
+.PHONY : src/hypercube/CubeEdge.cpp.i
+
+src/hypercube/CubeEdge.s: src/hypercube/CubeEdge.cpp.s
+
+.PHONY : src/hypercube/CubeEdge.s
+
+# target to generate assembly for a file
+src/hypercube/CubeEdge.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/CubeEdge.cpp.s
+.PHONY : src/hypercube/CubeEdge.cpp.s
+
+src/hypercube/EucledianHashTable.o: src/hypercube/EucledianHashTable.cpp.o
+
+.PHONY : src/hypercube/EucledianHashTable.o
+
+# target to build an object file
+src/hypercube/EucledianHashTable.cpp.o:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hypercube/EucledianHashTable.cpp.o
+.PHONY : src/hypercube/EucledianHashTable.cpp.o
+
+src/hypercube/EucledianHashTable.i: src/hypercube/EucledianHashTable.cpp.i
+
+.PHONY : src/hypercube/EucledianHashTable.i
+
+# target to preprocess a source file
+src/hypercube/EucledianHashTable.cpp.i:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hypercube/EucledianHashTable.cpp.i
+.PHONY : src/hypercube/EucledianHashTable.cpp.i
+
+src/hypercube/EucledianHashTable.s: src/hypercube/EucledianHashTable.cpp.s
+
+.PHONY : src/hypercube/EucledianHashTable.s
+
+# target to generate assembly for a file
+src/hypercube/EucledianHashTable.cpp.s:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hypercube/EucledianHashTable.cpp.s
+.PHONY : src/hypercube/EucledianHashTable.cpp.s
+
+src/hypercube/EucledianHypercube.o: src/hypercube/EucledianHypercube.cpp.o
+
+.PHONY : src/hypercube/EucledianHypercube.o
+
+# target to build an object file
+src/hypercube/EucledianHypercube.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/EucledianHypercube.cpp.o
+.PHONY : src/hypercube/EucledianHypercube.cpp.o
+
+src/hypercube/EucledianHypercube.i: src/hypercube/EucledianHypercube.cpp.i
+
+.PHONY : src/hypercube/EucledianHypercube.i
+
+# target to preprocess a source file
+src/hypercube/EucledianHypercube.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/EucledianHypercube.cpp.i
+.PHONY : src/hypercube/EucledianHypercube.cpp.i
+
+src/hypercube/EucledianHypercube.s: src/hypercube/EucledianHypercube.cpp.s
+
+.PHONY : src/hypercube/EucledianHypercube.s
+
+# target to generate assembly for a file
+src/hypercube/EucledianHypercube.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/EucledianHypercube.cpp.s
+.PHONY : src/hypercube/EucledianHypercube.cpp.s
+
+src/hypercube/cube.o: src/hypercube/cube.cpp.o
+
+.PHONY : src/hypercube/cube.o
+
+# target to build an object file
+src/hypercube/cube.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/cube.cpp.o
+.PHONY : src/hypercube/cube.cpp.o
+
+src/hypercube/cube.i: src/hypercube/cube.cpp.i
+
+.PHONY : src/hypercube/cube.i
+
+# target to preprocess a source file
+src/hypercube/cube.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/cube.cpp.i
+.PHONY : src/hypercube/cube.cpp.i
+
+src/hypercube/cube.s: src/hypercube/cube.cpp.s
+
+.PHONY : src/hypercube/cube.s
+
+# target to generate assembly for a file
+src/hypercube/cube.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/cube.cpp.s
+.PHONY : src/hypercube/cube.cpp.s
+
+src/lsh/AHashTable.o: src/lsh/AHashTable.cpp.o
+
+.PHONY : src/lsh/AHashTable.o
+
+# target to build an object file
+src/lsh/AHashTable.cpp.o:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/AHashTable.cpp.o
+.PHONY : src/lsh/AHashTable.cpp.o
+
+src/lsh/AHashTable.i: src/lsh/AHashTable.cpp.i
+
+.PHONY : src/lsh/AHashTable.i
+
+# target to preprocess a source file
+src/lsh/AHashTable.cpp.i:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/AHashTable.cpp.i
+.PHONY : src/lsh/AHashTable.cpp.i
+
+src/lsh/AHashTable.s: src/lsh/AHashTable.cpp.s
+
+.PHONY : src/lsh/AHashTable.s
+
+# target to generate assembly for a file
+src/lsh/AHashTable.cpp.s:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/AHashTable.cpp.s
+.PHONY : src/lsh/AHashTable.cpp.s
+
+src/lsh/CosineHashTable.o: src/lsh/CosineHashTable.cpp.o
+
+.PHONY : src/lsh/CosineHashTable.o
+
+# target to build an object file
+src/lsh/CosineHashTable.cpp.o:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/CosineHashTable.cpp.o
+.PHONY : src/lsh/CosineHashTable.cpp.o
+
+src/lsh/CosineHashTable.i: src/lsh/CosineHashTable.cpp.i
+
+.PHONY : src/lsh/CosineHashTable.i
+
+# target to preprocess a source file
+src/lsh/CosineHashTable.cpp.i:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/CosineHashTable.cpp.i
+.PHONY : src/lsh/CosineHashTable.cpp.i
+
+src/lsh/CosineHashTable.s: src/lsh/CosineHashTable.cpp.s
+
+.PHONY : src/lsh/CosineHashTable.s
+
+# target to generate assembly for a file
+src/lsh/CosineHashTable.cpp.s:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/CosineHashTable.cpp.s
+.PHONY : src/lsh/CosineHashTable.cpp.s
+
+src/lsh/HashNode.o: src/lsh/HashNode.cpp.o
+
+.PHONY : src/lsh/HashNode.o
+
+# target to build an object file
+src/lsh/HashNode.cpp.o:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/HashNode.cpp.o
+.PHONY : src/lsh/HashNode.cpp.o
+
+src/lsh/HashNode.i: src/lsh/HashNode.cpp.i
+
+.PHONY : src/lsh/HashNode.i
+
+# target to preprocess a source file
+src/lsh/HashNode.cpp.i:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/HashNode.cpp.i
+.PHONY : src/lsh/HashNode.cpp.i
+
+src/lsh/HashNode.s: src/lsh/HashNode.cpp.s
+
+.PHONY : src/lsh/HashNode.s
+
+# target to generate assembly for a file
+src/lsh/HashNode.cpp.s:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/HashNode.cpp.s
+.PHONY : src/lsh/HashNode.cpp.s
+
+src/lsh/cosineHashfunction.o: src/lsh/cosineHashfunction.cpp.o
+
+.PHONY : src/lsh/cosineHashfunction.o
+
+# target to build an object file
+src/lsh/cosineHashfunction.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/lsh/cosineHashfunction.cpp.o
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/cosineHashfunction.cpp.o
+.PHONY : src/lsh/cosineHashfunction.cpp.o
+
+src/lsh/cosineHashfunction.i: src/lsh/cosineHashfunction.cpp.i
+
+.PHONY : src/lsh/cosineHashfunction.i
+
+# target to preprocess a source file
+src/lsh/cosineHashfunction.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/lsh/cosineHashfunction.cpp.i
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/cosineHashfunction.cpp.i
+.PHONY : src/lsh/cosineHashfunction.cpp.i
+
+src/lsh/cosineHashfunction.s: src/lsh/cosineHashfunction.cpp.s
+
+.PHONY : src/lsh/cosineHashfunction.s
+
+# target to generate assembly for a file
+src/lsh/cosineHashfunction.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/lsh/cosineHashfunction.cpp.s
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/cosineHashfunction.cpp.s
+.PHONY : src/lsh/cosineHashfunction.cpp.s
+
+src/lsh/hashFunction.o: src/lsh/hashFunction.cpp.o
+
+.PHONY : src/lsh/hashFunction.o
+
+# target to build an object file
+src/lsh/hashFunction.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/lsh/hashFunction.cpp.o
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/hashFunction.cpp.o
+.PHONY : src/lsh/hashFunction.cpp.o
+
+src/lsh/hashFunction.i: src/lsh/hashFunction.cpp.i
+
+.PHONY : src/lsh/hashFunction.i
+
+# target to preprocess a source file
+src/lsh/hashFunction.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/lsh/hashFunction.cpp.i
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/hashFunction.cpp.i
+.PHONY : src/lsh/hashFunction.cpp.i
+
+src/lsh/hashFunction.s: src/lsh/hashFunction.cpp.s
+
+.PHONY : src/lsh/hashFunction.s
+
+# target to generate assembly for a file
+src/lsh/hashFunction.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/lsh/hashFunction.cpp.s
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/hashFunction.cpp.s
+.PHONY : src/lsh/hashFunction.cpp.s
+
+src/lsh/lsh.o: src/lsh/lsh.cpp.o
+
+.PHONY : src/lsh/lsh.o
+
+# target to build an object file
+src/lsh/lsh.cpp.o:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/lsh.cpp.o
+.PHONY : src/lsh/lsh.cpp.o
+
+src/lsh/lsh.i: src/lsh/lsh.cpp.i
+
+.PHONY : src/lsh/lsh.i
+
+# target to preprocess a source file
+src/lsh/lsh.cpp.i:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/lsh.cpp.i
+.PHONY : src/lsh/lsh.cpp.i
+
+src/lsh/lsh.s: src/lsh/lsh.cpp.s
+
+.PHONY : src/lsh/lsh.s
+
+# target to generate assembly for a file
+src/lsh/lsh.cpp.s:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/lsh.cpp.s
+.PHONY : src/lsh/lsh.cpp.s
 
 # Help Target
 help:
@@ -620,57 +593,54 @@ help:
 	@echo "... edit_cache"
 	@echo "... CUBE"
 	@echo "... LSH"
-	@echo "... src/AHashTable.o"
-	@echo "... src/AHashTable.i"
-	@echo "... src/AHashTable.s"
-	@echo "... src/AHypercube.o"
-	@echo "... src/AHypercube.i"
-	@echo "... src/AHypercube.s"
-	@echo "... src/BinaryMap.o"
-	@echo "... src/BinaryMap.i"
-	@echo "... src/BinaryMap.s"
 	@echo "... src/ComputationMethods.o"
 	@echo "... src/ComputationMethods.i"
 	@echo "... src/ComputationMethods.s"
-	@echo "... src/CosineHashTable.o"
-	@echo "... src/CosineHashTable.i"
-	@echo "... src/CosineHashTable.s"
-	@echo "... src/CosineHypercube.o"
-	@echo "... src/CosineHypercube.i"
-	@echo "... src/CosineHypercube.s"
-	@echo "... src/CubeEdge.o"
-	@echo "... src/CubeEdge.i"
-	@echo "... src/CubeEdge.s"
-	@echo "... src/CubeIndex.o"
-	@echo "... src/CubeIndex.i"
-	@echo "... src/CubeIndex.s"
 	@echo "... src/DataSetMap.o"
 	@echo "... src/DataSetMap.i"
 	@echo "... src/DataSetMap.s"
-	@echo "... src/EucledianHashTable.o"
-	@echo "... src/EucledianHashTable.i"
-	@echo "... src/EucledianHashTable.s"
-	@echo "... src/EucledianHypercube.o"
-	@echo "... src/EucledianHypercube.i"
-	@echo "... src/EucledianHypercube.s"
-	@echo "... src/HashNode.o"
-	@echo "... src/HashNode.i"
-	@echo "... src/HashNode.s"
 	@echo "... src/Item.o"
 	@echo "... src/Item.i"
 	@echo "... src/Item.s"
-	@echo "... src/cosineHashfunction.o"
-	@echo "... src/cosineHashfunction.i"
-	@echo "... src/cosineHashfunction.s"
-	@echo "... src/cube.o"
-	@echo "... src/cube.i"
-	@echo "... src/cube.s"
-	@echo "... src/hashFunction.o"
-	@echo "... src/hashFunction.i"
-	@echo "... src/hashFunction.s"
-	@echo "... src/lsh.o"
-	@echo "... src/lsh.i"
-	@echo "... src/lsh.s"
+	@echo "... src/hypercube/AHypercube.o"
+	@echo "... src/hypercube/AHypercube.i"
+	@echo "... src/hypercube/AHypercube.s"
+	@echo "... src/hypercube/BinaryMap.o"
+	@echo "... src/hypercube/BinaryMap.i"
+	@echo "... src/hypercube/BinaryMap.s"
+	@echo "... src/hypercube/CosineHypercube.o"
+	@echo "... src/hypercube/CosineHypercube.i"
+	@echo "... src/hypercube/CosineHypercube.s"
+	@echo "... src/hypercube/CubeEdge.o"
+	@echo "... src/hypercube/CubeEdge.i"
+	@echo "... src/hypercube/CubeEdge.s"
+	@echo "... src/hypercube/EucledianHashTable.o"
+	@echo "... src/hypercube/EucledianHashTable.i"
+	@echo "... src/hypercube/EucledianHashTable.s"
+	@echo "... src/hypercube/EucledianHypercube.o"
+	@echo "... src/hypercube/EucledianHypercube.i"
+	@echo "... src/hypercube/EucledianHypercube.s"
+	@echo "... src/hypercube/cube.o"
+	@echo "... src/hypercube/cube.i"
+	@echo "... src/hypercube/cube.s"
+	@echo "... src/lsh/AHashTable.o"
+	@echo "... src/lsh/AHashTable.i"
+	@echo "... src/lsh/AHashTable.s"
+	@echo "... src/lsh/CosineHashTable.o"
+	@echo "... src/lsh/CosineHashTable.i"
+	@echo "... src/lsh/CosineHashTable.s"
+	@echo "... src/lsh/HashNode.o"
+	@echo "... src/lsh/HashNode.i"
+	@echo "... src/lsh/HashNode.s"
+	@echo "... src/lsh/cosineHashfunction.o"
+	@echo "... src/lsh/cosineHashfunction.i"
+	@echo "... src/lsh/cosineHashfunction.s"
+	@echo "... src/lsh/hashFunction.o"
+	@echo "... src/lsh/hashFunction.i"
+	@echo "... src/lsh/hashFunction.s"
+	@echo "... src/lsh/lsh.o"
+	@echo "... src/lsh/lsh.i"
+	@echo "... src/lsh/lsh.s"
 .PHONY : help
 
 

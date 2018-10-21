@@ -4,10 +4,10 @@
 
 #include <cmath>
 #include <algorithm>
-#include "../header/CosineHypercube.h"
-#include "../header/ComputationMethods.h"
-#include "../header/cosineHashfunction.h"
-#include "../header/AHypercube.h"
+#include "../../header/hypercube/CosineHypercube.h"
+#include "../../header/ComputationMethods.h"
+#include "../../header/lsh/cosineHashfunction.h"
+#include "../../header/hypercube/AHypercube.h"
 
 CosineHypercube::CosineHypercube(int d) : AHypercube(d) {
     cosine_vector = vector<cosineHashfunction *>(d);

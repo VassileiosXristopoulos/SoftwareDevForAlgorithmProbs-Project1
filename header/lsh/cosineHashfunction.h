@@ -6,7 +6,7 @@
 #define TEST_COSINEHASHFUNCTION_H
 
 
-#include "Item.h"
+#include "../Item.h"
 
 class cosineHashfunction {
 private:

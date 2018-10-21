@@ -6,7 +6,7 @@
 #define EUCLEDIANHASHTABLE_H
 
 #include <vector>
-#include "Item.h"
+#include "../Item.h"
 #include "hashFunction.h"
 #include "HashNode.h"
 #include "cosineHashfunction.h"

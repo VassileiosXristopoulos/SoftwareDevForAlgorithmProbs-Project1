@@ -7,7 +7,7 @@
 
 
 #include "AHypercube.h"
-#include "hashFunction.h"
+#include "../lsh/hashFunction.h"
 
 class EucledianHypercube : public AHypercube{
 private:

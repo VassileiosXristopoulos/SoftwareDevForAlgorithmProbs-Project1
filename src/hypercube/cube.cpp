@@ -11,10 +11,10 @@
 #include <vector>
 #include <algorithm>
 #include <iomanip>
-#include "../header/DataSetMap.h"
-#include "../header/Item.h"
-#include "../header/CosineHypercube.h"
-#include "../header/EucledianHypercube.h"
+#include "../../header/DataSetMap.h"
+#include "../../header/Item.h"
+#include "../../header/hypercube/CosineHypercube.h"
+#include "../../header/hypercube/EucledianHypercube.h"
 
 using namespace std;
 int r,M,k;

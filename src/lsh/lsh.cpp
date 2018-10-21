@@ -12,10 +12,10 @@
 #include <vector>
 #include <algorithm>
 #include <iomanip>
-#include "../header/DataSetMap.h"
-#include "../header/Item.h"
-#include "../header/EucledianHashTable.h"
-#include "../header/CosineHashTable.h"
+#include "../../header/DataSetMap.h"
+#include "../../header/Item.h"
+#include "../../header/lsh/EucledianHashTable.h"
+#include "../../header/lsh/CosineHashTable.h"
 
 //TODO : make a class where I will save all input set (i.e. map of vectors) with get element, (set element)
 using namespace std;

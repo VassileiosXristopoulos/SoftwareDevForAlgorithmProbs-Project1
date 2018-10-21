@@ -4,10 +4,10 @@
 // Created by vassilis on 20/10/2018.
 //
 
-#include "../header/CubeEdge.h"
-#include "../header/ComputationMethods.h"
+#include "../../header/hypercube/CubeEdge.h"
+#include "../../header/ComputationMethods.h"
 CubeEdge::CubeEdge(vector<int> index) {
-    this->index = new CubeIndex(std::move(index));
+    this->index = index;
 }
 
 CubeEdge::~CubeEdge() {
@@ -22,7 +22,7 @@ vector<Item *> CubeEdge::Elements() {
     return elements;
 }
 
-CubeIndex *CubeEdge::getIndex() {
+vector<int> CubeEdge::getIndex() {
     return index;
 }
 

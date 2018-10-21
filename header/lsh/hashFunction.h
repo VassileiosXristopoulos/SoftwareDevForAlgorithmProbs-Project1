@@ -5,7 +5,7 @@
 #ifndef TEST_HASHFUNCTION_H
 #define TEST_HASHFUNCTION_H
 
-#include "Item.h"
+#include "../Item.h"
 class hashFunction {
 private:
     float *v;

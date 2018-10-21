@@ -6,7 +6,7 @@
 #define CUBE_AHASHTABLE_H
 
 
-#include "Item.h"
+#include "../Item.h"
 #include "HashNode.h"
 
 class AHashTable {
