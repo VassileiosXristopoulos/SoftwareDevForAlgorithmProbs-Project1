@@ -334,33 +334,6 @@ src/hypercube/CubeEdge.cpp.s:
 	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/hypercube/CubeEdge.cpp.s
 .PHONY : src/hypercube/CubeEdge.cpp.s
 
-src/hypercube/EucledianHashTable.o: src/hypercube/EucledianHashTable.cpp.o
-
-.PHONY : src/hypercube/EucledianHashTable.o
-
-# target to build an object file
-src/hypercube/EucledianHashTable.cpp.o:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hypercube/EucledianHashTable.cpp.o
-.PHONY : src/hypercube/EucledianHashTable.cpp.o
-
-src/hypercube/EucledianHashTable.i: src/hypercube/EucledianHashTable.cpp.i
-
-.PHONY : src/hypercube/EucledianHashTable.i
-
-# target to preprocess a source file
-src/hypercube/EucledianHashTable.cpp.i:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hypercube/EucledianHashTable.cpp.i
-.PHONY : src/hypercube/EucledianHashTable.cpp.i
-
-src/hypercube/EucledianHashTable.s: src/hypercube/EucledianHashTable.cpp.s
-
-.PHONY : src/hypercube/EucledianHashTable.s
-
-# target to generate assembly for a file
-src/hypercube/EucledianHashTable.cpp.s:
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/hypercube/EucledianHashTable.cpp.s
-.PHONY : src/hypercube/EucledianHashTable.cpp.s
-
 src/hypercube/EucledianHypercube.o: src/hypercube/EucledianHypercube.cpp.o
 
 .PHONY : src/hypercube/EucledianHypercube.o
@@ -468,6 +441,33 @@ src/lsh/CosineHashTable.s: src/lsh/CosineHashTable.cpp.s
 src/lsh/CosineHashTable.cpp.s:
 	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/CosineHashTable.cpp.s
 .PHONY : src/lsh/CosineHashTable.cpp.s
+
+src/lsh/EucledianHashTable.o: src/lsh/EucledianHashTable.cpp.o
+
+.PHONY : src/lsh/EucledianHashTable.o
+
+# target to build an object file
+src/lsh/EucledianHashTable.cpp.o:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/EucledianHashTable.cpp.o
+.PHONY : src/lsh/EucledianHashTable.cpp.o
+
+src/lsh/EucledianHashTable.i: src/lsh/EucledianHashTable.cpp.i
+
+.PHONY : src/lsh/EucledianHashTable.i
+
+# target to preprocess a source file
+src/lsh/EucledianHashTable.cpp.i:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/EucledianHashTable.cpp.i
+.PHONY : src/lsh/EucledianHashTable.cpp.i
+
+src/lsh/EucledianHashTable.s: src/lsh/EucledianHashTable.cpp.s
+
+.PHONY : src/lsh/EucledianHashTable.s
+
+# target to generate assembly for a file
+src/lsh/EucledianHashTable.cpp.s:
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/lsh/EucledianHashTable.cpp.s
+.PHONY : src/lsh/EucledianHashTable.cpp.s
 
 src/lsh/HashNode.o: src/lsh/HashNode.cpp.o
 
@@ -614,9 +614,6 @@ help:
 	@echo "... src/hypercube/CubeEdge.o"
 	@echo "... src/hypercube/CubeEdge.i"
 	@echo "... src/hypercube/CubeEdge.s"
-	@echo "... src/hypercube/EucledianHashTable.o"
-	@echo "... src/hypercube/EucledianHashTable.i"
-	@echo "... src/hypercube/EucledianHashTable.s"
 	@echo "... src/hypercube/EucledianHypercube.o"
 	@echo "... src/hypercube/EucledianHypercube.i"
 	@echo "... src/hypercube/EucledianHypercube.s"
@@ -629,6 +626,9 @@ help:
 	@echo "... src/lsh/CosineHashTable.o"
 	@echo "... src/lsh/CosineHashTable.i"
 	@echo "... src/lsh/CosineHashTable.s"
+	@echo "... src/lsh/EucledianHashTable.o"
+	@echo "... src/lsh/EucledianHashTable.i"
+	@echo "... src/lsh/EucledianHashTable.s"
 	@echo "... src/lsh/HashNode.o"
 	@echo "... src/lsh/HashNode.i"
 	@echo "... src/lsh/HashNode.s"

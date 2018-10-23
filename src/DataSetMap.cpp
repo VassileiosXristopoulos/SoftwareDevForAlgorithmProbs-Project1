@@ -21,13 +21,13 @@ void DataSetMap::append(Item * item) {
 
 double DataSetMap::TrueDistance(Item *item,string mode) {
     double min=-1;
-    for( int i=0; i<Map.size(); i++ ){
+    for (auto &i : Map) {
         double dist;
-        if(mode.compare("eucledian")==0){
-            dist= ComputationMethods::EucledianDistance(item->getContent(),Map[i]->getContent());
+        if(mode == "eucledian"){
+            dist= ComputationMethods::EucledianDistance(item->getContent(), i->getContent());
         }
-        else if(mode.compare("cosine")==0){
-            dist=ComputationMethods::cosineDistance(item->getContent(),Map[i]->getContent());
+        else if(mode == "cosine"){
+            dist=ComputationMethods::cosineDistance(item->getContent(), i->getContent());
         }
         if(min==-1 || dist<min)
             min = dist;
@@ -48,23 +48,14 @@ string DataSetMap::InsertFile(string inputFile) {
     ifstream input(inputFile);
     n=0;
 
-    string mode;
+    string mode,line;
     std::getline(input,mode); //get mode (i.e. first line)
-    cout<<mode<<endl;
-    while ( std::getline(input, FileLine) ) { // TODO: implement functionality of checking first line for mode
-        //  cout<<"in`"<<endl;
-        istringstream iss(FileLine);
-        //if (!(iss >> a >> b)) { break; } // error
-        string line = FileLine.substr(0, FileLine.size() - 1);
-        vector<string> element;
-        size_t pos = line.find(' ');
-        size_t startPos = 0;
-        while (pos != string::npos) {
-            element.push_back(line.substr(startPos, pos - startPos));
-            startPos = pos + 1;
-            pos = line.find(' ', startPos);
-        }
-        element.push_back(line.substr(startPos, pos - startPos));
+    cout<<"mode:"<<mode<<endl;
+
+    for( std::string line; getline( input, FileLine ); ) {
+
+        line = FileLine.substr(0, FileLine.size() - 1);
+        vector<string> element = ComputationMethods::Split(line);
         Item *item = new Item(element);
 
         if(element.size()<=0){
@@ -73,7 +64,7 @@ string DataSetMap::InsertFile(string inputFile) {
         }
         Map.push_back(item);
 
-        d = element.size();
+        d = static_cast<int>(element.size());
         n++;
 
     }

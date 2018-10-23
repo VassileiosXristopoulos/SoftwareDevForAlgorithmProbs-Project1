@@ -11,7 +11,7 @@
 
 CosineHypercube::CosineHypercube(int d) : AHypercube(d) {
     cosine_vector = vector<cosineHashfunction *>(d);
-    for(int i=0; i<d ;i++){
+    for( int i=0; i<d ;i++){
         cosine_vector[i] = new cosineHashfunction();
     }
 }

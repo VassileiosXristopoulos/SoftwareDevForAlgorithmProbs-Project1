@@ -16,17 +16,17 @@
 #include "../../header/Item.h"
 #include "../../header/lsh/EucledianHashTable.h"
 #include "../../header/lsh/CosineHashTable.h"
+#include "../../header/ComputationMethods.h"
 
-//TODO : make a class where I will save all input set (i.e. map of vectors) with get element, (set element)
 using namespace std;
 extern int d,n;
-int r,L,k;
+int r,L,k,w=100;
 default_random_engine generator;
 normal_distribution<float> distribution(0,1);
 int main(int argv,char **argc){
     srand(time(NULL));
 
-    string inputFile, queryFile, outputFile;
+    string inputFile, queryFile, outputFile,radius;
 
     if( argv == 11 ){ // TODO: ask/implement different ways of getting arguments (asking user)
         if(argc[2]==NULL || argc[4]==NULL || argc[6]==NULL || argc[8]==NULL || argc[10]==NULL ){
@@ -35,8 +35,8 @@ int main(int argv,char **argc){
         }
         string s = "Input/";
 
-        inputFile = "../Input/" + string(argc[2]);
-        queryFile = "../Input/" + string(argc[4]);
+        inputFile = "Input/" + string(argc[2]);
+        queryFile = "Input/" + string(argc[4]);
         k = atoi(argc[6]);
         L = atoi(argc[8]);
         if( k<=0 || L<=0 ){
@@ -65,14 +65,14 @@ int main(int argv,char **argc){
    DataSetMap Map;
     string mode = Map.InsertFile(inputFile);
     AHashTable * TableArray[L];
-    for(int i=0; i<L ; i++){
+    for( int i=0; i<L ; i++){
         if(mode.compare("eucledian")==0) {
             TableArray[i] = new EucledianHashTable(k, n / 2);
         }
         else{
             TableArray[i] = new CosineHashTable( n / 2, k);
         }
-        for(int j=0; j<Map.size(); j++){
+        for( int j=0; j<Map.size(); j++){
             TableArray[i]->add(Map.at(j));
         }
     }
@@ -80,71 +80,69 @@ int main(int argv,char **argc){
 
 
     ifstream input_q(queryFile);
-    string radius;
     getline(input_q,radius); // get radius (i.e. first line)
-
     r=stoi(radius.substr(radius.find(":") + 1));
-    string FileLine;
-    cout << radius <<endl;
-    double max_div = 0;
-    while ( getline(input_q, FileLine) ) { // TODO: implement functionality of checking first line for mode
-        istringstream iss(FileLine);
 
-        string line = FileLine.substr(0, FileLine.size() - 1);
-        vector<string> element;
-        size_t pos = line.find(' ');
-        size_t startPos = 0;
-        while (pos != string::npos) {
-            element.push_back(line.substr(startPos, pos - startPos));
-            startPos = pos + 1;
-            pos = line.find(' ', startPos);
-        }
-        element.push_back(line.substr(startPos, pos - startPos));
+    double max_div = 0;
+    string line;
+    for( std::string FileLine; getline( input_q, FileLine ); ) {
+        double tLSH,tTrue;
+
+        line = FileLine.substr(0, FileLine.size() - 1);
+        vector<string> element = ComputationMethods::Split(line);
+
         Item *item = new Item(element);
-      //  cout << item->getContent().size() <<endl;
         pair<Item *,double>closestNeighboor(NULL,-1.0);
-        vector<pair<Item *,double>> closerNneighboors;
-        for(int i=0;i<L;i++){
-          //  cout << "HASHTABLE["<<i+1<<"]"<<endl;
-            vector<pair<Item *,double>> Nneighboors=TableArray[i]->findNcloserNeighbors(item);
+        vector<string> closerNneighboors;
+
+        for( int i = 0; i < L ; i++ ){
+            vector<string> Nneighboors=TableArray[i]->findNcloserNeighbors(item);
+
+            clock_t nearest_start = clock();
             pair<Item*,double>neighboor = TableArray[i]->findCloserNeighbor(item);
+            clock_t nearest_end = clock();
+            tLSH = (nearest_end-nearest_start)/ (double) CLOCKS_PER_SEC;
+
             if(neighboor.second>0){ //last item is the closest neighboor
+
                 if(closestNeighboor.second==-1 || neighboor.second < closestNeighboor.second){
                     closestNeighboor=neighboor;
                 }
-          //  vector<pair<Item*,double >> neighboors=TableArray[i]->findNCloser(item);
-                for(int j=0;j<Nneighboors.size();j++){
 
+                for(unsigned int j = 0 ; j < Nneighboors.size() ; j++ ){
                     closerNneighboors.push_back(Nneighboors[j]);
                 }
             }
         }
         if(closestNeighboor.second>0){
             cout << "Query item: " << item->getName() << endl;
-            vector<string>Names;
-          //  for(int l=0;l< closerNneighboors.size(); l++){
-          //      Names.push_back(closerNneighboors[l].first->getName());
-          //  }
+            //sort and remove duplicates from set of closer neighbors
             sort( closerNneighboors.begin(), closerNneighboors.end() );
             closerNneighboors.erase(unique( closerNneighboors.begin(), closerNneighboors.end() ), closerNneighboors
            .end() );
-
 
             cout << "R-near neighbor:"<<endl;
             if(closerNneighboors.size()==0)
                 cout<<"none"<<endl;
 
 
-            for(int j=0;j<closerNneighboors.size(); j++){
-                if(closerNneighboors[j].first->getName().compare(closestNeighboor.first->getName())!=0){
-                    cout << closerNneighboors[j].first->getName() << " : "<< closerNneighboors[j].second <<endl;
+            for(unsigned int j = 0; j < closerNneighboors.size(); j++ ){
+                if(closerNneighboors[j].compare(closestNeighboor.first->getName())!=0){
+                    cout << closerNneighboors[j] << endl;
                 }
-
             }
+
             cout << "Nearest neighbor: " <<closestNeighboor.first->getName()<<endl<<
             "distanceLSH: "<<closestNeighboor.second<<endl;
+
+            clock_t true_start = clock();
             double trueDist = Map.TrueDistance(item,mode);
+            clock_t  true_end = clock();
+            tTrue = (true_end-true_start)/ (double) CLOCKS_PER_SEC;
+
             cout << "distanceTrue: "<< trueDist << endl;
+            cout << "tLSH: " << tLSH<<endl;
+            cout << "tTrue: " << tTrue<<endl;
             cout<<endl;
             double div = closestNeighboor.second/trueDist;
             if(div > max_div){

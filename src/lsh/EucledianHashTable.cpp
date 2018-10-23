@@ -15,7 +15,7 @@ using namespace std;
 extern int r,L;
 EucledianHashTable::EucledianHashTable(int k, int size): AHashTable(size,k) {
     H_vector= new hashFunction*[k];
-    for( int a=0; a<k; a++){
+    for(  int a=0; a<k; a++){
        r_vector.push_back(rand()%10+1);
        H_vector[a] = new hashFunction();
     }
@@ -37,7 +37,7 @@ int EucledianHashTable::hash(Item *item) {
     int sum = 0;
     int M = (int)pow(2.0,32.0) -5;
     vector<int>h_i=computeGVector(item);
-    for( int i=0; i< r_vector.size() ; i++){
+    for(unsigned  int i=0; i< r_vector.size() ; i++){
        sum += ComputationMethods::my_mod(((int)r_vector[i])*h_i[i],M);
     }
 
@@ -46,15 +46,15 @@ int EucledianHashTable::hash(Item *item) {
 
 
 
-vector< pair<Item*,double> > EucledianHashTable::findNcloserNeighbors(Item *item){
+vector< string > EucledianHashTable::findNcloserNeighbors(Item *item){
     int bucket = hash(item);
     vector<int>item_gVector=computeGVector(item);
     item->setGVector(item_gVector);
-    vector< pair<Item*,double> >ret;
-    for(int i=0; i<Table[bucket].size(); i++) {
+    vector< string >ret;
+    for(unsigned int i=0; i<Table[bucket].size(); i++) {
         bool match = true;
 
-        for (int j = 0; j < item->getGVector().size(); j++) {
+        for (unsigned int j = 0; j < item->getGVector().size(); j++) {
             if (item->getGVector()[j] != Table[bucket][i]->getGvector()[j]) {
                 match = false;
                 break;
@@ -67,9 +67,7 @@ vector< pair<Item*,double> > EucledianHashTable::findNcloserNeighbors(Item *item
                     ->getContent());
             if (item->getName().compare(datasetItem->getName()) != 0) {
                 if (distance < r ) {
-                    pair<Item *, double> myPair = make_pair(datasetItem, distance);
-                    ret.push_back(myPair);
-
+                    ret.push_back(datasetItem->getName());
                 }
             }
         }
@@ -85,10 +83,10 @@ pair<Item*,double> EucledianHashTable::findCloserNeighbor(Item *item){
     vector< pair<Item*,double> >ret;
     pair<Item*,double>min_pair(NULL,-1);
     int retrieved=0;
-    for(int i=0; i<Table[bucket].size(); i++) {
+    for(unsigned int i=0; i<Table[bucket].size(); i++) {
         bool match = true;
         if(retrieved == 2*L) return min_pair;
-        for (int j = 0; j < item->getGVector().size(); j++) {
+        for (unsigned int j = 0; j < item->getGVector().size(); j++) {
             if (item->getGVector()[j] != Table[bucket][i]->getGvector()[j]) {
                 match = false;
                 break;
@@ -114,7 +112,7 @@ pair<Item*,double> EucledianHashTable::findCloserNeighbor(Item *item){
 
 vector<int> EucledianHashTable::computeGVector(Item* item){
     vector<int> h_i;
-    for( int i=0; i< item->getGVector().size() ; i++) {
+    for(unsigned  int i=0; i< item->getGVector().size() ; i++) {
         h_i.push_back(H_vector[i]->hash(item));
     }
     return h_i;

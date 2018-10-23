@@ -13,7 +13,7 @@ class EucledianHypercube : public AHypercube{
 private:
     vector<hashFunction*>Hi;
 public:
-    EucledianHypercube(int d);
+    explicit EucledianHypercube(int d);
     ~EucledianHypercube();
     vector<int> getBitVector(Item* item) override;
     double computeDistance(vector<int>&x,vector<int>&y) override;

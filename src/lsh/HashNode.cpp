@@ -22,7 +22,7 @@ string HashNode::getItemName(){
 }
 
 void HashNode::printGvector(){
-    for(int i=0;i<gVector.size();i++){
+    for(unsigned int i=0;i<gVector.size();i++){
         cout << gVector[i] << " ";
     }
 }

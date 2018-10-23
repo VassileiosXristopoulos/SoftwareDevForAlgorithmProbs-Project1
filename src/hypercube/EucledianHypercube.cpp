@@ -7,7 +7,7 @@
 #include "../../header/ComputationMethods.h"
 
 EucledianHypercube::EucledianHypercube(int d) : AHypercube(d) {
-        for( int i = 0 ;i< d ; i++){
+        for(  int i = 0 ;i< d ; i++){
             Hi.push_back(new hashFunction());
         }
 }
@@ -39,5 +39,5 @@ vector<int> EucledianHypercube::getBitVector(Item *item) {
 }
 
 double EucledianHypercube::computeDistance(vector<int> &x, vector<int> &y) {
-    ComputationMethods::EucledianDistance(x,y);
+    return ComputationMethods::EucledianDistance(x,y);
 }

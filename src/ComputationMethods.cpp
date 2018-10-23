@@ -5,6 +5,7 @@
 #include <cmath>
 #include <algorithm>
 #include <bitset>
+#include <regex>
 #include "../header/ComputationMethods.h"
 
 int ComputationMethods::my_mod(int x, int y) {
@@ -12,7 +13,7 @@ int ComputationMethods::my_mod(int x, int y) {
 }
 double ComputationMethods::EucledianDistance(vector<int> x, vector<int> y) {
     double distance=0;
-    for (int j = 0; j < x.size(); j++) {
+    for (unsigned int j = 0; j < x.size(); j++) {
         distance += pow(x[j] - y[j], 2);
     }
     return sqrt(distance);
@@ -22,7 +23,7 @@ int ComputationMethods::intVectortoInteger(vector<int> table) {
     int retval = 0;
     int i =0;
     std::reverse(table.begin(),table.end());
-    for (vector<int>::iterator it = table.begin() ; it != table.end(); it++,i++){
+    for (auto it = table.begin() ; it != table.end(); it++,i++){
         if(*it){
             retval |= 1<<i;
         }
@@ -32,7 +33,7 @@ int ComputationMethods::intVectortoInteger(vector<int> table) {
 
 vector<int> ComputationMethods::intToIntVector(int number, int d) {
     vector<int> ret = vector<int>(d);
-    for (int i = 0; i < d; i++) {
+    for ( int i = 0; i < d; i++) {
         ret[d - 1 - i] = (1 << i & number) != 0;
     }
     return ret;
@@ -69,7 +70,7 @@ void ComputationMethods::getHammingCloseVectors( int changesLeft, vector<int>& s
 double ComputationMethods::cosineDistance(vector<int> &x, vector<int> &y) {
     double sum=0,partial_sumX=0,partial_sumY=0;
 
-    for(int i=0;i<x.size();i++){
+    for(unsigned int i=0;i<x.size();i++){
         sum+=x[i]*y[i];
         partial_sumX+=pow(x[i],2);
         partial_sumY+=pow(y[i],2);
@@ -77,4 +78,18 @@ double ComputationMethods::cosineDistance(vector<int> &x, vector<int> &y) {
     partial_sumX=sqrt(partial_sumX);
     partial_sumY=sqrt(partial_sumY);
     return 1 - sum/(partial_sumX*partial_sumY);
+}
+
+vector<string> ComputationMethods::Split(string &line) {
+    vector<string> element;
+    size_t pos = line.find(' ');
+    size_t startPos = 0;
+    while (pos != string::npos) {
+        element.push_back(line.substr(startPos, pos - startPos));
+        startPos = pos + 1;
+        pos = line.find(' ', startPos);
+    }
+    element.push_back(line.substr(startPos, pos - startPos));
+
+    return element;
 }

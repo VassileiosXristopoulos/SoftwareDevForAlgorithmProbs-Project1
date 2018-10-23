@@ -16,14 +16,14 @@ protected:
     cosineHashfunction **cosine_vector;
     vector<CubeEdge*>edges;
 public:
-    AHypercube(int d);
+    explicit AHypercube(int d);
     ~AHypercube();
     virtual  vector<int> getBitVector(Item* item) = 0;
     vector<CubeEdge*> getHamingCLose(int hammingDist,CubeEdge* edge);
     void add(Item* item);
     virtual double computeDistance(vector<int>&x,vector<int>&y) = 0;
     pair<string,double> findCloser(Item *item,int max,int probes);
-    vector<pair<string,double>> findRCloser(Item *item,int max,int probes,int radius);
+    vector<string> findRCloser(Item *item,int max,int probes,int radius);
 };
 
 

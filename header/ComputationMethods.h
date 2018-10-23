@@ -23,6 +23,7 @@ public:
     static void getHammingCloseVectors( int changesLeft, std::vector<int>& str, const int i,
             vector<vector<int>>&res );
     static double cosineDistance(vector<int>&x,vector<int>&y);
+    static vector<string> Split(string &line);
 };
 
 #endif //TEST_COMPUTATIONMETHODS_H

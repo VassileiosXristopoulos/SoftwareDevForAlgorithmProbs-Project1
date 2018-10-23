@@ -6,7 +6,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 ")
 set(LSH "src/lsh/lsh.cpp"
         "src/DataSetMap.cpp"
         "src/Item.cpp"
-        "src/hypercube/EucledianHashTable.cpp"
+        "src/lsh/EucledianHashTable.cpp"
         "src/lsh/hashFunction.cpp"
         "src/lsh/HashNode.cpp"
         "src/ComputationMethods.cpp"

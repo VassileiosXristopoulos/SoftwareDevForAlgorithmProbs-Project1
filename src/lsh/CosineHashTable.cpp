@@ -8,14 +8,14 @@
 extern int r,L;
 CosineHashTable::CosineHashTable(int size, int k) : AHashTable(size,k){
     cosine_vector = new cosineHashfunction*[k];
-    for( int a=0; a<k; a++){
+    for(  int a=0; a<k; a++){
         cosine_vector[a] = new cosineHashfunction();
     }
 }
 
 vector<int> CosineHashTable::computeGVector(Item *item) {
     vector<int>ret=vector<int>(k);
-    for(int i=0; i<k ;i++){
+    for( int i=0; i<k ;i++){
         ret[i] = cosine_vector[i]->hash(item);
     }
     return ret;
@@ -32,15 +32,15 @@ void CosineHashTable::add(Item *item) {
     Table[key].push_back(new HashNode(item,computeGVector(item)));
 }
 
-vector<pair<Item *, double>>  CosineHashTable::findNcloserNeighbors(Item *item) {
+vector<string>  CosineHashTable::findNcloserNeighbors(Item *item) {
     int bucket = hash(item);
     vector<int>item_gVector=computeGVector(item);
     item->setGVector(item_gVector);
-    vector< pair<Item*,double> >ret;
-    for(int i=0; i<Table[bucket].size(); i++) {
+    vector <string> ret;
+    for(unsigned int i=0; i<Table[bucket].size(); i++) {
         bool match = true;
 
-        for (int j = 0; j < item->getGVector().size(); j++) {
+        for (unsigned int j = 0; j < item->getGVector().size(); j++) {
             if (item->getGVector()[j] != Table[bucket][i]->getGvector()[j]) {
                 match = false;
                 break;
@@ -53,9 +53,7 @@ vector<pair<Item *, double>>  CosineHashTable::findNcloserNeighbors(Item *item) 
                     ->getContent());
             if (item->getName().compare(datasetItem->getName()) != 0) {
                 if (distance < r ) {
-                    pair<Item *, double> myPair = make_pair(datasetItem, distance);
-                    ret.push_back(myPair);
-
+                    ret.push_back(datasetItem->getName());
                 }
             }
         }
@@ -71,10 +69,10 @@ pair<Item *, double> CosineHashTable::findCloserNeighbor(Item *item) {
     vector< pair<Item*,double> >ret;
     pair<Item*,double>min_pair(NULL,-1);
     int retrieved=0;
-    for(int i=0; i<Table[bucket].size(); i++) {
+    for(unsigned int i=0; i<Table[bucket].size(); i++) {
         bool match = true;
         if(retrieved == 2*L) return min_pair;
-        for (int j = 0; j < item->getGVector().size(); j++) {
+        for (unsigned int j = 0; j < item->getGVector().size(); j++) {
             if (item->getGVector()[j] != Table[bucket][i]->getGvector()[j]) {
                 match = false;
                 break;

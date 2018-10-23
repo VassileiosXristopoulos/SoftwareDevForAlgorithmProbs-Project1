@@ -24,7 +24,7 @@ public:
     ~EucledianHashTable();
     void add(Item* item);
     pair< Item*,double > findCloserNeighbor(Item *item) override;
-    vector<pair<Item*,double>>  findNcloserNeighbors(Item *item) override;
+    vector<string>  findNcloserNeighbors(Item *item) override;
     vector<int> computeGVector(Item* item) override;
     int hash(Item*item) override;
 };
