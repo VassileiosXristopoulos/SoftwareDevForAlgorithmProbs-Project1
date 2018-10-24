@@ -10,7 +10,7 @@
 
 class cosineHashfunction {
 private:
-    float *v;
+    vector<float>v;
 public:
     cosineHashfunction();
     ~cosineHashfunction();

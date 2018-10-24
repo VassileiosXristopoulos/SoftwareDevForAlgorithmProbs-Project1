@@ -11,10 +11,11 @@
 
 class CosineHashTable : public AHashTable{
 private:
-    cosineHashfunction **cosine_vector;
+    vector<cosineHashfunction *>cosine_vector;
+    int k;
 public:
     CosineHashTable(int size,int k);
-    inline ~CosineHashTable() = default;
+    ~CosineHashTable();
     vector<int> computeGVector(Item* item) override;
     int hash(Item*item) override;
     void add(Item* item) override;

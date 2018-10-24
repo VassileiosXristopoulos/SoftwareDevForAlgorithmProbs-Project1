@@ -7,10 +7,10 @@
 #include "../../header/ComputationMethods.h"
 extern int r,L;
 CosineHashTable::CosineHashTable(int size, int k) : AHashTable(size,k){
-    cosine_vector = new cosineHashfunction*[k];
     for(  int a=0; a<k; a++){
-        cosine_vector[a] = new cosineHashfunction();
+        cosine_vector.push_back(new cosineHashfunction());
     }
+    this->k = k;
 }
 
 vector<int> CosineHashTable::computeGVector(Item *item) {
@@ -94,5 +94,16 @@ pair<Item *, double> CosineHashTable::findCloserNeighbor(Item *item) {
     }
     return min_pair;
 
+}
+
+CosineHashTable::~CosineHashTable()  {
+    for(unsigned int i=0;i<Table.size();i++){
+        for(unsigned int j=0;j<Table[i].size();j++){
+            delete(Table[i][j]);
+        }
+    }
+    for(int i = 0; i<k; i++){
+        delete(cosine_vector[i]);
+    }
 }
 

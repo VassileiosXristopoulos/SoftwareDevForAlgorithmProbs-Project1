@@ -13,11 +13,11 @@
 class AHypercube {
 protected:
     BinaryMap binaryMap;
-    cosineHashfunction **cosine_vector;
     vector<CubeEdge*>edges;
+    int d;
 public:
     explicit AHypercube(int d);
-    ~AHypercube();
+    virtual ~AHypercube();
     virtual  vector<int> getBitVector(Item* item) = 0;
     vector<CubeEdge*> getHamingCLose(int hammingDist,CubeEdge* edge);
     void add(Item* item);

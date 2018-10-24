@@ -6,6 +6,8 @@ OBJS_LSH=obj/lsh.o obj/DataSetMap.o obj/Item.o obj/EucledianHashTable.o obj/hash
 OBJS_CUBE=obj/cube.o obj/EucledianHypercube.o obj/CosineHypercube.o obj/CubeEdge.o obj/BinaryMap.o obj/cosineHashfunction.o obj/AHypercube.o obj/ComputationMethods.o obj/Item.o obj/DataSetMap.o obj/hashFunction.o 
 MOVE=$(shell mv *.o obj)
 
+all:lsh cube
+
 lsh: $(OBJS_LSH)
 	$(CC) $(CFLAGS) $(OBJS_LSH) $(LFLAGS_LSH) $(MOVE)
 

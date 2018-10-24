@@ -15,7 +15,7 @@ protected:
     vector< vector<HashNode*> >Table;
 public:
     AHashTable(int size,int k);
-    ~AHashTable();
+    virtual ~AHashTable();
     virtual void add(Item* item) = 0;
     virtual int hash(Item*item) = 0;
     virtual vector<string>  findNcloserNeighbors(Item *item) = 0;

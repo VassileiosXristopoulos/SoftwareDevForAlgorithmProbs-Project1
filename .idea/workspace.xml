@@ -14,25 +14,32 @@
   <component name="ChangeListManager">
     <list default="true" id="996e8eee-dcdb-43cb-9ebd-72abe6bf98fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/ComputationMethods.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/ComputationMethods.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Input/input_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Input/input_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Input/query_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Input/query_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cube" beforeDir="false" afterPath="$PROJECT_DIR$/cube" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header/hypercube/AHypercube.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/hypercube/AHypercube.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/hypercube/CosineHypercube.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/hypercube/CosineHypercube.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/hypercube/EucledianHypercube.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/hypercube/EucledianHypercube.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header/lsh/AHashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/lsh/AHashTable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header/lsh/CosineHashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/lsh/CosineHashTable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header/lsh/EucledianHashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/lsh/EucledianHashTable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComputationMethods.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComputationMethods.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/lsh/cosineHashfunction.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/lsh/cosineHashfunction.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/lsh/hashFunction.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/lsh/hashFunction.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/AHypercube.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/AHypercube.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/CosineHypercube.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/CosineHypercube.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/DataSetMap.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/DataSetMap.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/EucledianHypercube.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/EucledianHypercube.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Item.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Item.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/cosineHashfunction.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/cosineHashfunction.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/cube.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/cube.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/hashFunction.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/hashFunction.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataSetMap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataSetMap.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hypercube/AHypercube.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hypercube/AHypercube.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hypercube/CosineHypercube.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hypercube/CosineHypercube.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hypercube/EucledianHashTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/EucledianHashTable.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hypercube/EucledianHypercube.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hypercube/EucledianHypercube.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hypercube/cube.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hypercube/cube.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lsh/CosineHashTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/CosineHashTable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lsh/HashNode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/HashNode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lsh/EucledianHashTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/EucledianHashTable.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lsh/cosineHashfunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/cosineHashfunction.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lsh/hashFunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/hashFunction.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lsh/lsh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/lsh.cpp" afterDir="false" />
@@ -73,10 +80,10 @@
         <counts>
           <entry key="Build All (disassembly)" value="3" />
           <entry key="Makefile" value="1" />
-          <entry key="cpp" value="70" />
+          <entry key="cpp" value="83" />
           <entry key="cube (disassembly)" value="2" />
           <entry key="filesystem" value="1" />
-          <entry key="h" value="73" />
+          <entry key="h" value="80" />
           <entry key="input_small" value="1" />
           <entry key="lsh (disassembly)" value="9" />
           <entry key="query_small" value="1" />
@@ -88,15 +95,15 @@
         <counts>
           <entry key="CMakeLists.txt" value="16" />
           <entry key="Disassembly" value="18" />
-          <entry key="ObjectiveC" value="144" />
+          <entry key="ObjectiveC" value="164" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="77" />
-          <entry key="cpp" value="20110" />
-          <entry key="h" value="4397" />
+          <entry key="cpp" value="20958" />
+          <entry key="h" value="4485" />
           <entry key="mm" value="1519" />
           <entry key="txt" value="313" />
         </counts>
@@ -104,7 +111,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="313" />
-          <entry key="ObjectiveC" value="26026" />
+          <entry key="ObjectiveC" value="26962" />
           <entry key="PLAIN_TEXT" value="77" />
         </counts>
       </usages-collector>
@@ -145,23 +152,14 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/hypercube/AHypercube.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="320">
-                  <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#45#65#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+            <entry file="file://$PROJECT_DIR$/src/lsh/EucledianHashTable.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+                <state relative-caret-position="396">
+                  <caret line="33" column="1" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#45#64#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -169,8 +167,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/lsh/lsh.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+                <state relative-caret-position="3006">
+                  <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="1" />
                   <folding>
                     <element signature="e#43#62#0" expanded="true" />
                   </folding>
@@ -179,46 +177,31 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/header/hypercube/CosineHypercube.h">
+            <entry file="file://$PROJECT_DIR$/header/lsh/AHashTable.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#97#111#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="288">
+                  <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/header/hypercube/EucledianHypercube.h">
+            <entry file="file://$PROJECT_DIR$/src/hypercube/AHypercube.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+                <state relative-caret-position="180">
+                  <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
                   <folding>
-                    <element signature="e#115#138#0" expanded="true" />
+                    <element signature="e#45#65#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/DataSetMap.cpp">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/hypercube/EucledianHypercube.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="67" selection-start-line="67" selection-end-line="67" />
-                  <folding>
-                    <element signature="e#45#63#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ComputationMethods.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+                <state relative-caret-position="288">
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
                   <folding>
                     <element signature="e#45#61#0" expanded="true" />
                   </folding>
@@ -227,10 +210,31 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/lsh/CosineHashTable.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="352">
+                  <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#45#65#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/hypercube/CubeEdge.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="126">
+                  <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/lsh/cosineHashfunction.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="11" column="18" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="18" />
+                <state relative-caret-position="342">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
                   <folding>
                     <element signature="e#45#62#0" expanded="true" />
                   </folding>
@@ -242,26 +246,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/hypercube/EucledianHypercube.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#45#61#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/hypercube/CosineHypercube.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="388">
-                  <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-                  <folding>
-                    <element signature="e#45#61#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="108">
+                  <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
                 </state>
               </provider>
             </entry>
@@ -269,8 +258,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/lsh/hashFunction.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="468">
-                  <caret line="35" selection-start-line="35" selection-end-line="35" />
+                <state relative-caret-position="162">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
                   <folding>
                     <element signature="e#44#61#0" expanded="true" />
                   </folding>
@@ -278,11 +267,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/hypercube/cube.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-287">
-                  <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+                <state relative-caret-position="100">
+                  <caret line="100" column="54" selection-start-line="100" selection-start-column="54" selection-end-line="100" selection-end-column="54" />
                   <folding>
                     <element signature="e#44#63#0" expanded="true" />
                   </folding>
@@ -291,12 +280,12 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/header/hypercube/AHypercube.h">
+            <entry file="file://$PROJECT_DIR$/header/lsh/CosineHashTable.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+                <state relative-caret-position="252">
+                  <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
                   <folding>
-                    <element signature="e#99#137#0" expanded="true" />
+                    <element signature="e#109#132#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -329,7 +318,6 @@
       <find>extern int</find>
       <find>cubeIndex</find>
       <find>vector&lt;int&gt;</find>
-      <find>todo</find>
       <find />
       <find>for</find>
       <find>i&lt;</find>
@@ -338,6 +326,7 @@
       <find>d must</find>
       <find>d</find>
       <find>w</find>
+      <find>todo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -346,10 +335,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main.cpp" />
-        <option value="$PROJECT_DIR$/src/BinaryMap.cpp" />
-        <option value="$PROJECT_DIR$/header/BinaryMap.h" />
-        <option value="$PROJECT_DIR$/src/CubeEntry.cpp" />
         <option value="$PROJECT_DIR$/header/CubeEntry.h" />
         <option value="$PROJECT_DIR$/src/hashFunction.cpp" />
         <option value="$PROJECT_DIR$/src/CubeIndex.cpp" />
@@ -380,23 +365,27 @@
         <option value="$PROJECT_DIR$/header/hypercube/CubeEdge.h" />
         <option value="$PROJECT_DIR$/src/hypercube/CubeEdge.cpp" />
         <option value="$PROJECT_DIR$/header/ComputationMethods.h" />
-        <option value="$PROJECT_DIR$/src/lsh/hashFunction.cpp" />
-        <option value="$PROJECT_DIR$/header/lsh/CosineHashTable.h" />
-        <option value="$PROJECT_DIR$/header/lsh/AHashTable.h" />
-        <option value="$PROJECT_DIR$/src/lsh/CosineHashTable.cpp" />
-        <option value="$PROJECT_DIR$/header/lsh/EucledianHashTable.h" />
-        <option value="$PROJECT_DIR$/src/lsh/EucledianHashTable.cpp" />
         <option value="$PROJECT_DIR$/header/hypercube/EucledianHypercube.h" />
-        <option value="$PROJECT_DIR$/header/hypercube/AHypercube.h" />
         <option value="$PROJECT_DIR$/header/hypercube/CosineHypercube.h" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/src/ComputationMethods.cpp" />
+        <option value="$PROJECT_DIR$/header/lsh/AHashTable.h" />
+        <option value="$PROJECT_DIR$/header/hypercube/AHypercube.h" />
+        <option value="$PROJECT_DIR$/src/hypercube/AHypercube.cpp" />
         <option value="$PROJECT_DIR$/src/lsh/lsh.cpp" />
         <option value="$PROJECT_DIR$/src/DataSetMap.cpp" />
-        <option value="$PROJECT_DIR$/src/hypercube/AHypercube.cpp" />
-        <option value="$PROJECT_DIR$/src/hypercube/EucledianHypercube.cpp" />
-        <option value="$PROJECT_DIR$/src/hypercube/CosineHypercube.cpp" />
+        <option value="$PROJECT_DIR$/src/Item.cpp" />
+        <option value="$PROJECT_DIR$/header/lsh/hashFunction.h" />
+        <option value="$PROJECT_DIR$/header/lsh/EucledianHashTable.h" />
+        <option value="$PROJECT_DIR$/src/lsh/hashFunction.cpp" />
+        <option value="$PROJECT_DIR$/src/lsh/EucledianHashTable.cpp" />
+        <option value="$PROJECT_DIR$/header/lsh/CosineHashTable.h" />
+        <option value="$PROJECT_DIR$/src/lsh/CosineHashTable.cpp" />
         <option value="$PROJECT_DIR$/src/hypercube/cube.cpp" />
+        <option value="$PROJECT_DIR$/header/lsh/cosineHashfunction.h" />
+        <option value="$PROJECT_DIR$/src/lsh/cosineHashfunction.cpp" />
+        <option value="$PROJECT_DIR$/src/hypercube/CosineHypercube.cpp" />
+        <option value="$PROJECT_DIR$/src/hypercube/EucledianHypercube.cpp" />
       </list>
     </option>
   </component>
@@ -455,6 +444,12 @@
             <path>
               <item name="CUBE" type="b2602c69:ProjectViewProjectNode" />
               <item name="SoftwareDevForAlgorithmProbs-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+              <item name="lsh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CUBE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareDevForAlgorithmProbs-Project1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -462,6 +457,12 @@
               <item name="SoftwareDevForAlgorithmProbs-Project1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hypercube" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CUBE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareDevForAlgorithmProbs-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lsh" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -525,12 +526,12 @@
       <workItem from="1539374048517" duration="40157000" />
       <workItem from="1539627394212" duration="4668000" />
       <workItem from="1539633671764" duration="7753000" />
-      <workItem from="1540047642524" duration="52386000" />
+      <workItem from="1540047642524" duration="59737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158620000" />
+    <option name="totallyTimeSpent" value="165971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -619,11 +620,6 @@
           <url>file://$PROJECT_DIR$/src/hypercube/CosineHypercube.cpp</url>
           <line>35</line>
           <option name="timeStamp" value="177" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/hypercube/cube.cpp</url>
-          <line>102</line>
-          <option name="timeStamp" value="178" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -727,13 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header/lsh/hashFunction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header/Item.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -761,33 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header/DataSetMap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding>
-            <element signature="e#98#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lsh/AHashTable.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Item.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#45#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -799,13 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header/lsh/cosineHashfunction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -826,16 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hypercube/CubeEdge.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#65#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header/hypercube/CubeEdge.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -850,86 +795,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header/lsh/CosineHashTable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="e#109#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header/lsh/AHashTable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lsh/CosineHashTable.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="55" column="23" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="23" />
-          <folding>
-            <element signature="e#45#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header/lsh/EucledianHashTable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lsh/EucledianHashTable.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="69" column="23" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="23" />
-          <folding>
-            <element signature="e#45#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header/hypercube/EucledianHypercube.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding>
             <element signature="e#115#138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header/hypercube/AHypercube.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="e#99#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header/hypercube/CosineHypercube.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="e#97#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lsh/hashFunction.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#44#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -951,23 +822,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lsh/cosineHashfunction.cpp">
+    <entry file="file://$PROJECT_DIR$/header/hypercube/CosineHypercube.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="360">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding>
-            <element signature="e#45#62#0" expanded="true" />
+            <element signature="e#97#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataSetMap.cpp">
+    <entry file="file://$PROJECT_DIR$/src/lsh/AHashTable.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#45#63#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -978,30 +846,155 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/header/lsh/AHashTable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header/hypercube/AHypercube.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="e#99#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header/DataSetMap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding>
+            <element signature="e#98#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lsh/lsh.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="3006">
+          <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="1" />
           <folding>
             <element signature="e#43#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hypercube/EucledianHypercube.cpp">
+    <entry file="file://$PROJECT_DIR$/src/DataSetMap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="68" column="26" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="26" />
+          <folding>
+            <element signature="e#45#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Item.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="e#45#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header/lsh/EucledianHashTable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lsh/hashFunction.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#44#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header/lsh/hashFunction.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lsh/EucledianHashTable.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="33" column="1" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="e#45#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lsh/CosineHashTable.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <folding>
+            <element signature="e#45#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hypercube/CubeEdge.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lsh/cosineHashfunction.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#45#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header/lsh/cosineHashfunction.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header/lsh/CosineHashTable.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding>
-            <element signature="e#45#61#0" expanded="true" />
+            <element signature="e#109#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hypercube/cube.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="100" column="54" selection-start-line="100" selection-start-column="54" selection-end-line="100" selection-end-column="54" />
+          <folding>
+            <element signature="e#44#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hypercube/AHypercube.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        <state relative-caret-position="180">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding>
             <element signature="e#45#65#0" expanded="true" />
           </folding>
@@ -1010,20 +1003,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hypercube/CosineHypercube.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding>
-            <element signature="e#45#61#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hypercube/cube.cpp">
+    <entry file="file://$PROJECT_DIR$/src/hypercube/EucledianHypercube.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-287">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        <state relative-caret-position="288">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#44#63#0" expanded="true" />
+            <element signature="e#45#61#0" expanded="true" />
           </folding>
         </state>
       </provider>

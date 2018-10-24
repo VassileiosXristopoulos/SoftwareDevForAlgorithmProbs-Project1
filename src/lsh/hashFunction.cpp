@@ -13,12 +13,11 @@ hashFunction::hashFunction() {
         exit(0);
     }
 
-    v = new float[d];
     for( int i=0; i<d ; i++){
-        v[i] = distribution(generator);
+        v.push_back(distribution(generator));
     }
 
-    t = static_cast<float>(4.0 * ((float)rand() / RAND_MAX));
+    t = (float)(4.0 * ((float)rand() / RAND_MAX));
     if(t<0 || t>4){
         cout << "t == " << t <<endl;
         exit(0);
@@ -29,7 +28,7 @@ hashFunction::~hashFunction() = default;
 
 int hashFunction::hash(Item* item) {
     vector<int>p_item = item->getContent();
-    float sum=t;
+    float sum=this->t;
     for(unsigned int i=0; i<p_item.size() ;i++){
         sum += ( (float) p_item[i] )*v[i];
     }

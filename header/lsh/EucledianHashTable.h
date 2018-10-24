@@ -16,7 +16,7 @@ using namespace std;
 
 class EucledianHashTable : public AHashTable {
 private:
-    hashFunction **H_vector;
+    vector<hashFunction *>H_vector;
     vector<int> r_vector;
 
 public:

@@ -23,7 +23,7 @@ extern int d,n;
 int r,L,k,w=100;
 default_random_engine generator;
 normal_distribution<float> distribution(0,1);
-int main(int argv,char **argc){
+int main(int argv,char **argc){ //TODO: check lsh again for results
     srand(time(NULL));
 
     string inputFile, queryFile, outputFile,radius;
@@ -155,10 +155,14 @@ int main(int argv,char **argc){
                 exit(0);
             }
         }
-
+        delete (item);
 
     }
     cout << "Max Div: "<<max_div<<endl;
+
+    for( int i = 0; i < L ; i++)
+            delete(TableArray[i]);
+    //delete (Map);
 
 
 }

@@ -6,10 +6,10 @@
 #include "../../header/hypercube/AHypercube.h"
 #include "../../header/ComputationMethods.h"
 AHypercube::AHypercube(int d) {
+    this->d = d;
     for(  int i = 0 ;i< pow(2,d) ; i++){
         edges.push_back(new CubeEdge(ComputationMethods::intToIntVector(i,d)));
     }
-
 }
 
 vector<CubeEdge *> AHypercube::getHamingCLose(int hammingDist, CubeEdge *edge) {

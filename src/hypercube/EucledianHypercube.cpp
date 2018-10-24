@@ -13,7 +13,11 @@ EucledianHypercube::EucledianHypercube(int d) : AHypercube(d) {
 }
 
 EucledianHypercube::~EucledianHypercube() {
-
+    for(int i=0;i<d;i++){
+        delete(Hi[i]);
+    }
+    for(int i=0;i<pow(2,d);i++)
+        delete(edges[i]);
 }
 
 vector<int> EucledianHypercube::getBitVector(Item *item) {

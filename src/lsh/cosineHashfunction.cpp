@@ -12,9 +12,9 @@ cosineHashfunction::cosineHashfunction() {
         cout << "d must be positive while constructing cosineHashFunction" << endl;
         exit(0);
     }
-    v = new float[d];
+
     for( int i=0; i<d ; i++){
-        v[i] = distribution(generator);
+        v.push_back(distribution(generator));
     }
 }
 

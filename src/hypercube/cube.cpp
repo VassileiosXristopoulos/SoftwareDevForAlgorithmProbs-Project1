@@ -119,7 +119,8 @@ int main(int argv,char **argc) {
         double div = closer_item.second/trueDist;
         if(div>max_div)
             max_div=div;
-
+        delete(item);
     }
     cout << "Max Div: "<<max_div<<endl;
+    delete(hypercube);
 }

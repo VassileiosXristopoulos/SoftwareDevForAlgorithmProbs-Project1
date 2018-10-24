@@ -16,8 +16,13 @@ CosineHypercube::CosineHypercube(int d) : AHypercube(d) {
     }
 }
 
-CosineHypercube::~CosineHypercube() = default;
-
+CosineHypercube::~CosineHypercube(){
+    for(int i=0;i<d;i++){
+        delete(cosine_vector[i]);
+    }
+    for(int i=0;i<pow(2,d);i++)
+        delete(edges[i]);
+}
 vector<int> CosineHypercube::getBitVector(Item*item){
     int dimensions = (int)cosine_vector.size();
     // we want the size of the vector to be power of 2, so as to get

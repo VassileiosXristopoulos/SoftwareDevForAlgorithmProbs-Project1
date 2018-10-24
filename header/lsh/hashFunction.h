@@ -8,7 +8,7 @@
 #include "../Item.h"
 class hashFunction {
 private:
-    float *v;
+    vector<float> v;
     float t;
 public:
     hashFunction();

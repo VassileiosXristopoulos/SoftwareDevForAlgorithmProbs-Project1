@@ -9,11 +9,9 @@ Item::Item(vector<string> &element){
 
     name = element.at(0);
     element.erase(element.begin());
-    //cout<<"Created Item with name: "<< name << " and content ";
+
     for(unsigned int i=0;i<element.size();i++){
         content.push_back(atoi(element[i].c_str()));
-
-   //     cout << element[i]<< " ";
     }
 }
 
@@ -31,7 +29,9 @@ void Item::setGVector(vector<int>& h_i) {
 }
 
 Item::~Item() {
-
+    for(unsigned int i=0; i<content.size() ; i++){
+       // delete(content[i]);
+    }
 }
 
 void Item::printContent() {

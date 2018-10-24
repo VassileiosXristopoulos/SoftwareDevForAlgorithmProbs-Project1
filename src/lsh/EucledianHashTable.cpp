@@ -14,16 +14,23 @@
 using namespace std;
 extern int r,L;
 EucledianHashTable::EucledianHashTable(int k, int size): AHashTable(size,k) {
-    H_vector= new hashFunction*[k];
+
     for(  int a=0; a<k; a++){
        r_vector.push_back(rand()%10+1);
-       H_vector[a] = new hashFunction();
+       H_vector.push_back(new hashFunction());
     }
 }
 
 
 EucledianHashTable::~EucledianHashTable() { //TODO: implement destructor
-
+    for(unsigned int i=0;i<Table.size();i++){
+        for(unsigned int j=0;j<Table[i].size();j++){
+            delete(Table[i][j]);
+        }
+    }
+    for(unsigned int i=0;i<r_vector.size();i++){
+        delete(H_vector[i]);
+    }
 }
 void EucledianHashTable::add(Item* item){
     int key = hash(item);
