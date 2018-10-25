@@ -18,6 +18,7 @@ public:
     void add(Item* item);
     vector<Item*> Elements();
     vector<int> getIndex();
+    int size();
 };
 
 

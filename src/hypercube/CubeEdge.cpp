@@ -5,7 +5,7 @@
 //
 
 #include "../../header/hypercube/CubeEdge.h"
-#include "../../header/ComputationMethods.h"
+#include "../../header/Util.h"
 CubeEdge::CubeEdge(vector<int> index) {
     this->index = index;
 }
@@ -24,5 +24,16 @@ vector<Item *> CubeEdge::Elements() {
 
 vector<int> CubeEdge::getIndex() {
     return index;
+}
+
+int CubeEdge::size() {
+    int size=0;
+    for(unsigned int i=0;i<index.size(); i++){
+        size+=sizeof(index[i]);
+    }
+    for(unsigned int i=0;i<elements.size(); i++){
+        size+=elements[i]->size();
+    }
+    return size;
 }
 

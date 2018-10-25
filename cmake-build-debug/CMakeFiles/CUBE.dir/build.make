@@ -109,18 +109,18 @@ CMakeFiles/CUBE.dir/src/lsh/hashFunction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CUBE.dir/src/lsh/hashFunction.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/lsh/hashFunction.cpp -o CMakeFiles/CUBE.dir/src/lsh/hashFunction.cpp.s
 
-CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.o: CMakeFiles/CUBE.dir/flags.make
-CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.o: ../src/ComputationMethods.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.o -c /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/ComputationMethods.cpp
+CMakeFiles/CUBE.dir/src/Util.cpp.o: CMakeFiles/CUBE.dir/flags.make
+CMakeFiles/CUBE.dir/src/Util.cpp.o: ../src/Util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CUBE.dir/src/Util.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CUBE.dir/src/Util.cpp.o -c /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Util.cpp
 
-CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/ComputationMethods.cpp > CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.i
+CMakeFiles/CUBE.dir/src/Util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CUBE.dir/src/Util.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Util.cpp > CMakeFiles/CUBE.dir/src/Util.cpp.i
 
-CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/ComputationMethods.cpp -o CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.s
+CMakeFiles/CUBE.dir/src/Util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CUBE.dir/src/Util.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Util.cpp -o CMakeFiles/CUBE.dir/src/Util.cpp.s
 
 CMakeFiles/CUBE.dir/src/hypercube/CosineHypercube.cpp.o: CMakeFiles/CUBE.dir/flags.make
 CMakeFiles/CUBE.dir/src/hypercube/CosineHypercube.cpp.o: ../src/hypercube/CosineHypercube.cpp
@@ -206,7 +206,7 @@ CUBE_OBJECTS = \
 "CMakeFiles/CUBE.dir/src/DataSetMap.cpp.o" \
 "CMakeFiles/CUBE.dir/src/Item.cpp.o" \
 "CMakeFiles/CUBE.dir/src/lsh/hashFunction.cpp.o" \
-"CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.o" \
+"CMakeFiles/CUBE.dir/src/Util.cpp.o" \
 "CMakeFiles/CUBE.dir/src/hypercube/CosineHypercube.cpp.o" \
 "CMakeFiles/CUBE.dir/src/hypercube/CubeEdge.cpp.o" \
 "CMakeFiles/CUBE.dir/src/hypercube/BinaryMap.cpp.o" \
@@ -221,7 +221,7 @@ CUBE: CMakeFiles/CUBE.dir/src/hypercube/cube.cpp.o
 CUBE: CMakeFiles/CUBE.dir/src/DataSetMap.cpp.o
 CUBE: CMakeFiles/CUBE.dir/src/Item.cpp.o
 CUBE: CMakeFiles/CUBE.dir/src/lsh/hashFunction.cpp.o
-CUBE: CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.o
+CUBE: CMakeFiles/CUBE.dir/src/Util.cpp.o
 CUBE: CMakeFiles/CUBE.dir/src/hypercube/CosineHypercube.cpp.o
 CUBE: CMakeFiles/CUBE.dir/src/hypercube/CubeEdge.cpp.o
 CUBE: CMakeFiles/CUBE.dir/src/hypercube/BinaryMap.cpp.o

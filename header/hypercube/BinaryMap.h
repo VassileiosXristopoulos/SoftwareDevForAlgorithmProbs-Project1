@@ -15,6 +15,7 @@ public:
     void add(int num,char val);
     int get(int num);
     bool inMap(int num);
+    int size();
 };
 
 

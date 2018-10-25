@@ -30,3 +30,11 @@ int cosineHashfunction::hash(Item *item) {
     }
     return sum>=0;
 }
+
+int cosineHashfunction::size() {
+    int size=0;
+    for(unsigned int i=0;i<v.size(); i++){
+        size+=sizeof(v[i]);
+    }
+    return size;
+}

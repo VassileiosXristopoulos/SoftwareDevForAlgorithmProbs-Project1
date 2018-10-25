@@ -15,13 +15,13 @@ private:
     int k;
 public:
     CosineHashTable(int size,int k);
-    ~CosineHashTable();
+    ~CosineHashTable() override;
     vector<int> computeGVector(Item* item) override;
     int hash(Item*item) override;
     void add(Item* item) override;
     vector<string>  findNcloserNeighbors(Item *item) override;
     pair<Item *, double>  findCloserNeighbor(Item *item) override;
-
+    int size() override;
 };
 
 

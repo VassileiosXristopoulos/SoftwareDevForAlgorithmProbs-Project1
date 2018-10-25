@@ -27,6 +27,7 @@ public:
     vector<string>  findNcloserNeighbors(Item *item) override;
     vector<int> computeGVector(Item* item) override;
     int hash(Item*item) override;
+    int size() override;
 };
 
 

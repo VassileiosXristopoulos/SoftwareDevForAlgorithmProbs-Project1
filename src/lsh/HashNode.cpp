@@ -30,3 +30,11 @@ void HashNode::printGvector(){
 Item *HashNode::getItem(){
     return my_item;
 }
+
+int HashNode::size() {
+    int size=my_item->size();
+    for(unsigned int i=0;i<gVector.size(); i++){
+        size+=sizeof(gVector[i]);
+    }
+    return size;
+}

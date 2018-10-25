@@ -5,7 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LSH.dir/src/lsh/EucledianHashTable.cpp.o"
   "CMakeFiles/LSH.dir/src/lsh/hashFunction.cpp.o"
   "CMakeFiles/LSH.dir/src/lsh/HashNode.cpp.o"
-  "CMakeFiles/LSH.dir/src/ComputationMethods.cpp.o"
+  "CMakeFiles/LSH.dir/src/Util.cpp.o"
   "CMakeFiles/LSH.dir/src/lsh/cosineHashfunction.cpp.o"
   "CMakeFiles/LSH.dir/src/lsh/AHashTable.cpp.o"
   "CMakeFiles/LSH.dir/src/lsh/CosineHashTable.cpp.o"

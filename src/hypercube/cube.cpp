@@ -15,7 +15,7 @@
 #include "../../header/Item.h"
 #include "../../header/hypercube/CosineHypercube.h"
 #include "../../header/hypercube/EucledianHypercube.h"
-#include "../../header/ComputationMethods.h"
+#include "../../header/Util.h"
 
 using namespace std;
 int r,M,k,w=100;
@@ -34,10 +34,9 @@ int main(int argv,char **argc) {
             cout << "Invalid Arguments" << endl;
             return 1;
         }
-        string s = "Input/";
 
-        inputFile = "Input/" + string(argc[2]);
-        queryFile = "Input/" + string(argc[4]);
+        inputFile = "../Input/" + string(argc[2]);
+        queryFile = "../Input/" + string(argc[4]);
         k = atoi(argc[6]);
         M = atoi(argc[8]);
         if( k<=0 || M<=0 ){
@@ -45,19 +44,19 @@ int main(int argv,char **argc) {
             return 1;
         }
         probes = atoi(argc[10]);
-        outputFile = "Input/" + string(argc[12]);
+        outputFile = "../Output/" + string(argc[12]);
     }
     else if( argv == 11){
         if(argc[2]==NULL || argc[4]==NULL || argc[10]==NULL){
             cout << "Invalid Arguments" << endl;
             return 1;
         }
-        inputFile = "Input/" + string(argc[2]);
-        queryFile = "Input/" + string(argc[4]);
+        inputFile = "../Input/" + string(argc[2]);
+        queryFile = "../Input/" + string(argc[4]);
         k = 3;
         M = 10;
         probes = 2;
-        outputFile = "Input/" + string(argc[12]);
+        outputFile = "../Output/" + string(argc[12]);
     }
     else {
         cout << "Wrong arguments!" << endl;
@@ -86,12 +85,14 @@ int main(int argv,char **argc) {
     cout << radius <<endl;
     r=stoi(radius.substr(radius.find(":") + 1));
     double max_div = 0;
+    ofstream output;
+    output.open(outputFile);
     while ( getline(input_q, FileLine) ) {
         double tHupercube,tTrue;
         istringstream iss(FileLine);
 
         string line = FileLine.substr(0, FileLine.size() - 1);
-        vector<string> element = ComputationMethods::Split(line);
+        vector<string> element = Util::Split(line);
 
         Item *item = new Item(element);
         pair<string,double>closer_item;
@@ -106,21 +107,23 @@ int main(int argv,char **argc) {
         clock_t nearest_end = clock();
         tHupercube = (nearest_end-nearest_start)/ (double) CLOCKS_PER_SEC;
         vector<string>Rnearest = hypercube->findRCloser(item,100,5,r);
-        cout <<"Query item: "<< item->getName()<<endl;
-        cout <<"R-nearest neighbor:"<<endl;
+        output <<"Query item: "<< item->getName()<<endl;
+        output <<"R-nearest neighbor:"<<endl;
         for(unsigned int i=0 ; i<Rnearest.size(); i++){
-            cout<<Rnearest[i] <<endl;
+            output<<Rnearest[i] <<endl;
         }
-        cout<< "Nearest neighbor: "
+        output<< "Nearest neighbor: "
         ": "<< closer_item.first <<endl<<"distance Hypercube: "<< closer_item.second << endl<<
         "distanceTrue: " << trueDist<<endl;
-        cout << "tHupercube: " << tHupercube<<endl;
-        cout << "tTrue: " << tTrue<<endl<<endl;
+        output << "tHupercube: " << tHupercube<<endl;
+        output << "tTrue: " << tTrue<<endl<<endl;
         double div = closer_item.second/trueDist;
         if(div>max_div)
             max_div=div;
         delete(item);
     }
-    cout << "Max Div: "<<max_div<<endl;
+    output << "Max Div: "<<max_div<<endl;
+    int total_size = hypercube->size();
+    output << "Total size of "<<mode <<" hypercube = "<<total_size<<endl;
     delete(hypercube);
 }

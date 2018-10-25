@@ -51,6 +51,17 @@ void Item::printGVector(){
     }
 }
 
+int Item::size() {
+    int size=(int)name.size();
+    for(unsigned int i=0;i<content.size(); i++){
+        size+=sizeof(content[i]);
+    }
+    for(unsigned int i=0; i<g_vector.size(); i++){
+        size+=sizeof(g_vector[i]);
+    }
+    return size;
+}
+
 
 
 

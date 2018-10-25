@@ -136,36 +136,6 @@ LSH/fast:
 	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/build
 .PHONY : LSH/fast
 
-src/ComputationMethods.o: src/ComputationMethods.cpp.o
-
-.PHONY : src/ComputationMethods.o
-
-# target to build an object file
-src/ComputationMethods.cpp.o:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.o
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/ComputationMethods.cpp.o
-.PHONY : src/ComputationMethods.cpp.o
-
-src/ComputationMethods.i: src/ComputationMethods.cpp.i
-
-.PHONY : src/ComputationMethods.i
-
-# target to preprocess a source file
-src/ComputationMethods.cpp.i:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.i
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/ComputationMethods.cpp.i
-.PHONY : src/ComputationMethods.cpp.i
-
-src/ComputationMethods.s: src/ComputationMethods.cpp.s
-
-.PHONY : src/ComputationMethods.s
-
-# target to generate assembly for a file
-src/ComputationMethods.cpp.s:
-	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.s
-	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/ComputationMethods.cpp.s
-.PHONY : src/ComputationMethods.cpp.s
-
 src/DataSetMap.o: src/DataSetMap.cpp.o
 
 .PHONY : src/DataSetMap.o
@@ -225,6 +195,36 @@ src/Item.cpp.s:
 	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/Item.cpp.s
 	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/Item.cpp.s
 .PHONY : src/Item.cpp.s
+
+src/Util.o: src/Util.cpp.o
+
+.PHONY : src/Util.o
+
+# target to build an object file
+src/Util.cpp.o:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/Util.cpp.o
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/Util.cpp.o
+.PHONY : src/Util.cpp.o
+
+src/Util.i: src/Util.cpp.i
+
+.PHONY : src/Util.i
+
+# target to preprocess a source file
+src/Util.cpp.i:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/Util.cpp.i
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/Util.cpp.i
+.PHONY : src/Util.cpp.i
+
+src/Util.s: src/Util.cpp.s
+
+.PHONY : src/Util.s
+
+# target to generate assembly for a file
+src/Util.cpp.s:
+	$(MAKE) -f CMakeFiles/CUBE.dir/build.make CMakeFiles/CUBE.dir/src/Util.cpp.s
+	$(MAKE) -f CMakeFiles/LSH.dir/build.make CMakeFiles/LSH.dir/src/Util.cpp.s
+.PHONY : src/Util.cpp.s
 
 src/hypercube/AHypercube.o: src/hypercube/AHypercube.cpp.o
 
@@ -593,15 +593,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... CUBE"
 	@echo "... LSH"
-	@echo "... src/ComputationMethods.o"
-	@echo "... src/ComputationMethods.i"
-	@echo "... src/ComputationMethods.s"
 	@echo "... src/DataSetMap.o"
 	@echo "... src/DataSetMap.i"
 	@echo "... src/DataSetMap.s"
 	@echo "... src/Item.o"
 	@echo "... src/Item.i"
 	@echo "... src/Item.s"
+	@echo "... src/Util.o"
+	@echo "... src/Util.i"
+	@echo "... src/Util.s"
 	@echo "... src/hypercube/AHypercube.o"
 	@echo "... src/hypercube/AHypercube.i"
 	@echo "... src/hypercube/AHypercube.s"

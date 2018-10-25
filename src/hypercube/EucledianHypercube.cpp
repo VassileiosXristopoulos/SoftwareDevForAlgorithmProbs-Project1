@@ -4,7 +4,7 @@
 
 #include <cmath>
 #include "../../header/hypercube/EucledianHypercube.h"
-#include "../../header/ComputationMethods.h"
+#include "../../header/Util.h"
 
 EucledianHypercube::EucledianHypercube(int d) : AHypercube(d) {
         for(  int i = 0 ;i< d ; i++){
@@ -24,7 +24,7 @@ vector<int> EucledianHypercube::getBitVector(Item *item) {
     int dimensions = (int)Hi.size();
     // we want the size of the vector to be power of 2, so as to get
     //  the right number off the conversion from vector to int
-    int nextPowof2dimensions = static_cast<int>(ComputationMethods::upper_power_of_two(dimensions));
+    int nextPowof2dimensions = static_cast<int>(Util::upper_power_of_two(dimensions));
     vector<int> bitVector((unsigned long)(nextPowof2dimensions));
     // std::reverse(bitVector.begin(),bitVector.end());
     for(int i=0; i< dimensions ; i++){
@@ -43,5 +43,16 @@ vector<int> EucledianHypercube::getBitVector(Item *item) {
 }
 
 double EucledianHypercube::computeDistance(vector<int> &x, vector<int> &y) {
-    return ComputationMethods::EucledianDistance(x,y);
+    return Util::EucledianDistance(x,y);
+}
+
+int EucledianHypercube::size() {
+    int size = sizeof(d)+binaryMap.size();
+    for(unsigned int i=0; i<edges.size(); i++){
+        size+= edges[i]->size();
+    }
+    for(unsigned int i=0; i<Hi.size(); i++){
+        size+=Hi[i]->size();
+    }
+    return size;
 }

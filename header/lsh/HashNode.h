@@ -19,6 +19,7 @@ public:
     string getItemName();
     void printGvector();
     Item* getItem();
+    int size();
 };
 
 

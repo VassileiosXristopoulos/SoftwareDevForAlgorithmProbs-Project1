@@ -6,12 +6,13 @@
 #include <algorithm>
 #include <bitset>
 #include <regex>
-#include "../header/ComputationMethods.h"
+#include <fstream>
+#include "../header/Util.h"
 
-int ComputationMethods::my_mod(int x, int y) {
+int Util::my_mod(int x, int y) {
     return (x % y + y) % y;
 }
-double ComputationMethods::EucledianDistance(vector<int> x, vector<int> y) {
+double Util::EucledianDistance(vector<int> x, vector<int> y) {
     double distance=0;
     for (unsigned int j = 0; j < x.size(); j++) {
         distance += pow(x[j] - y[j], 2);
@@ -19,7 +20,7 @@ double ComputationMethods::EucledianDistance(vector<int> x, vector<int> y) {
     return sqrt(distance);
 }
 
-int ComputationMethods::intVectortoInteger(vector<int> table) {
+int Util::intVectortoInteger(vector<int> table) {
     int retval = 0;
     int i =0;
     std::reverse(table.begin(),table.end());
@@ -31,7 +32,7 @@ int ComputationMethods::intVectortoInteger(vector<int> table) {
     return retval;
 }
 
-vector<int> ComputationMethods::intToIntVector(int number, int d) {
+vector<int> Util::intToIntVector(int number, int d) {
     vector<int> ret = vector<int>(d);
     for ( int i = 0; i < d; i++) {
         ret[d - 1 - i] = (1 << i & number) != 0;
@@ -39,7 +40,7 @@ vector<int> ComputationMethods::intToIntVector(int number, int d) {
     return ret;
 }
 
-unsigned long ComputationMethods::upper_power_of_two(unsigned long v){
+unsigned long Util::upper_power_of_two(unsigned long v){
     v--;
     v |= v >> 1;
     v |= v >> 2;
@@ -50,7 +51,7 @@ unsigned long ComputationMethods::upper_power_of_two(unsigned long v){
     return v;
 }
 
-void ComputationMethods::getHammingCloseVectors( int changesLeft, vector<int>& str, const int i,
+void Util::getHammingCloseVectors( int changesLeft, vector<int>& str, const int i,
         vector<vector<int>>&res
 ) {
     if (changesLeft == 0) {
@@ -67,7 +68,7 @@ void ComputationMethods::getHammingCloseVectors( int changesLeft, vector<int>& s
     getHammingCloseVectors(changesLeft,str, i-1,res);
 }
 
-double ComputationMethods::cosineDistance(vector<int> &x, vector<int> &y) {
+double Util::cosineDistance(vector<int> &x, vector<int> &y) {
     double sum=0,partial_sumX=0,partial_sumY=0;
 
     for(unsigned int i=0;i<x.size();i++){
@@ -80,7 +81,7 @@ double ComputationMethods::cosineDistance(vector<int> &x, vector<int> &y) {
     return 1 - sum/(partial_sumX*partial_sumY);
 }
 
-vector<string> ComputationMethods::Split(string &line) {
+vector<string> Util::Split(string &line) {
     vector<string> element;
     size_t pos = line.find(' ');
     size_t startPos = 0;
@@ -92,4 +93,70 @@ vector<string> ComputationMethods::Split(string &line) {
     element.push_back(line.substr(startPos, pos - startPos));
 
     return element;
+}
+
+Lsh_arguments Util::getLshArguments(int argv,char*argc[]) {
+    Lsh_arguments args;
+    if(argv>=7){
+        if( argv == 11 ){ // TODO: ask/implement different ways of getting arguments (asking user)
+            if(argc[2]==NULL || argc[4]==NULL || argc[6]==NULL || argc[8]==NULL || argc[10]==NULL ){
+                cout << "Invalid Arguments" << endl;
+                exit(0);
+            }
+
+            args.inputFile = "../Input/" + string(argc[6]);
+            args.queryFile = "../Input/" + string(argc[8]);
+            //trick - modified order of arguments to implement rerun
+            args.k = atoi(argc[2]);
+            args.L = atoi(argc[4]);
+            if( args.k<=0 || args.L<=0 ){
+                cout << "k and/or L arguments not given properly" << endl;
+                exit(0);
+            }
+            args.outputFIle = "../Output/" + string(argc[10]);
+        }
+        else if( argv == 7){
+            if(argc[2]==NULL || argc[4]==NULL || argc[6]==NULL){
+                cout << "Invalid Arguments" << endl;
+                exit(0);
+            }
+            args.inputFile = "../Input/" + string(argc[2]);
+            args.queryFile = "../Input/" + string(argc[4]);
+            args.k = 4;
+            args.L = 5;
+            args.outputFIle = "../Output/" + string(argc[6]);
+        }
+        else {
+            cout << "Wrong arguments!" << endl;
+            exit(0);
+        }
+
+
+    }
+    else {
+        if (argv == 5) {
+            args.k = atoi(argc[2]);
+            args.L = atoi(argc[4]);
+
+        } else if (argv == 1) {
+            args.k = 4;
+            args.L = 5;
+        } else {
+            cout << "Wrong arguments!" << endl;
+            exit(0);
+        }
+        cout << "Please give path of dataset:";
+        cin >> args.inputFile;
+        cout << endl << "Please give path of query file:";
+        cin >> args.queryFile;
+        args.outputFIle = "../Output/output.txt";
+        cout << "Output file generated at: "<< args.outputFIle << endl;
+    }
+    std::ifstream inputfile(args.inputFile);
+    std::ifstream queryfile(args.queryFile);
+    if(!(inputfile.good() && queryfile.good())){
+        cout << "Not existing Input files!"<<endl;
+        exit(0);
+    }
+    return args;
 }

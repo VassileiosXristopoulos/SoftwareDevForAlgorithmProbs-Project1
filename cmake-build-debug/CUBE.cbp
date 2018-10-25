@@ -130,15 +130,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/ComputationMethods.cpp">
-			<Option target="CUBE"/>
-			<Option target="LSH"/>
-		</Unit>
 		<Unit filename="/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/DataSetMap.cpp">
 			<Option target="CUBE"/>
 			<Option target="LSH"/>
 		</Unit>
 		<Unit filename="/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Item.cpp">
+			<Option target="CUBE"/>
+			<Option target="LSH"/>
+		</Unit>
+		<Unit filename="/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Util.cpp">
 			<Option target="CUBE"/>
 			<Option target="LSH"/>
 		</Unit>

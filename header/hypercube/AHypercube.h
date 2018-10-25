@@ -24,6 +24,7 @@ public:
     virtual double computeDistance(vector<int>&x,vector<int>&y) = 0;
     pair<string,double> findCloser(Item *item,int max,int probes);
     vector<string> findRCloser(Item *item,int max,int probes,int radius);
+    virtual int size() = 0;
 };
 
 

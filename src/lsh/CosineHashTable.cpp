@@ -4,7 +4,7 @@
 
 #include <algorithm>
 #include "../../header/lsh/CosineHashTable.h"
-#include "../../header/ComputationMethods.h"
+#include "../../header/Util.h"
 extern int r,L;
 CosineHashTable::CosineHashTable(int size, int k) : AHashTable(size,k){
     for(  int a=0; a<k; a++){
@@ -24,7 +24,7 @@ vector<int> CosineHashTable::computeGVector(Item *item) {
 int CosineHashTable::hash(Item *item) {
     vector<int> table = computeGVector(item);
     std::reverse(table.begin(),table.end());
-    return ComputationMethods::intVectortoInteger(table);
+    return Util::intVectortoInteger(table);
 }
 
 void CosineHashTable::add(Item *item) {
@@ -49,7 +49,7 @@ vector<string>  CosineHashTable::findNcloserNeighbors(Item *item) {
         if (match) {
             Item * datasetItem = Table[bucket][i]->getItem();
 
-            double distance = ComputationMethods::cosineDistance(item->getContent(), Table[bucket][i]->getItem()
+            double distance = Util::cosineDistance(item->getContent(), Table[bucket][i]->getItem()
                     ->getContent());
             if (item->getName().compare(datasetItem->getName()) != 0) {
                 if (distance < r ) {
@@ -81,7 +81,7 @@ pair<Item *, double> CosineHashTable::findCloserNeighbor(Item *item) {
         if (match) {
             Item *datasetItem = Table[bucket][i]->getItem();
 
-            double distance = ComputationMethods::cosineDistance(item->getContent(), Table[bucket][i]->getItem()
+            double distance = Util::cosineDistance(item->getContent(), Table[bucket][i]->getItem()
                     ->getContent());
             if (item->getName().compare(datasetItem->getName()) != 0) {
                 if (min_pair.second == -1 || min_pair.second > distance ) {
@@ -105,5 +105,18 @@ CosineHashTable::~CosineHashTable()  {
     for(int i = 0; i<k; i++){
         delete(cosine_vector[i]);
     }
+}
+
+int CosineHashTable::size() {
+    int size=sizeof(k);
+    for(unsigned int i=0; i<cosine_vector.size(); i++){
+        size+=cosine_vector[i]->size();
+    }
+    for(unsigned int i=0;i<Table.size(); i++){
+        for(unsigned int j=0; j<Table[i].size(); j++){
+            size+= Table[i][j]->size();
+        }
+    }
+    return size;
 }
 

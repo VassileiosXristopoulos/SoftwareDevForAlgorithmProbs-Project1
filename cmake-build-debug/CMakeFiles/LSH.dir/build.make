@@ -135,18 +135,18 @@ CMakeFiles/LSH.dir/src/lsh/HashNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSH.dir/src/lsh/HashNode.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/lsh/HashNode.cpp -o CMakeFiles/LSH.dir/src/lsh/HashNode.cpp.s
 
-CMakeFiles/LSH.dir/src/ComputationMethods.cpp.o: CMakeFiles/LSH.dir/flags.make
-CMakeFiles/LSH.dir/src/ComputationMethods.cpp.o: ../src/ComputationMethods.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LSH.dir/src/ComputationMethods.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LSH.dir/src/ComputationMethods.cpp.o -c /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/ComputationMethods.cpp
+CMakeFiles/LSH.dir/src/Util.cpp.o: CMakeFiles/LSH.dir/flags.make
+CMakeFiles/LSH.dir/src/Util.cpp.o: ../src/Util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LSH.dir/src/Util.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LSH.dir/src/Util.cpp.o -c /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Util.cpp
 
-CMakeFiles/LSH.dir/src/ComputationMethods.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LSH.dir/src/ComputationMethods.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/ComputationMethods.cpp > CMakeFiles/LSH.dir/src/ComputationMethods.cpp.i
+CMakeFiles/LSH.dir/src/Util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LSH.dir/src/Util.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Util.cpp > CMakeFiles/LSH.dir/src/Util.cpp.i
 
-CMakeFiles/LSH.dir/src/ComputationMethods.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSH.dir/src/ComputationMethods.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/ComputationMethods.cpp -o CMakeFiles/LSH.dir/src/ComputationMethods.cpp.s
+CMakeFiles/LSH.dir/src/Util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSH.dir/src/Util.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vassilis/di-project/SoftwareDevForAlgorithmProbs-Project1/src/Util.cpp -o CMakeFiles/LSH.dir/src/Util.cpp.s
 
 CMakeFiles/LSH.dir/src/lsh/cosineHashfunction.cpp.o: CMakeFiles/LSH.dir/flags.make
 CMakeFiles/LSH.dir/src/lsh/cosineHashfunction.cpp.o: ../src/lsh/cosineHashfunction.cpp
@@ -195,7 +195,7 @@ LSH_OBJECTS = \
 "CMakeFiles/LSH.dir/src/lsh/EucledianHashTable.cpp.o" \
 "CMakeFiles/LSH.dir/src/lsh/hashFunction.cpp.o" \
 "CMakeFiles/LSH.dir/src/lsh/HashNode.cpp.o" \
-"CMakeFiles/LSH.dir/src/ComputationMethods.cpp.o" \
+"CMakeFiles/LSH.dir/src/Util.cpp.o" \
 "CMakeFiles/LSH.dir/src/lsh/cosineHashfunction.cpp.o" \
 "CMakeFiles/LSH.dir/src/lsh/AHashTable.cpp.o" \
 "CMakeFiles/LSH.dir/src/lsh/CosineHashTable.cpp.o"
@@ -209,7 +209,7 @@ LSH: CMakeFiles/LSH.dir/src/Item.cpp.o
 LSH: CMakeFiles/LSH.dir/src/lsh/EucledianHashTable.cpp.o
 LSH: CMakeFiles/LSH.dir/src/lsh/hashFunction.cpp.o
 LSH: CMakeFiles/LSH.dir/src/lsh/HashNode.cpp.o
-LSH: CMakeFiles/LSH.dir/src/ComputationMethods.cpp.o
+LSH: CMakeFiles/LSH.dir/src/Util.cpp.o
 LSH: CMakeFiles/LSH.dir/src/lsh/cosineHashfunction.cpp.o
 LSH: CMakeFiles/LSH.dir/src/lsh/AHashTable.cpp.o
 LSH: CMakeFiles/LSH.dir/src/lsh/CosineHashTable.cpp.o

@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CUBE.dir/src/DataSetMap.cpp.o"
   "CMakeFiles/CUBE.dir/src/Item.cpp.o"
   "CMakeFiles/CUBE.dir/src/lsh/hashFunction.cpp.o"
-  "CMakeFiles/CUBE.dir/src/ComputationMethods.cpp.o"
+  "CMakeFiles/CUBE.dir/src/Util.cpp.o"
   "CMakeFiles/CUBE.dir/src/hypercube/CosineHypercube.cpp.o"
   "CMakeFiles/CUBE.dir/src/hypercube/CubeEdge.cpp.o"
   "CMakeFiles/CUBE.dir/src/hypercube/BinaryMap.cpp.o"

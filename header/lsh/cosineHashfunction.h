@@ -15,6 +15,7 @@ public:
     cosineHashfunction();
     ~cosineHashfunction();
     int hash(Item* item);
+    int size();
 };
 
 

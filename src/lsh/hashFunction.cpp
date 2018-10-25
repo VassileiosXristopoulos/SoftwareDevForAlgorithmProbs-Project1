@@ -37,3 +37,11 @@ int hashFunction::hash(Item* item) {
     return ret;
 }
 
+int hashFunction::size() {
+    int size=sizeof(t);
+    for(unsigned int i=0;i<v.size();i++){
+        size+=sizeof(v[i]);
+    }
+    return size;
+}
+

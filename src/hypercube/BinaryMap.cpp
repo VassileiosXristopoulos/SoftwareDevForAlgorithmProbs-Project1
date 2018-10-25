@@ -14,3 +14,11 @@ int BinaryMap::get(int num) {
     return Map.at(num);
 }
 
+int BinaryMap::size() {
+    int size=0;
+    for (auto const& x : Map) {
+        size += (sizeof(x.first) + sizeof(x.second));
+    }
+    return size;
+}
+

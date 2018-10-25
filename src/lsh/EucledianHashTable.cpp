@@ -10,7 +10,7 @@
 #include "../../header/lsh/EucledianHashTable.h"
 #include "../../header/Item.h"
 #include "../../header/lsh/HashNode.h"
-#include "../../header/ComputationMethods.h"
+#include "../../header/Util.h"
 using namespace std;
 extern int r,L;
 EucledianHashTable::EucledianHashTable(int k, int size): AHashTable(size,k) {
@@ -45,10 +45,10 @@ int EucledianHashTable::hash(Item *item) {
     int M = (int)pow(2.0,32.0) -5;
     vector<int>h_i=computeGVector(item);
     for(unsigned  int i=0; i< r_vector.size() ; i++){
-       sum += ComputationMethods::my_mod(((int)r_vector[i])*h_i[i],M);
+       sum += Util::my_mod(((int)r_vector[i])*h_i[i],M);
     }
 
-    return ComputationMethods::my_mod(sum,TableSize);
+    return Util::my_mod(sum,TableSize);
 }
 
 
@@ -70,7 +70,7 @@ vector< string > EucledianHashTable::findNcloserNeighbors(Item *item){
         if (match) {
             Item * datasetItem = Table[bucket][i]->getItem();
 
-            double distance = ComputationMethods::EucledianDistance(item->getContent(), Table[bucket][i]->getItem()
+            double distance = Util::EucledianDistance(item->getContent(), Table[bucket][i]->getItem()
                     ->getContent());
             if (item->getName().compare(datasetItem->getName()) != 0) {
                 if (distance < r ) {
@@ -102,7 +102,7 @@ pair<Item*,double> EucledianHashTable::findCloserNeighbor(Item *item){
         if (match) {
             Item *datasetItem = Table[bucket][i]->getItem();
 
-            double distance = ComputationMethods::EucledianDistance(item->getContent(), Table[bucket][i]->getItem()
+            double distance = Util::EucledianDistance(item->getContent(), Table[bucket][i]->getItem()
                     ->getContent());
             if (item->getName().compare(datasetItem->getName()) != 0) {
                 if (min_pair.second == -1 || min_pair.second > distance ) {
@@ -123,6 +123,22 @@ vector<int> EucledianHashTable::computeGVector(Item* item){
         h_i.push_back(H_vector[i]->hash(item));
     }
     return h_i;
+}
+
+int EucledianHashTable::size() {
+    int size=TableSize;
+    for(unsigned int i=0; i<H_vector.size(); i++){
+        size+=H_vector[i]->size();
+    }
+    for(unsigned int i=0;i<r_vector.size(); i++){
+        size+=sizeof(r_vector[i]);
+    }
+    for(unsigned int i=0;i<Table.size(); i++){
+        for(unsigned int j=0; j<Table[i].size(); j++){
+            size+= Table[i][j]->size();
+        }
+    }
+    return size;
 }
 
 

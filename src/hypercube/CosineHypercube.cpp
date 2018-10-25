@@ -5,7 +5,7 @@
 #include <cmath>
 #include <algorithm>
 #include "../../header/hypercube/CosineHypercube.h"
-#include "../../header/ComputationMethods.h"
+#include "../../header/Util.h"
 #include "../../header/lsh/cosineHashfunction.h"
 #include "../../header/hypercube/AHypercube.h"
 
@@ -27,7 +27,7 @@ vector<int> CosineHypercube::getBitVector(Item*item){
     int dimensions = (int)cosine_vector.size();
     // we want the size of the vector to be power of 2, so as to get
     //  the right number off the conversion from vector to int
-    int nextPowof2dimensions = static_cast<int>(ComputationMethods::upper_power_of_two(dimensions));
+    int nextPowof2dimensions = static_cast<int>(Util::upper_power_of_two(dimensions));
     vector<int>ret(nextPowof2dimensions);
     for(int i=0; i<dimensions ;i++){
         ret[i] = cosine_vector[i]->hash(item);
@@ -38,7 +38,18 @@ vector<int> CosineHypercube::getBitVector(Item*item){
 
 
 double CosineHypercube::computeDistance(vector<int>&x,vector<int>&y) {
-    return ComputationMethods::cosineDistance(x,y);
+    return Util::cosineDistance(x,y);
+}
+
+int CosineHypercube::size() {
+    int size = sizeof(d)+binaryMap.size();
+    for(unsigned int i=0; i<edges.size(); i++){
+        size+= edges[i]->size();
+    }
+    for(unsigned int i=0;i<cosine_vector.size(); i++){
+        size+=cosine_vector[i]->size();
+    }
+    return size;
 }
 
 

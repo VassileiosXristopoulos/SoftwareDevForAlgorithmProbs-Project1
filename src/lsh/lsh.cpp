@@ -16,11 +16,11 @@
 #include "../../header/Item.h"
 #include "../../header/lsh/EucledianHashTable.h"
 #include "../../header/lsh/CosineHashTable.h"
-#include "../../header/ComputationMethods.h"
+#include "../../header/Util.h"
 
 using namespace std;
 extern int d,n;
-int r,L,k,w=100;
+int r,L,k,w=400;
 default_random_engine generator;
 normal_distribution<float> distribution(0,1);
 int main(int argv,char **argc){ //TODO: check lsh again for results
@@ -28,142 +28,134 @@ int main(int argv,char **argc){ //TODO: check lsh again for results
 
     string inputFile, queryFile, outputFile,radius;
 
-    if( argv == 11 ){ // TODO: ask/implement different ways of getting arguments (asking user)
-        if(argc[2]==NULL || argc[4]==NULL || argc[6]==NULL || argc[8]==NULL || argc[10]==NULL ){
-            cout << "Invalid Arguments" << endl;
-            return 1;
+    while(1) {
+        Lsh_arguments arguments = Util::getLshArguments(argv, argc);
+        k = arguments.k;
+        L = arguments.L;
+        inputFile = arguments.inputFile;
+        queryFile = arguments.queryFile;
+        outputFile = arguments.outputFIle;
+
+        // cout << inputFile << "  " << queryFile<<endl;
+        DataSetMap Map;
+        string mode = Map.InsertFile(inputFile);
+        AHashTable *TableArray[L];
+        for (int i = 0; i < L; i++) {
+            if (mode.compare("eucledian") == 0) {
+                TableArray[i] = new EucledianHashTable(k, n / 2);
+            } else {
+                TableArray[i] = new CosineHashTable(n / 2, k);
+            }
+            for (int j = 0; j < Map.size(); j++) {
+                TableArray[i]->add(Map.at(j));
+            }
         }
-        string s = "Input/";
 
-        inputFile = "Input/" + string(argc[2]);
-        queryFile = "Input/" + string(argc[4]);
-        k = atoi(argc[6]);
-        L = atoi(argc[8]);
-        if( k<=0 || L<=0 ){
-            cout << "k and/or L arguments not given properly" << endl;
-            return 1;
+
+        ifstream input_q(queryFile);
+        getline(input_q, radius); // get radius (i.e. first line)
+        r = stoi(radius.substr(radius.find(":") + 1));
+
+        double max_div = 0;
+        string line;
+        ofstream output;
+        output.open(outputFile);
+        if(!output.good()){
+            cout << "Output file given does not exist"<<endl;
+            exit(0);
         }
-        outputFile = "Input/" + string(argc[10]);
-    }
-    else if( argv == 9){
-        if(argc[2]==NULL || argc[4]==NULL || argc[10]==NULL){
-            cout << "Invalid Arguments" << endl;
-            return 1;
-        }
-        inputFile = "Input/" + string(argc[2]);
-        queryFile = "Input/" + string(argc[4]);
-        k = 4;
-        L = 5;
-        outputFile = "Input/" + string(argc[10]);
-    }
-    else {
-        cout << "Wrong arguments!" << endl;
-        return 1;
-    }
+        for (std::string FileLine; getline(input_q, FileLine);) {
+            double tLSH, tTrue;
 
-    cout << inputFile << "  " << queryFile<<endl;
-   DataSetMap Map;
-    string mode = Map.InsertFile(inputFile);
-    AHashTable * TableArray[L];
-    for( int i=0; i<L ; i++){
-        if(mode.compare("eucledian")==0) {
-            TableArray[i] = new EucledianHashTable(k, n / 2);
-        }
-        else{
-            TableArray[i] = new CosineHashTable( n / 2, k);
-        }
-        for( int j=0; j<Map.size(); j++){
-            TableArray[i]->add(Map.at(j));
-        }
-    }
+            line = FileLine.substr(0, FileLine.size() - 1);
+            vector<string> element = Util::Split(line);
 
+            Item *item = new Item(element);
+            pair<Item *, double> closestNeighboor(NULL, -1.0);
+            vector<string> closerNneighboors;
 
+            for (int i = 0; i < L; i++) {
+                vector<string> Nneighboors = TableArray[i]->findNcloserNeighbors(item);
 
-    ifstream input_q(queryFile);
-    getline(input_q,radius); // get radius (i.e. first line)
-    r=stoi(radius.substr(radius.find(":") + 1));
+                clock_t nearest_start = clock();
+                pair<Item *, double> neighboor = TableArray[i]->findCloserNeighbor(item);
+                clock_t nearest_end = clock();
+                tLSH = (nearest_end - nearest_start) / (double) CLOCKS_PER_SEC;
 
-    double max_div = 0;
-    string line;
-    for( std::string FileLine; getline( input_q, FileLine ); ) {
-        double tLSH,tTrue;
+                if (neighboor.second > 0) { //last item is the closest neighboor
 
-        line = FileLine.substr(0, FileLine.size() - 1);
-        vector<string> element = ComputationMethods::Split(line);
+                    if (closestNeighboor.second == -1 || neighboor.second < closestNeighboor.second) {
+                        closestNeighboor = neighboor;
+                    }
 
-        Item *item = new Item(element);
-        pair<Item *,double>closestNeighboor(NULL,-1.0);
-        vector<string> closerNneighboors;
-
-        for( int i = 0; i < L ; i++ ){
-            vector<string> Nneighboors=TableArray[i]->findNcloserNeighbors(item);
-
-            clock_t nearest_start = clock();
-            pair<Item*,double>neighboor = TableArray[i]->findCloserNeighbor(item);
-            clock_t nearest_end = clock();
-            tLSH = (nearest_end-nearest_start)/ (double) CLOCKS_PER_SEC;
-
-            if(neighboor.second>0){ //last item is the closest neighboor
-
-                if(closestNeighboor.second==-1 || neighboor.second < closestNeighboor.second){
-                    closestNeighboor=neighboor;
-                }
-
-                for(unsigned int j = 0 ; j < Nneighboors.size() ; j++ ){
-                    closerNneighboors.push_back(Nneighboors[j]);
+                    for (unsigned int j = 0; j < Nneighboors.size(); j++) {
+                        closerNneighboors.push_back(Nneighboors[j]);
+                    }
                 }
             }
-        }
-        if(closestNeighboor.second>0){
-            cout << "Query item: " << item->getName() << endl;
-            //sort and remove duplicates from set of closer neighbors
-            sort( closerNneighboors.begin(), closerNneighboors.end() );
-            closerNneighboors.erase(unique( closerNneighboors.begin(), closerNneighboors.end() ), closerNneighboors
-           .end() );
+            if (closestNeighboor.second > 0) {
+                output << "Query item: " << item->getName() << endl;
+                //sort and remove duplicates from set of closer neighbors
+                sort(closerNneighboors.begin(), closerNneighboors.end());
+                closerNneighboors.erase(unique(closerNneighboors.begin(), closerNneighboors.end()), closerNneighboors
+                        .end());
 
-            cout << "R-near neighbor:"<<endl;
-            if(closerNneighboors.size()==0)
-                cout<<"none"<<endl;
+                output << "R-near neighbor:" << endl;
+                if (closerNneighboors.size() == 0)
+                    output << "none" << endl;
 
 
-            for(unsigned int j = 0; j < closerNneighboors.size(); j++ ){
-                if(closerNneighboors[j].compare(closestNeighboor.first->getName())!=0){
-                    cout << closerNneighboors[j] << endl;
+                for (unsigned int j = 0; j < closerNneighboors.size(); j++) {
+                    if (closerNneighboors[j].compare(closestNeighboor.first->getName()) != 0) {
+                        output << closerNneighboors[j] << endl;
+                    }
+                }
+
+                output << "Nearest neighbor: " << closestNeighboor.first->getName() << endl <<
+                       "distanceLSH: " << closestNeighboor.second << endl;
+
+                clock_t true_start = clock();
+                double trueDist = Map.TrueDistance(item, mode);
+                clock_t true_end = clock();
+                tTrue = (true_end - true_start) / (double) CLOCKS_PER_SEC;
+
+                output << "distanceTrue: " << trueDist << endl;
+                output << "tLSH: " << tLSH << endl;
+                output << "tTrue: " << tTrue << endl;
+                output << endl;
+                double div = closestNeighboor.second / trueDist;
+                if (div > max_div) {
+                    max_div = div;
+                }
+            } else {
+                if (closerNneighboors.size() > 0) {
+                    cout << "Error occured at finding neighboors. Found Ncloser without finding closer" << endl;
+                    exit(0);
                 }
             }
+            delete (item);
 
-            cout << "Nearest neighbor: " <<closestNeighboor.first->getName()<<endl<<
-            "distanceLSH: "<<closestNeighboor.second<<endl;
-
-            clock_t true_start = clock();
-            double trueDist = Map.TrueDistance(item,mode);
-            clock_t  true_end = clock();
-            tTrue = (true_end-true_start)/ (double) CLOCKS_PER_SEC;
-
-            cout << "distanceTrue: "<< trueDist << endl;
-            cout << "tLSH: " << tLSH<<endl;
-            cout << "tTrue: " << tTrue<<endl;
-            cout<<endl;
-            double div = closestNeighboor.second/trueDist;
-            if(div > max_div){
-                max_div = div;
-            }
         }
-        else{
-            if(closerNneighboors.size()>0){
-                cout << "Error occured at finding neighboors. Found Ncloser without finding closer"<<endl;
-                exit(0);
-            }
+        output << "Max Div: " << max_div << endl;
+        int total_size = 0;
+        for (int i = 0; i < L; i++) {
+            total_size += TableArray[i]->size();
         }
-        delete (item);
+        output << "Total size of " << mode << " hashtable = " << total_size << endl;
+        for (int i = 0; i < L; i++)
+            delete (TableArray[i]);
 
+        output.close();
+        cout<<"Program finished! Results at "<<outputFile<<endl;
+        cout<<"Please select your choise:"<<endl;
+        cout<<"     To run again with different arguments: Press 1"<<endl;
+        cout<<"     To stop the program: Press 2"<<endl;
+        int input;
+        cin >> input;
+        if(input==2) break;
+        if(argv==11) argv=5; //trick - if all args initially given from command line, go to proper case
+        if(argv==7)  argv=1; //trick - k,L default, go to proper case
     }
-    cout << "Max Div: "<<max_div<<endl;
-
-    for( int i = 0; i < L ; i++)
-            delete(TableArray[i]);
-    //delete (Map);
-
 
 }
 

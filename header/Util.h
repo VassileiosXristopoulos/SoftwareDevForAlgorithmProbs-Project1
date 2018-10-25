@@ -2,13 +2,29 @@
 // Created by vassilis on 18/10/2018.
 //
 
-#ifndef TEST_COMPUTATIONMETHODS_H
-#define TEST_COMPUTATIONMETHODS_H
+#ifndef UTIL_H
+#define UTIL_H
 
 
 #include "Item.h"
+struct Lsh_arguments{
+    string inputFile;
+    string queryFile;
+    int k;
+    int L;
+    string outputFIle;
+};
 
-class ComputationMethods {
+struct Cube_arguments{
+    string inputFile;
+    string queryFile;
+    int probes;
+    int k;
+    int M;
+    string outputFIle;
+
+};
+class Util {
 public:
     static int my_mod(int x, int y);
 
@@ -24,6 +40,9 @@ public:
             vector<vector<int>>&res );
     static double cosineDistance(vector<int>&x,vector<int>&y);
     static vector<string> Split(string &line);
+
+    static Lsh_arguments getLshArguments(int argv,char *argc[]);
+    static Cube_arguments getCubeArguments();
 };
 
-#endif //TEST_COMPUTATIONMETHODS_H
+#endif //UTIL_H

@@ -5,7 +5,7 @@
 #include <sstream>
 #include <fstream>
 #include "../header/DataSetMap.h"
-#include "../header/ComputationMethods.h"
+#include "../header/Util.h"
 
 int d,n;
 DataSetMap::DataSetMap() = default;
@@ -28,10 +28,10 @@ double DataSetMap::TrueDistance(Item *item,string mode) {
     for (auto &i : Map) {
         double dist;
         if(mode == "eucledian"){
-            dist= ComputationMethods::EucledianDistance(item->getContent(), i->getContent());
+            dist= Util::EucledianDistance(item->getContent(), i->getContent());
         }
         else if(mode == "cosine"){
-            dist=ComputationMethods::cosineDistance(item->getContent(), i->getContent());
+            dist=Util::cosineDistance(item->getContent(), i->getContent());
         }
         if(min==-1 || dist<min)
             min = dist;
@@ -59,7 +59,7 @@ string DataSetMap::InsertFile(string inputFile) {
     for( std::string line; getline( input, FileLine ); ) {
 
         line = FileLine.substr(0, FileLine.size() - 1);
-        vector<string> element = ComputationMethods::Split(line);
+        vector<string> element = Util::Split(line);
         Item *item = new Item(element);
 
         if(element.size()<=0){
