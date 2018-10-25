@@ -1,902 +1,802 @@
 Query item: item_idS1
-R-near neighbor:
-none
-Nearest neighbor: item_id2177
-distanceLSH: 0.148192
+R-nearest neighbor:
+Nearest neighbor: : item_id2777
+distance Hypercube: 0.216246
 distanceTrue: 0.148192
-tLSH: 0.005098
-tTrue: 0.04956
+tHupercube: 0.002476
+tTrue: 0.04573
 
 Query item: item_idS2
-R-near neighbor:
-none
-Nearest neighbor: item_id2782
-distanceLSH: 0.127847
+R-nearest neighbor:
+Nearest neighbor: : item_id2782
+distance Hypercube: 0.127847
 distanceTrue: 0.127847
-tLSH: 0.001744
-tTrue: 0.048139
+tHupercube: 0.015273
+tTrue: 0.044938
 
 Query item: item_idS3
-R-near neighbor:
-none
-Nearest neighbor: item_id2708
-distanceLSH: 0.0828626
+R-nearest neighbor:
+Nearest neighbor: : item_id2708
+distance Hypercube: 0.0828626
 distanceTrue: 0.0828626
-tLSH: 0.001234
-tTrue: 0.051617
+tHupercube: 0.015806
+tTrue: 0.048405
 
 Query item: item_idS4
-R-near neighbor:
-none
-Nearest neighbor: item_id9844
-distanceLSH: 0.0893443
+R-nearest neighbor:
+Nearest neighbor: : item_id9575
+distance Hypercube: 0.107516
 distanceTrue: 0.0893443
-tLSH: 0.007635
-tTrue: 0.049813
+tHupercube: 0.014609
+tTrue: 0.05009
 
 Query item: item_idS5
-R-near neighbor:
-none
-Nearest neighbor: item_id4720
-distanceLSH: 0.121244
+R-nearest neighbor:
+Nearest neighbor: : item_id4720
+distance Hypercube: 0.121244
 distanceTrue: 0.121244
-tLSH: 0.005269
-tTrue: 0.051688
+tHupercube: 0.015472
+tTrue: 0.048807
 
 Query item: item_idS6
-R-near neighbor:
-none
-Nearest neighbor: item_id1098
-distanceLSH: 0.146729
+R-nearest neighbor:
+Nearest neighbor: : item_id1098
+distance Hypercube: 0.146729
 distanceTrue: 0.146729
-tLSH: 0.000465
-tTrue: 0.050442
+tHupercube: 0.013666
+tTrue: 0.044216
 
 Query item: item_idS7
-R-near neighbor:
-none
-Nearest neighbor: item_id2457
-distanceLSH: 0.11785
+R-nearest neighbor:
+Nearest neighbor: : item_id2457
+distance Hypercube: 0.11785
 distanceTrue: 0.11785
-tLSH: 0.00714
-tTrue: 0.049144
+tHupercube: 0.01489
+tTrue: 0.045066
 
 Query item: item_idS8
-R-near neighbor:
-none
-Nearest neighbor: item_id5448
-distanceLSH: 0.0582756
+R-nearest neighbor:
+Nearest neighbor: : item_id5448
+distance Hypercube: 0.0582756
 distanceTrue: 0.0582756
-tLSH: 0.007679
-tTrue: 0.051946
+tHupercube: 0.015481
+tTrue: 0.047584
 
 Query item: item_idS9
-R-near neighbor:
-none
-Nearest neighbor: item_id9629
-distanceLSH: 0.119274
+R-nearest neighbor:
+Nearest neighbor: : item_id9629
+distance Hypercube: 0.119274
 distanceTrue: 0.119274
-tLSH: 0.005189
-tTrue: 0.049565
+tHupercube: 0.0167
+tTrue: 0.045897
 
 Query item: item_idS10
-R-near neighbor:
-none
-Nearest neighbor: item_id4765
-distanceLSH: 0.12109
+R-nearest neighbor:
+Nearest neighbor: : item_id4765
+distance Hypercube: 0.12109
 distanceTrue: 0.12109
-tLSH: 0.005309
-tTrue: 0.051984
+tHupercube: 0.015896
+tTrue: 0.050892
 
 Query item: item_idS11
-R-near neighbor:
-none
-Nearest neighbor: item_id1219
-distanceLSH: 0.167304
+R-nearest neighbor:
+Nearest neighbor: : item_id805
+distance Hypercube: 0.186934
 distanceTrue: 0.167304
-tLSH: 0.001683
-tTrue: 0.050087
+tHupercube: 0.016431
+tTrue: 0.047182
 
 Query item: item_idS12
-R-near neighbor:
-none
-Nearest neighbor: item_id4698
-distanceLSH: 0.0572816
+R-nearest neighbor:
+Nearest neighbor: : item_id4698
+distance Hypercube: 0.0572816
 distanceTrue: 0.0572816
-tLSH: 0.003752
-tTrue: 0.050413
+tHupercube: 0.00971
+tTrue: 0.04789
 
 Query item: item_idS13
-R-near neighbor:
-none
-Nearest neighbor: item_id2114
-distanceLSH: 0.110085
+R-nearest neighbor:
+Nearest neighbor: : item_id1363
+distance Hypercube: 0.126006
 distanceTrue: 0.110085
-tLSH: 0.011046
-tTrue: 0.049743
+tHupercube: 0.014938
+tTrue: 0.045881
 
 Query item: item_idS14
-R-near neighbor:
-none
-Nearest neighbor: item_id3610
-distanceLSH: 0.115548
+R-nearest neighbor:
+Nearest neighbor: : item_id3610
+distance Hypercube: 0.115548
 distanceTrue: 0.115548
-tLSH: 0.001349
-tTrue: 0.051959
+tHupercube: 0.003173
+tTrue: 0.047893
 
 Query item: item_idS15
-R-near neighbor:
-none
-Nearest neighbor: item_id798
-distanceLSH: 0.144665
+R-nearest neighbor:
+Nearest neighbor: : item_id70
+distance Hypercube: 0.154634
 distanceTrue: 0.144665
-tLSH: 0.005324
-tTrue: 0.048939
+tHupercube: 0.004489
+tTrue: 0.045157
 
 Query item: item_idS16
-R-near neighbor:
-none
-Nearest neighbor: item_id5327
-distanceLSH: 0.124316
+R-nearest neighbor:
+Nearest neighbor: : item_id3326
+distance Hypercube: 0.132413
 distanceTrue: 0.124316
-tLSH: 0.007053
-tTrue: 0.049787
+tHupercube: 0.004624
+tTrue: 0.046911
 
 Query item: item_idS17
-R-near neighbor:
-none
-Nearest neighbor: item_id9714
-distanceLSH: 0.119265
+R-nearest neighbor:
+Nearest neighbor: : item_id9714
+distance Hypercube: 0.119265
 distanceTrue: 0.119265
-tLSH: 0.011549
-tTrue: 0.047668
+tHupercube: 0.014349
+tTrue: 0.044406
 
 Query item: item_idS18
-R-near neighbor:
-none
-Nearest neighbor: item_id4097
-distanceLSH: 0.125731
+R-nearest neighbor:
+Nearest neighbor: : item_id1293
+distance Hypercube: 0.134285
 distanceTrue: 0.125731
-tLSH: 0.006982
-tTrue: 0.048161
+tHupercube: 0.015085
+tTrue: 0.04531
 
 Query item: item_idS19
-R-near neighbor:
-none
-Nearest neighbor: item_id904
-distanceLSH: 0.1377
+R-nearest neighbor:
+Nearest neighbor: : item_id904
+distance Hypercube: 0.1377
 distanceTrue: 0.1377
-tLSH: 0.003654
-tTrue: 0.053075
+tHupercube: 0.006537
+tTrue: 0.045108
 
 Query item: item_idS20
-R-near neighbor:
-none
-Nearest neighbor: item_id1700
-distanceLSH: 0.0975897
+R-nearest neighbor:
+Nearest neighbor: : item_id1700
+distance Hypercube: 0.0975897
 distanceTrue: 0.0975897
-tLSH: 0.007166
-tTrue: 0.050258
+tHupercube: 0.003074
+tTrue: 0.046106
 
 Query item: item_idS21
-R-near neighbor:
-none
-Nearest neighbor: item_id7218
-distanceLSH: 0.0720603
+R-nearest neighbor:
+Nearest neighbor: : item_id7463
+distance Hypercube: 0.0718209
 distanceTrue: 0.0718209
-tLSH: 0.003388
-tTrue: 0.055622
+tHupercube: 0.004775
+tTrue: 0.049242
 
 Query item: item_idS22
-R-near neighbor:
-none
-Nearest neighbor: item_id4491
-distanceLSH: 0.0125901
+R-nearest neighbor:
+Nearest neighbor: : item_id4491
+distance Hypercube: 0.0125901
 distanceTrue: 0.0125901
-tLSH: 0.006284
-tTrue: 0.054315
+tHupercube: 0.016135
+tTrue: 0.050316
 
 Query item: item_idS23
-R-near neighbor:
-none
-Nearest neighbor: item_id4958
-distanceLSH: 0.0579657
+R-nearest neighbor:
+Nearest neighbor: : item_id4958
+distance Hypercube: 0.0579657
 distanceTrue: 0.0579657
-tLSH: 0.007842
-tTrue: 0.051706
+tHupercube: 0.010034
+tTrue: 0.04793
 
 Query item: item_idS24
-R-near neighbor:
-none
-Nearest neighbor: item_id8336
-distanceLSH: 0.124238
+R-nearest neighbor:
+Nearest neighbor: : item_id8336
+distance Hypercube: 0.124238
 distanceTrue: 0.124238
-tLSH: 0.005529
-tTrue: 0.05401
+tHupercube: 0.016252
+tTrue: 0.049989
 
 Query item: item_idS25
-R-near neighbor:
-none
-Nearest neighbor: item_id4631
-distanceLSH: 0.0460618
+R-nearest neighbor:
+Nearest neighbor: : item_id4631
+distance Hypercube: 0.0460618
 distanceTrue: 0.0460618
-tLSH: 0.005419
-tTrue: 0.051304
+tHupercube: 0.009905
+tTrue: 0.0474
 
 Query item: item_idS26
-R-near neighbor:
-none
-Nearest neighbor: item_id5301
-distanceLSH: 0.142386
+R-nearest neighbor:
+Nearest neighbor: : item_id5948
+distance Hypercube: 0.158431
 distanceTrue: 0.142386
-tLSH: 0.004513
-tTrue: 0.056921
+tHupercube: 0.010024
+tTrue: 0.048323
 
 Query item: item_idS27
-R-near neighbor:
-none
-Nearest neighbor: item_id9900
-distanceLSH: 0.0649993
+R-nearest neighbor:
+Nearest neighbor: : item_id6828
+distance Hypercube: 0.0769624
 distanceTrue: 0.0649993
-tLSH: 0.005487
-tTrue: 0.05223
+tHupercube: 0.014998
+tTrue: 0.048268
 
 Query item: item_idS28
-R-near neighbor:
-none
-Nearest neighbor: item_id5964
-distanceLSH: 0.0595318
+R-nearest neighbor:
+Nearest neighbor: : item_id5964
+distance Hypercube: 0.0595318
 distanceTrue: 0.0595318
-tLSH: 0.002617
-tTrue: 0.053155
+tHupercube: 0.010035
+tTrue: 0.048425
 
 Query item: item_idS29
-R-near neighbor:
-none
-Nearest neighbor: item_id4473
-distanceLSH: 0.0976395
+R-nearest neighbor:
+Nearest neighbor: : item_id4473
+distance Hypercube: 0.0976395
 distanceTrue: 0.0976395
-tLSH: 0.005427
-tTrue: 0.05928
+tHupercube: 0.016276
+tTrue: 0.051475
 
 Query item: item_idS30
-R-near neighbor:
-none
-Nearest neighbor: item_id5454
-distanceLSH: 0.0302874
+R-nearest neighbor:
+Nearest neighbor: : item_id5454
+distance Hypercube: 0.0302874
 distanceTrue: 0.0302874
-tLSH: 0.008392
-tTrue: 0.056946
+tHupercube: 0.010612
+tTrue: 0.051475
 
 Query item: item_idS31
-R-near neighbor:
-none
-Nearest neighbor: item_id5208
-distanceLSH: 0.135861
+R-nearest neighbor:
+Nearest neighbor: : item_id5208
+distance Hypercube: 0.135861
 distanceTrue: 0.135861
-tLSH: 0.008333
-tTrue: 0.053131
+tHupercube: 0.010264
+tTrue: 0.048336
 
 Query item: item_idS32
-R-near neighbor:
-none
-Nearest neighbor: item_id5560
-distanceLSH: 0.0229592
+R-nearest neighbor:
+Nearest neighbor: : item_id5560
+distance Hypercube: 0.0229592
 distanceTrue: 0.0229592
-tLSH: 0.003897
-tTrue: 0.05226
+tHupercube: 0.015144
+tTrue: 0.048621
 
 Query item: item_idS33
-R-near neighbor:
-none
-Nearest neighbor: item_id5301
-distanceLSH: 0.067844
+R-nearest neighbor:
+Nearest neighbor: : item_id7721
+distance Hypercube: 0.133979
 distanceTrue: 0.067844
-tLSH: 0.000642
-tTrue: 0.054333
+tHupercube: 0.002756
+tTrue: 0.048832
 
 Query item: item_idS34
-R-near neighbor:
-none
-Nearest neighbor: item_id7278
-distanceLSH: 0.208014
+R-nearest neighbor:
+Nearest neighbor: : item_id1194
+distance Hypercube: 0.249667
 distanceTrue: 0.208014
-tLSH: 0.000705
-tTrue: 0.054074
+tHupercube: 0.003299
+tTrue: 0.050274
 
 Query item: item_idS35
-R-near neighbor:
-none
-Nearest neighbor: item_id7059
-distanceLSH: 0.119727
+R-nearest neighbor:
+Nearest neighbor: : item_id8863
+distance Hypercube: 0.133298
 distanceTrue: 0.119727
-tLSH: 0.008062
-tTrue: 0.050973
+tHupercube: 0.014521
+tTrue: 0.04935
 
 Query item: item_idS36
-R-near neighbor:
-none
-Nearest neighbor: item_id5842
-distanceLSH: 0.0283779
+R-nearest neighbor:
+Nearest neighbor: : item_id5842
+distance Hypercube: 0.0283779
 distanceTrue: 0.0283779
-tLSH: 0.001379
-tTrue: 0.049786
+tHupercube: 0.013824
+tTrue: 0.044814
 
 Query item: item_idS37
-R-near neighbor:
-none
-Nearest neighbor: item_id5843
-distanceLSH: 0.0240329
+R-nearest neighbor:
+Nearest neighbor: : item_id6709
+distance Hypercube: 0.0494074
 distanceTrue: 0.0240329
-tLSH: 0.000721
-tTrue: 0.049754
+tHupercube: 0.01515
+tTrue: 0.045178
 
 Query item: item_idS38
-R-near neighbor:
-none
-Nearest neighbor: item_id5185
-distanceLSH: 0.0537516
+R-nearest neighbor:
+Nearest neighbor: : item_id5185
+distance Hypercube: 0.0537516
 distanceTrue: 0.0537516
-tLSH: 0.003709
-tTrue: 0.050376
+tHupercube: 0.015159
+tTrue: 0.047611
 
 Query item: item_idS39
-R-near neighbor:
-none
-Nearest neighbor: item_id5024
-distanceLSH: 0.0473192
+R-nearest neighbor:
+Nearest neighbor: : item_id5024
+distance Hypercube: 0.0473192
 distanceTrue: 0.0473192
-tLSH: 0.000887
-tTrue: 0.053358
+tHupercube: 0.015029
+tTrue: 0.045723
 
 Query item: item_idS40
-R-near neighbor:
-none
-Nearest neighbor: item_id4678
-distanceLSH: 0.0725294
+R-nearest neighbor:
+Nearest neighbor: : item_id9842
+distance Hypercube: 0.0854564
 distanceTrue: 0.0725294
-tLSH: 0.010535
-tTrue: 0.053021
+tHupercube: 0.015148
+tTrue: 0.049286
 
 Query item: item_idS41
-R-near neighbor:
-none
-Nearest neighbor: item_id8308
-distanceLSH: 0.0455979
+R-nearest neighbor:
+Nearest neighbor: : item_id8308
+distance Hypercube: 0.0455979
 distanceTrue: 0.0455979
-tLSH: 0.005535
-tTrue: 0.050305
+tHupercube: 0.009751
+tTrue: 0.046618
 
 Query item: item_idS42
-R-near neighbor:
-none
-Nearest neighbor: item_id4644
-distanceLSH: 0.0774015
+R-nearest neighbor:
+Nearest neighbor: : item_id7392
+distance Hypercube: 0.0792377
 distanceTrue: 0.0774015
-tLSH: 0.006182
-tTrue: 0.053136
+tHupercube: 0.003144
+tTrue: 0.04833
 
 Query item: item_idS43
-R-near neighbor:
-none
-Nearest neighbor: item_id5225
-distanceLSH: 0.108205
+R-nearest neighbor:
+Nearest neighbor: : item_id5225
+distance Hypercube: 0.108205
 distanceTrue: 0.108205
-tLSH: 0.004871
-tTrue: 0.052254
+tHupercube: 0.005903
+tTrue: 0.047973
 
 Query item: item_idS44
-R-near neighbor:
-none
-Nearest neighbor: item_id6303
-distanceLSH: 0.0530062
+R-nearest neighbor:
+Nearest neighbor: : item_id6303
+distance Hypercube: 0.0530062
 distanceTrue: 0.0530062
-tLSH: 0.003759
-tTrue: 0.051986
+tHupercube: 0.014311
+tTrue: 0.047224
 
 Query item: item_idS45
-R-near neighbor:
-none
-Nearest neighbor: item_id5429
-distanceLSH: 0.126939
+R-nearest neighbor:
+Nearest neighbor: : item_id5429
+distance Hypercube: 0.126939
 distanceTrue: 0.126939
-tLSH: 0.005617
-tTrue: 0.054715
+tHupercube: 0.016037
+tTrue: 0.050208
 
 Query item: item_idS46
-R-near neighbor:
-none
-Nearest neighbor: item_id8980
-distanceLSH: 0.131809
+R-nearest neighbor:
+Nearest neighbor: : item_id8980
+distance Hypercube: 0.131809
 distanceTrue: 0.131809
-tLSH: 0.001406
-tTrue: 0.054465
+tHupercube: 0.015453
+tTrue: 0.051797
 
 Query item: item_idS47
-R-near neighbor:
-none
-Nearest neighbor: item_id5881
-distanceLSH: 0.0191331
+R-nearest neighbor:
+Nearest neighbor: : item_id5881
+distance Hypercube: 0.0191331
 distanceTrue: 0.0191331
-tLSH: 0.003685
-tTrue: 0.055417
+tHupercube: 0.017123
+tTrue: 0.051789
 
 Query item: item_idS48
-R-near neighbor:
-none
-Nearest neighbor: item_id5642
-distanceLSH: 0.167774
+R-nearest neighbor:
+Nearest neighbor: : item_id3949
+distance Hypercube: 0.189849
 distanceTrue: 0.167774
-tLSH: 0.001269
-tTrue: 0.049259
+tHupercube: 0.014133
+tTrue: 0.045858
 
 Query item: item_idS49
-R-near neighbor:
-none
-Nearest neighbor: item_id5214
-distanceLSH: 0.0469796
+R-nearest neighbor:
+Nearest neighbor: : item_id5214
+distance Hypercube: 0.0469796
 distanceTrue: 0.0469796
-tLSH: 0.008238
-tTrue: 0.05381
+tHupercube: 0.015278
+tTrue: 0.049741
 
 Query item: item_idS50
-R-near neighbor:
-none
-Nearest neighbor: item_id5085
-distanceLSH: 0.0320867
+R-nearest neighbor:
+Nearest neighbor: : item_id5085
+distance Hypercube: 0.0320867
 distanceTrue: 0.0320867
-tLSH: 0.006011
-tTrue: 0.053274
+tHupercube: 0.010237
+tTrue: 0.04955
 
 Query item: item_idS51
-R-near neighbor:
-none
-Nearest neighbor: item_id5654
-distanceLSH: 0.0633703
+R-nearest neighbor:
+Nearest neighbor: : item_id5654
+distance Hypercube: 0.0633703
 distanceTrue: 0.0633703
-tLSH: 0.002451
-tTrue: 0.053796
+tHupercube: 0.015506
+tTrue: 0.050656
 
 Query item: item_idS52
-R-near neighbor:
-none
-Nearest neighbor: item_id6124
-distanceLSH: 0.0329869
+R-nearest neighbor:
+Nearest neighbor: : item_id6124
+distance Hypercube: 0.0329869
 distanceTrue: 0.0329869
-tLSH: 0.005789
-tTrue: 0.053482
+tHupercube: 0.015253
+tTrue: 0.049467
 
 Query item: item_idS53
-R-near neighbor:
-none
-Nearest neighbor: item_id5674
-distanceLSH: 0.0762445
+R-nearest neighbor:
+Nearest neighbor: : item_id5674
+distance Hypercube: 0.0762445
 distanceTrue: 0.0762445
-tLSH: 0.004828
-tTrue: 0.051758
+tHupercube: 0.011043
+tTrue: 0.048049
 
 Query item: item_idS54
-R-near neighbor:
-none
-Nearest neighbor: item_id8613
-distanceLSH: 0.0727913
+R-nearest neighbor:
+Nearest neighbor: : item_id8613
+distance Hypercube: 0.0727913
 distanceTrue: 0.0727913
-tLSH: 0.007473
-tTrue: 0.056527
+tHupercube: 0.010093
+tTrue: 0.049202
 
 Query item: item_idS55
-R-near neighbor:
-none
-Nearest neighbor: item_id6159
-distanceLSH: 0.0489403
+R-nearest neighbor:
+Nearest neighbor: : item_id8741
+distance Hypercube: 0.0730629
 distanceTrue: 0.0489403
-tLSH: 0.005899
-tTrue: 0.053988
+tHupercube: 0.015374
+tTrue: 0.04935
 
 Query item: item_idS56
-R-near neighbor:
-none
-Nearest neighbor: item_id5116
-distanceLSH: 0.0835395
+R-nearest neighbor:
+Nearest neighbor: : item_id6000
+distance Hypercube: 0.0870594
 distanceTrue: 0.0654953
-tLSH: 0.005714
-tTrue: 0.054115
+tHupercube: 0.016279
+tTrue: 0.050244
 
 Query item: item_idS57
-R-near neighbor:
-none
-Nearest neighbor: item_id4904
-distanceLSH: 0.070308
+R-nearest neighbor:
+Nearest neighbor: : item_id7118
+distance Hypercube: 0.106146
 distanceTrue: 0.070308
-tLSH: 0.008481
-tTrue: 0.055004
+tHupercube: 0.015499
+tTrue: 0.047589
 
 Query item: item_idS58
-R-near neighbor:
-none
-Nearest neighbor: item_id5285
-distanceLSH: 0.0868418
+R-nearest neighbor:
+Nearest neighbor: : item_id7375
+distance Hypercube: 0.0997604
 distanceTrue: 0.0540138
-tLSH: 0.000231
-tTrue: 0.050949
+tHupercube: 0.015281
+tTrue: 0.047126
 
 Query item: item_idS59
-R-near neighbor:
-none
-Nearest neighbor: item_id7238
-distanceLSH: 0.00836924
+R-nearest neighbor:
+Nearest neighbor: : item_id7238
+distance Hypercube: 0.00836924
 distanceTrue: 0.00836924
-tLSH: 0.005708
-tTrue: 0.052879
+tHupercube: 0.015939
+tTrue: 0.048992
 
 Query item: item_idS60
-R-near neighbor:
-none
-Nearest neighbor: item_id6835
-distanceLSH: 0.0252484
+R-nearest neighbor:
+Nearest neighbor: : item_id6377
+distance Hypercube: 0.0387238
 distanceTrue: 0.0252484
-tLSH: 0.006409
-tTrue: 0.056018
+tHupercube: 0.016616
+tTrue: 0.051557
 
 Query item: item_idS61
-R-near neighbor:
-none
-Nearest neighbor: item_id4473
-distanceLSH: 0.134562
+R-nearest neighbor:
+Nearest neighbor: : item_id4473
+distance Hypercube: 0.134562
 distanceTrue: 0.0562044
-tLSH: 0.005655
-tTrue: 0.053226
+tHupercube: 0.015821
+tTrue: 0.050668
 
 Query item: item_idS62
-R-near neighbor:
-none
-Nearest neighbor: item_id8403
-distanceLSH: 0.0379561
+R-nearest neighbor:
+Nearest neighbor: : item_id1891
+distance Hypercube: 0.120317
 distanceTrue: 0.0379561
-tLSH: 0.00722
-tTrue: 0.054812
+tHupercube: 0.004976
+tTrue: 0.050728
 
 Query item: item_idS63
-R-near neighbor:
-none
-Nearest neighbor: item_id6203
-distanceLSH: 0.0801364
+R-nearest neighbor:
+Nearest neighbor: : item_id6561
+distance Hypercube: 0.0333646
 distanceTrue: 0.0333646
-tLSH: 0.006462
-tTrue: 0.071385
+tHupercube: 0.010584
+tTrue: 0.051567
 
 Query item: item_idS64
-R-near neighbor:
-none
-Nearest neighbor: item_id6322
-distanceLSH: 0.0174068
+R-nearest neighbor:
+Nearest neighbor: : item_id6322
+distance Hypercube: 0.0174068
 distanceTrue: 0.0174068
-tLSH: 0.011573
-tTrue: 0.070037
+tHupercube: 0.015243
+tTrue: 0.049154
 
 Query item: item_idS65
-R-near neighbor:
-none
-Nearest neighbor: item_id5636
-distanceLSH: 0.036902
+R-nearest neighbor:
+Nearest neighbor: : item_id5636
+distance Hypercube: 0.036902
 distanceTrue: 0.036902
-tLSH: 0.000922
-tTrue: 0.069763
+tHupercube: 0.015882
+tTrue: 0.048516
 
 Query item: item_idS66
-R-near neighbor:
-none
-Nearest neighbor: item_id6406
-distanceLSH: 0.0581148
+R-nearest neighbor:
+Nearest neighbor: : item_id6406
+distance Hypercube: 0.0581148
 distanceTrue: 0.0581148
-tLSH: 0.007116
-tTrue: 0.073594
+tHupercube: 0.015175
+tTrue: 0.049291
 
 Query item: item_idS67
-R-near neighbor:
-none
-Nearest neighbor: item_id5391
-distanceLSH: 0.077795
+R-nearest neighbor:
+Nearest neighbor: : item_id5670
+distance Hypercube: 0.0983838
 distanceTrue: 0.077795
-tLSH: 0.007377
-tTrue: 0.068363
+tHupercube: 0.015794
+tTrue: 0.048779
 
 Query item: item_idS68
-R-near neighbor:
-none
-Nearest neighbor: item_id6858
-distanceLSH: 0.0971119
+R-nearest neighbor:
+Nearest neighbor: : item_id6858
+distance Hypercube: 0.0971119
 distanceTrue: 0.0971119
-tLSH: 0.003034
-tTrue: 0.071091
+tHupercube: 0.016102
+tTrue: 0.050047
 
 Query item: item_idS69
-R-near neighbor:
-none
-Nearest neighbor: item_id1479
-distanceLSH: 0.0781299
+R-nearest neighbor:
+Nearest neighbor: : item_id9846
+distance Hypercube: 0.0863609
 distanceTrue: 0.0781299
-tLSH: 0.011535
-tTrue: 0.07157
+tHupercube: 0.016597
+tTrue: 0.051052
 
 Query item: item_idS70
-R-near neighbor:
-none
-Nearest neighbor: item_id5878
-distanceLSH: 0.137516
+R-nearest neighbor:
+Nearest neighbor: : item_id3050
+distance Hypercube: 0.139344
 distanceTrue: 0.137516
-tLSH: 0.003713
-tTrue: 0.066507
+tHupercube: 0.014336
+tTrue: 0.046235
 
 Query item: item_idS71
-R-near neighbor:
-none
-Nearest neighbor: item_id6125
-distanceLSH: 0.00422304
+R-nearest neighbor:
+Nearest neighbor: : item_id6125
+distance Hypercube: 0.00422304
 distanceTrue: 0.00422304
-tLSH: 0.006521
-tTrue: 0.070947
+tHupercube: 0.01552
+tTrue: 0.049984
 
 Query item: item_idS72
-R-near neighbor:
-none
-Nearest neighbor: item_id5886
-distanceLSH: 0.081624
+R-nearest neighbor:
+Nearest neighbor: : item_id5156
+distance Hypercube: 0.0959031
 distanceTrue: 0.072575
-tLSH: 0.006584
-tTrue: 0.069527
+tHupercube: 0.015965
+tTrue: 0.048862
 
 Query item: item_idS73
-R-near neighbor:
-none
-Nearest neighbor: item_id6610
-distanceLSH: 0.178035
+R-nearest neighbor:
+Nearest neighbor: : item_id6610
+distance Hypercube: 0.178035
 distanceTrue: 0.178035
-tLSH: 0.009065
-tTrue: 0.069308
+tHupercube: 0.00996
+tTrue: 0.047935
 
 Query item: item_idS74
-R-near neighbor:
-none
-Nearest neighbor: item_id6854
-distanceLSH: 0.102526
+R-nearest neighbor:
+Nearest neighbor: : item_id4241
+distance Hypercube: 0.161836
 distanceTrue: 0.102526
-tLSH: 0.002295
-tTrue: 0.068294
+tHupercube: 0.015609
+tTrue: 0.048088
 
 Query item: item_idS75
-R-near neighbor:
-none
-Nearest neighbor: item_id7365
-distanceLSH: 0.0332313
+R-nearest neighbor:
+Nearest neighbor: : item_id7365
+distance Hypercube: 0.0332313
 distanceTrue: 0.0332313
-tLSH: 0.007716
-tTrue: 0.064375
+tHupercube: 0.00442
+tTrue: 0.045533
 
 Query item: item_idS76
-R-near neighbor:
-none
-Nearest neighbor: item_id6554
-distanceLSH: 0.0869535
+R-nearest neighbor:
+Nearest neighbor: : item_id2727
+distance Hypercube: 0.173725
 distanceTrue: 0.0869535
-tLSH: 0.006847
-tTrue: 0.065872
+tHupercube: 0.017306
+tTrue: 0.046511
 
 Query item: item_idS77
-R-near neighbor:
-none
-Nearest neighbor: item_id7904
-distanceLSH: 0.121994
+R-nearest neighbor:
+Nearest neighbor: : item_id7904
+distance Hypercube: 0.121994
 distanceTrue: 0.121994
-tLSH: 0.000448
-tTrue: 0.071207
-
-Query item: item_idS78
-R-near neighbor:
-none
-Nearest neighbor: item_id8579
-distanceLSH: 0.167064
-distanceTrue: 0.167064
-tLSH: 0.006444
-tTrue: 0.06947
-
-Query item: item_idS79
-R-near neighbor:
-none
-Nearest neighbor: item_id9209
-distanceLSH: 0.0995002
-distanceTrue: 0.0995002
-tLSH: 0.016096
-tTrue: 0.067754
-
-Query item: item_idS80
-R-near neighbor:
-none
-Nearest neighbor: item_id6071
-distanceLSH: 0.042238
-distanceTrue: 0.042238
-tLSH: 0.010514
-tTrue: 0.075814
-
-Query item: item_idS81
-R-near neighbor:
-none
-Nearest neighbor: item_id7452
-distanceLSH: 0.0412215
-distanceTrue: 0.0412215
-tLSH: 0.012429
-tTrue: 0.069465
-
-Query item: item_idS82
-R-near neighbor:
-none
-Nearest neighbor: item_id3087
-distanceLSH: 0.147644
-distanceTrue: 0.147644
-tLSH: 0.007612
-tTrue: 0.06747
-
-Query item: item_idS83
-R-near neighbor:
-none
-Nearest neighbor: item_id9165
-distanceLSH: 0.143349
-distanceTrue: 0.143349
-tLSH: 0.017322
-tTrue: 0.070729
-
-Query item: item_idS84
-R-near neighbor:
-none
-Nearest neighbor: item_id6006
-distanceLSH: 0.0635985
-distanceTrue: 0.0635985
-tLSH: 0.00767
-tTrue: 0.069078
-
-Query item: item_idS85
-R-near neighbor:
-none
-Nearest neighbor: item_id8895
-distanceLSH: 0.071851
-distanceTrue: 0.071851
-tLSH: 0.000876
-tTrue: 0.050654
-
-Query item: item_idS86
-R-near neighbor:
-none
-Nearest neighbor: item_id8355
-distanceLSH: 0.156554
-distanceTrue: 0.156554
-tLSH: 0.000491
-tTrue: 0.057056
-
-Query item: item_idS87
-R-near neighbor:
-none
-Nearest neighbor: item_id9152
-distanceLSH: 0.0977167
-distanceTrue: 0.0977167
-tLSH: 0.003417
-tTrue: 0.049872
-
-Query item: item_idS88
-R-near neighbor:
-none
-Nearest neighbor: item_id7723
-distanceLSH: 0.0294188
-distanceTrue: 0.0294188
-tLSH: 0.005812
-tTrue: 0.053882
-
-Query item: item_idS89
-R-near neighbor:
-none
-Nearest neighbor: item_id7066
-distanceLSH: 0.046638
-distanceTrue: 0.0109034
-tLSH: 0.002379
-tTrue: 0.053383
-
-Query item: item_idS90
-R-near neighbor:
-none
-Nearest neighbor: item_id7628
-distanceLSH: 0.025345
-distanceTrue: 0.025345
-tLSH: 0.008501
-tTrue: 0.053497
-
-Query item: item_idS91
-R-near neighbor:
-none
-Nearest neighbor: item_id9259
-distanceLSH: 0.00490278
-distanceTrue: 0.00490278
-tLSH: 0.003893
-tTrue: 0.053321
-
-Query item: item_idS92
-R-near neighbor:
-none
-Nearest neighbor: item_id8897
-distanceLSH: 0.171555
-distanceTrue: 0.171555
-tLSH: 0.000697
-tTrue: 0.051943
-
-Query item: item_idS93
-R-near neighbor:
-none
-Nearest neighbor: item_id8357
-distanceLSH: 0.0387243
-distanceTrue: 0.0387243
-tLSH: 0.006737
-tTrue: 0.051696
-
-Query item: item_idS94
-R-near neighbor:
-none
-Nearest neighbor: item_id8979
-distanceLSH: 0.106505
-distanceTrue: 0.106505
-tLSH: 0.001194
-tTrue: 0.053302
-
-Query item: item_idS95
-R-near neighbor:
-none
-Nearest neighbor: item_id8420
-distanceLSH: 0.049688
-distanceTrue: 0.049688
-tLSH: 0.001456
-tTrue: 0.05358
-
-Query item: item_idS96
-R-near neighbor:
-none
-Nearest neighbor: item_id9206
-distanceLSH: 0.180009
-distanceTrue: 0.180009
-tLSH: 0.003223
-tTrue: 0.05088
-
-Query item: item_idS97
-R-near neighbor:
-none
-Nearest neighbor: item_id7513
-distanceLSH: 0.157862
-distanceTrue: 0.157862
-tLSH: 0.005306
-tTrue: 0.057249
-
-Query item: item_idS98
-R-near neighbor:
-none
-Nearest neighbor: item_id8826
-distanceLSH: 0.105538
-distanceTrue: 0.105538
-tLSH: 0.005963
-tTrue: 0.051468
-
-Query item: item_idS99
-R-near neighbor:
-none
-Nearest neighbor: item_id5774
-distanceLSH: 0.0397098
-distanceTrue: 0.0364062
-tLSH: 0.003368
-tTrue: 0.055191
-
-Query item: item_idS100
-R-near neighbor:
-none
-Nearest neighbor: item_id8083
-distanceLSH: 0.0658072
-distanceTrue: 0.0658072
-tLSH: 0.000366
+tHupercube: 0.016512
 tTrue: 0.052754
 
-Max Div: 4.2774
-Total size of cosine hashtable = 27754730
+Query item: item_idS78
+R-nearest neighbor:
+Nearest neighbor: : item_id2093
+distance Hypercube: 0.196279
+distanceTrue: 0.167064
+tHupercube: 0.01648
+tTrue: 0.049092
+
+Query item: item_idS79
+R-nearest neighbor:
+Nearest neighbor: : item_id9209
+distance Hypercube: 0.0995002
+distanceTrue: 0.0995002
+tHupercube: 0.015681
+tTrue: 0.048203
+
+Query item: item_idS80
+R-nearest neighbor:
+Nearest neighbor: : item_id6071
+distance Hypercube: 0.042238
+distanceTrue: 0.042238
+tHupercube: 0.000805
+tTrue: 0.0513
+
+Query item: item_idS81
+R-nearest neighbor:
+Nearest neighbor: : item_id7452
+distance Hypercube: 0.0412215
+distanceTrue: 0.0412215
+tHupercube: 0.004768
+tTrue: 0.049511
+
+Query item: item_idS82
+R-nearest neighbor:
+Nearest neighbor: : item_id6132
+distance Hypercube: 0.17858
+distanceTrue: 0.147644
+tHupercube: 0.014615
+tTrue: 0.047424
+
+Query item: item_idS83
+R-nearest neighbor:
+Nearest neighbor: : item_id1134
+distance Hypercube: 0.171353
+distanceTrue: 0.143349
+tHupercube: 0.009916
+tTrue: 0.047805
+
+Query item: item_idS84
+R-nearest neighbor:
+Nearest neighbor: : item_id6006
+distance Hypercube: 0.0635985
+distanceTrue: 0.0635985
+tHupercube: 0.015674
+tTrue: 0.050067
+
+Query item: item_idS85
+R-nearest neighbor:
+Nearest neighbor: : item_id2468
+distance Hypercube: 0.105694
+distanceTrue: 0.071851
+tHupercube: 0.01631
+tTrue: 0.047489
+
+Query item: item_idS86
+R-nearest neighbor:
+Nearest neighbor: : item_id8355
+distance Hypercube: 0.156554
+distanceTrue: 0.156554
+tHupercube: 0.015648
+tTrue: 0.05081
+
+Query item: item_idS87
+R-nearest neighbor:
+Nearest neighbor: : item_id9152
+distance Hypercube: 0.0977167
+distanceTrue: 0.0977167
+tHupercube: 0.014992
+tTrue: 0.046352
+
+Query item: item_idS88
+R-nearest neighbor:
+Nearest neighbor: : item_id7723
+distance Hypercube: 0.0294188
+distanceTrue: 0.0294188
+tHupercube: 0.016182
+tTrue: 0.049627
+
+Query item: item_idS89
+R-nearest neighbor:
+Nearest neighbor: : item_id7099
+distance Hypercube: 0.0109034
+distanceTrue: 0.0109034
+tHupercube: 0.016174
+tTrue: 0.049606
+
+Query item: item_idS90
+R-nearest neighbor:
+Nearest neighbor: : item_id7628
+distance Hypercube: 0.025345
+distanceTrue: 0.025345
+tHupercube: 0.017156
+tTrue: 0.049529
+
+Query item: item_idS91
+R-nearest neighbor:
+Nearest neighbor: : item_id9259
+distance Hypercube: 0.00490278
+distanceTrue: 0.00490278
+tHupercube: 0.001622
+tTrue: 0.049946
+
+Query item: item_idS92
+R-nearest neighbor:
+Nearest neighbor: : item_id9994
+distance Hypercube: 0.184661
+distanceTrue: 0.171555
+tHupercube: 0.008299
+tTrue: 0.047711
+
+Query item: item_idS93
+R-nearest neighbor:
+Nearest neighbor: : item_id4054
+distance Hypercube: 0.256795
+distanceTrue: 0.0387243
+tHupercube: 0.001193
+tTrue: 0.049914
+
+Query item: item_idS94
+R-nearest neighbor:
+Nearest neighbor: : item_id1089
+distance Hypercube: 0.128928
+distanceTrue: 0.106505
+tHupercube: 0.01595
+tTrue: 0.049264
+
+Query item: item_idS95
+R-nearest neighbor:
+Nearest neighbor: : item_id7412
+distance Hypercube: 0.13367
+distanceTrue: 0.049688
+tHupercube: 0.01552
+tTrue: 0.049748
+
+Query item: item_idS96
+R-nearest neighbor:
+Nearest neighbor: : item_id1186
+distance Hypercube: 0.189451
+distanceTrue: 0.180009
+tHupercube: 0.015416
+tTrue: 0.047239
+
+Query item: item_idS97
+R-nearest neighbor:
+Nearest neighbor: : item_id7513
+distance Hypercube: 0.157862
+distanceTrue: 0.157862
+tHupercube: 0.015289
+tTrue: 0.047885
+
+Query item: item_idS98
+R-nearest neighbor:
+Nearest neighbor: : item_id1890
+distance Hypercube: 0.266449
+distanceTrue: 0.105538
+tHupercube: 0.002615
+tTrue: 0.047633
+
+Query item: item_idS99
+R-nearest neighbor:
+Nearest neighbor: : item_id5461
+distance Hypercube: 0.0364062
+distanceTrue: 0.0364062
+tHupercube: 0.00495
+tTrue: 0.050308
+
+Query item: item_idS100
+R-nearest neighbor:
+Nearest neighbor: : item_id8083
+distance Hypercube: 0.0658072
+distanceTrue: 0.0658072
+tHupercube: 0.015321
+tTrue: 0.049176
+
+Max Div: 6.63136
+Total size of cosine hypercube = 5351202

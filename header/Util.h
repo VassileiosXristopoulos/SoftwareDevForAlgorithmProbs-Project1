@@ -42,7 +42,7 @@ public:
     static vector<string> Split(string &line);
 
     static Lsh_arguments getLshArguments(int argv,char *argc[]);
-    static Cube_arguments getCubeArguments();
+    static Cube_arguments getCubeArguments(int argv,char *argc[]);
 };
 
 #endif //UTIL_H

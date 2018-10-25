@@ -13,78 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996e8eee-dcdb-43cb-9ebd-72abe6bf98fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/input_custom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/input_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Input/input_small.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/input_verySmall.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/modify_file.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Input/modify_file.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/query_custom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/query_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Input/query_small.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/query_verySmall.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/DataSetMap.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/DataSetMap.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/Item.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/Item.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/AHypercube.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/AHypercube.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/BinaryMap.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/BinaryMap.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/CosineHypercube.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/CosineHypercube.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/CubeEdge.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/CubeEdge.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/EucledianHypercube.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/EucledianHypercube.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/cube.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/hypercube/cube.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/lsh/cosineHashfunction.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/lsh/cosineHashfunction.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/lsh/hashFunction.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CUBE.dir/src/lsh/hashFunction.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/ComputationMethods.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/DataSetMap.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/DataSetMap.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/Item.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/Item.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/AHashTable.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/AHashTable.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/CosineHashTable.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/CosineHashTable.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/EucledianHashTable.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/EucledianHashTable.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/HashNode.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/HashNode.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/cosineHashfunction.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/cosineHashfunction.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/hashFunction.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/hashFunction.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/lsh.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LSH.dir/src/lsh/lsh.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CUBE" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CUBE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CUBE.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CUBE.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LSH" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LSH" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/ComputationMethods.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Item.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/hypercube/AHypercube.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/hypercube/AHypercube.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/hypercube/BinaryMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/hypercube/BinaryMap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/hypercube/CosineHypercube.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/hypercube/CosineHypercube.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/hypercube/CubeEdge.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/hypercube/CubeEdge.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/hypercube/EucledianHypercube.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/hypercube/EucledianHypercube.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/lsh/AHashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/lsh/AHashTable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/lsh/CosineHashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/lsh/CosineHashTable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/lsh/EucledianHashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/lsh/EucledianHashTable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/lsh/HashNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/lsh/HashNode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/lsh/cosineHashfunction.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/lsh/cosineHashfunction.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/lsh/hashFunction.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/lsh/hashFunction.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComputationMethods.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataSetMap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataSetMap.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hypercube/AHypercube.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hypercube/AHypercube.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hypercube/BinaryMap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hypercube/BinaryMap.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hypercube/CosineHypercube.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hypercube/CosineHypercube.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hypercube/CubeEdge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hypercube/CubeEdge.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hypercube/EucledianHypercube.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hypercube/EucledianHypercube.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/output_small" beforeDir="false" afterPath="$PROJECT_DIR$/Output/output_small" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/Util.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Util.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Util.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hypercube/cube.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hypercube/cube.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lsh/CosineHashTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/CosineHashTable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lsh/EucledianHashTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/EucledianHashTable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lsh/HashNode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/HashNode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lsh/cosineHashfunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/cosineHashfunction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lsh/hashFunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/hashFunction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lsh/lsh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lsh/lsh.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -122,7 +55,7 @@
         <counts>
           <entry key="Build All (disassembly)" value="3" />
           <entry key="Makefile" value="1" />
-          <entry key="cpp" value="105" />
+          <entry key="cpp" value="106" />
           <entry key="cube (disassembly)" value="2" />
           <entry key="filesystem" value="1" />
           <entry key="h" value="96" />
@@ -137,14 +70,14 @@
         <counts>
           <entry key="CMakeLists.txt" value="16" />
           <entry key="Disassembly" value="18" />
-          <entry key="ObjectiveC" value="202" />
+          <entry key="ObjectiveC" value="203" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="77" />
-          <entry key="cpp" value="24338" />
+          <entry key="cpp" value="24487" />
           <entry key="h" value="4918" />
           <entry key="mm" value="1519" />
           <entry key="txt" value="313" />
@@ -153,7 +86,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="313" />
-          <entry key="ObjectiveC" value="30775" />
+          <entry key="ObjectiveC" value="30924" />
           <entry key="PLAIN_TEXT" value="77" />
         </counts>
       </usages-collector>
@@ -231,7 +164,7 @@
             <entry file="file://$PROJECT_DIR$/src/hypercube/cube.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="64">
-                  <caret line="36" selection-start-line="36" selection-end-line="36" />
+                  <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
                   <folding>
                     <element signature="e#44#63#0" expanded="true" />
                   </folding>
@@ -284,8 +217,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Util.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="301">
-                  <caret line="152" column="43" selection-start-line="152" selection-start-column="43" selection-end-line="152" selection-end-column="43" />
+                <state relative-caret-position="235">
+                  <caret line="200" column="24" lean-forward="true" selection-start-line="200" selection-start-column="24" selection-end-line="200" selection-end-column="24" />
                   <folding>
                     <element signature="e#45#61#0" expanded="true" />
                   </folding>
@@ -328,18 +261,6 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/header/hypercube/CosineHypercube.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#97#111#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/hypercube/CubeEdge.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="499">
@@ -375,17 +296,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/header/Util.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+                <state relative-caret-position="403">
+                  <caret line="35" selection-start-line="35" selection-end-line="35" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/lsh/lsh.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1389">
-                  <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+                <state relative-caret-position="513">
+                  <caret line="156" column="69" selection-start-line="147" selection-start-column="8" selection-end-line="156" selection-end-column="69" />
                   <folding>
                     <element signature="e#43#62#0" expanded="true" />
                   </folding>
@@ -400,6 +321,18 @@
                   <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
                   <folding>
                     <element signature="e#45#63#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/hypercube/cube.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="271">
+                  <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#44#63#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -499,10 +432,10 @@
         <option value="$PROJECT_DIR$/src/hypercube/CosineHypercube.cpp" />
         <option value="$PROJECT_DIR$/header/hypercube/EucledianHypercube.h" />
         <option value="$PROJECT_DIR$/src/hypercube/EucledianHypercube.cpp" />
-        <option value="$PROJECT_DIR$/src/hypercube/cube.cpp" />
-        <option value="$PROJECT_DIR$/header/Util.h" />
         <option value="$PROJECT_DIR$/src/lsh/lsh.cpp" />
+        <option value="$PROJECT_DIR$/header/Util.h" />
         <option value="$PROJECT_DIR$/src/Util.cpp" />
+        <option value="$PROJECT_DIR$/src/hypercube/cube.cpp" />
       </list>
     </option>
   </component>
@@ -614,8 +547,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.lsh">
-    <configuration name="cube" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-d input_small.txt -q query_small.txt -k 3 -M 10 -probes 2 -o output_small" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CUBE" TARGET_NAME="CUBE" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CUBE" RUN_TARGET_NAME="CUBE">
+  <component name="RunManager" selected="Application.cube">
+    <configuration name="cube" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CUBE" TARGET_NAME="CUBE" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CUBE" RUN_TARGET_NAME="CUBE">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -643,12 +576,12 @@
       <workItem from="1539374048517" duration="40157000" />
       <workItem from="1539627394212" duration="4668000" />
       <workItem from="1539633671764" duration="7753000" />
-      <workItem from="1540047642524" duration="68848000" />
+      <workItem from="1540047642524" duration="70744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175082000" />
+    <option name="totallyTimeSpent" value="176978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -659,7 +592,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.498618" visible="true" weight="0.3780881" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.498618" visible="true" weight="0.4575725" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997236" weight="0.3340494" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1091,23 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hypercube/cube.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#44#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header/Util.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataSetMap.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-67">
@@ -1118,20 +1034,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/header/Util.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lsh/lsh.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1389">
-          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+        <state relative-caret-position="513">
+          <caret line="156" column="69" selection-start-line="147" selection-start-column="8" selection-end-line="156" selection-end-column="69" />
           <folding>
             <element signature="e#43#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hypercube/cube.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+          <folding>
+            <element signature="e#44#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Util.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="152" column="43" selection-start-line="152" selection-start-column="43" selection-end-line="152" selection-end-column="43" />
+        <state relative-caret-position="235">
+          <caret line="200" column="24" lean-forward="true" selection-start-line="200" selection-start-column="24" selection-end-line="200" selection-end-column="24" />
           <folding>
             <element signature="e#45#61#0" expanded="true" />
           </folding>

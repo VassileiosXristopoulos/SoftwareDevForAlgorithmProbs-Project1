@@ -160,3 +160,69 @@ Lsh_arguments Util::getLshArguments(int argv,char*argc[]) {
     }
     return args;
 }
+
+Cube_arguments Util::getCubeArguments(int argv,char*argc[]) {
+    Cube_arguments args;
+    if(argv>=7){
+        if (argv == 13) { // TODO: ask/implement different ways of getting arguments (asking user)
+            if (argc[2] == NULL || argc[4] == NULL || argc[6] == NULL || argc[8] == NULL || argc[10] == NULL ||
+                argc[12] == NULL) {
+                cout << "Invalid Arguments" << endl;
+                exit(0);
+            }
+
+            args.inputFile = "../Input/" + string(argc[8]);
+            args.queryFile = "../Input/" + string(argc[10]);
+            args.k = atoi(argc[2]);
+            args.M = atoi(argc[4]);
+            if (args.k <= 0 || args.M <= 0) {
+                cout << "k and/or M arguments not given properly" << endl;
+                exit(0);
+            }
+            args.probes = atoi(argc[6]);
+            args.outputFIle = "../Output/" + string(argc[12]);
+        } else if (argv == 7 && string(argc[1])=="-d") {
+            if (argc[2] == NULL || argc[4] == NULL || argc[6] == NULL) {
+                cout << "Invalid Arguments" << endl;
+                exit(0);
+            }
+            args.inputFile = "../Input/" + string(argc[2]);
+            args.queryFile = "../Input/" + string(argc[4]);
+            args.k = 3;
+            args.M = 10;
+            args.probes = 2;
+            args.outputFIle = "../Output/" + string(argc[6]);
+        } else {
+            cout << "Wrong arguments!" << endl;
+            exit(0);
+        }
+    }
+    else {
+        if (argv == 7) {
+            args.k = atoi(argc[2]);
+            args.M = atoi(argc[4]);
+            args.probes = atoi(argc[6]);
+
+        } else if (argv == 1) {
+            args.k = 3;
+            args.M = 10;
+            args.probes = 2;
+        } else {
+            cout << "Wrong arguments!" << endl;
+            exit(0);
+        }
+        cout << "Please give path of dataset:";
+        cin >> args.inputFile;
+        cout << endl << "Please give path of query file:";
+        cin >> args.queryFile;
+        args.outputFIle = "../Output/output.txt";
+        cout << "Output file generated at: "<< args.outputFIle << endl;
+    }
+    std::ifstream inputfile(args.inputFile);
+    std::ifstream queryfile(args.queryFile);
+    if(!(inputfile.good() && queryfile.good())){
+        cout << "Not existing Input files!"<<endl;
+        exit(0);
+    }
+    return args;
+}

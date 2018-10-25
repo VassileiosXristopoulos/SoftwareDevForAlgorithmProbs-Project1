@@ -28,102 +28,87 @@ int main(int argv,char **argc) {
     int probes;
     string FileLine;
     string inputFile, queryFile, outputFile;
+    while(1) {
+        Cube_arguments arguments = Util::getCubeArguments(argv, argc);
+        k = arguments.k;
+        M = arguments.M;
+        probes = arguments.probes;
+        inputFile = arguments.inputFile;
+        queryFile = arguments.queryFile;
+        outputFile = arguments.outputFIle;
 
-    if( argv == 13 ){ // TODO: ask/implement different ways of getting arguments (asking user)
-        if(argc[2]==NULL || argc[4]==NULL || argc[6]==NULL || argc[8]==NULL || argc[10]==NULL || argc[12]==NULL ){
-            cout << "Invalid Arguments" << endl;
-            return 1;
+        DataSetMap Map;
+        string mode = Map.InsertFile(inputFile);
+        //(int)log2(n)
+        AHypercube *hypercube;
+        if (mode.compare("eucledian") == 0) {
+            hypercube = new EucledianHypercube(4);
+        } else {
+            hypercube = new CosineHypercube(4);
         }
 
-        inputFile = "../Input/" + string(argc[2]);
-        queryFile = "../Input/" + string(argc[4]);
-        k = atoi(argc[6]);
-        M = atoi(argc[8]);
-        if( k<=0 || M<=0 ){
-            cout << "k and/or M arguments not given properly" << endl;
-            return 1;
+        for (int i = 0; i < Map.size(); i++) {
+            hypercube->add(Map.at(i));
         }
-        probes = atoi(argc[10]);
-        outputFile = "../Output/" + string(argc[12]);
-    }
-    else if( argv == 11){
-        if(argc[2]==NULL || argc[4]==NULL || argc[10]==NULL){
-            cout << "Invalid Arguments" << endl;
-            return 1;
+        ifstream input_q(queryFile);
+        string radius;
+        getline(input_q, radius); // get radius (i.e. first line)
+
+        r = stoi(radius.substr(radius.find(":") + 1));
+        cout << radius << endl;
+        r = stoi(radius.substr(radius.find(":") + 1));
+        double max_div = 0;
+        ofstream output;
+        output.open(outputFile);
+        while (getline(input_q, FileLine)) {
+            double tHupercube, tTrue;
+            istringstream iss(FileLine);
+
+            string line = FileLine.substr(0, FileLine.size() - 1);
+            vector<string> element = Util::Split(line);
+
+            Item *item = new Item(element);
+            pair<string, double> closer_item;
+            clock_t true_start = clock();
+            double trueDist = Map.TrueDistance(item, mode);
+            clock_t true_end = clock();
+            tTrue = (true_end - true_start) / (double) CLOCKS_PER_SEC;
+
+            clock_t nearest_start = clock();
+            probes = 1;
+            closer_item = hypercube->findCloser(item, 10000, probes);
+            clock_t nearest_end = clock();
+            tHupercube = (nearest_end - nearest_start) / (double) CLOCKS_PER_SEC;
+            vector<string> Rnearest = hypercube->findRCloser(item, 100, 5, r);
+            output << "Query item: " << item->getName() << endl;
+            output << "R-nearest neighbor:" << endl;
+            for (unsigned int i = 0; i < Rnearest.size(); i++) {
+                output << Rnearest[i] << endl;
+            }
+            output << "Nearest neighbor: "
+                      ": " << closer_item.first << endl << "distance Hypercube: " << closer_item.second << endl <<
+                   "distanceTrue: " << trueDist << endl;
+            output << "tHupercube: " << tHupercube << endl;
+            output << "tTrue: " << tTrue << endl << endl;
+            double div = closer_item.second / trueDist;
+            if (div > max_div)
+                max_div = div;
+            delete (item);
         }
-        inputFile = "../Input/" + string(argc[2]);
-        queryFile = "../Input/" + string(argc[4]);
-        k = 3;
-        M = 10;
-        probes = 2;
-        outputFile = "../Output/" + string(argc[12]);
-    }
-    else {
-        cout << "Wrong arguments!" << endl;
-        return 1;
-    }
+        output << "Max Div: " << max_div << endl;
+        int total_size = hypercube->size();
+        output << "Total size of " << mode << " hypercube = " << total_size << endl;
+        delete (hypercube);
 
-    DataSetMap Map;
-    string mode = Map.InsertFile(inputFile);
-    //(int)log2(n)
-    AHypercube *hypercube;
-    if(mode.compare("eucledian")==0)    {
-        hypercube = new EucledianHypercube(4);
+        output.close();
+        cout<<"Program finished! Results at "<<outputFile<<endl;
+        cout<<"Please select your choise:"<<endl;
+        cout<<"     To run again with different arguments: Press 1"<<endl;
+        cout<<"     To stop the program: Press 2"<<endl;
+        int input;
+        cin >> input;
+        if(input==2) break;
+        if(argv==13) argv=7; //trick - if all args initially given from command line, go to proper case
+        if(argv==7)  argv=1; //trick - k,L default, go to proper case
     }
-    else{
-        hypercube = new CosineHypercube(4);
-    }
-
-    for( int i=0;i<Map.size() ;i++){
-        hypercube->add(Map.at(i));
-    }
-    ifstream input_q(queryFile);
-    string radius;
-    getline(input_q,radius); // get radius (i.e. first line)
-
-    r=stoi(radius.substr(radius.find(":") + 1));
-    cout << radius <<endl;
-    r=stoi(radius.substr(radius.find(":") + 1));
-    double max_div = 0;
-    ofstream output;
-    output.open(outputFile);
-    while ( getline(input_q, FileLine) ) {
-        double tHupercube,tTrue;
-        istringstream iss(FileLine);
-
-        string line = FileLine.substr(0, FileLine.size() - 1);
-        vector<string> element = Util::Split(line);
-
-        Item *item = new Item(element);
-        pair<string,double>closer_item;
-        clock_t true_start = clock();
-        double trueDist = Map.TrueDistance(item,mode);
-        clock_t  true_end = clock();
-        tTrue = (true_end-true_start)/ (double) CLOCKS_PER_SEC;
-
-        clock_t nearest_start = clock();
-        probes=1;
-        closer_item = hypercube->findCloser(item,10000,probes);
-        clock_t nearest_end = clock();
-        tHupercube = (nearest_end-nearest_start)/ (double) CLOCKS_PER_SEC;
-        vector<string>Rnearest = hypercube->findRCloser(item,100,5,r);
-        output <<"Query item: "<< item->getName()<<endl;
-        output <<"R-nearest neighbor:"<<endl;
-        for(unsigned int i=0 ; i<Rnearest.size(); i++){
-            output<<Rnearest[i] <<endl;
-        }
-        output<< "Nearest neighbor: "
-        ": "<< closer_item.first <<endl<<"distance Hypercube: "<< closer_item.second << endl<<
-        "distanceTrue: " << trueDist<<endl;
-        output << "tHupercube: " << tHupercube<<endl;
-        output << "tTrue: " << tTrue<<endl<<endl;
-        double div = closer_item.second/trueDist;
-        if(div>max_div)
-            max_div=div;
-        delete(item);
-    }
-    output << "Max Div: "<<max_div<<endl;
-    int total_size = hypercube->size();
-    output << "Total size of "<<mode <<" hypercube = "<<total_size<<endl;
-    delete(hypercube);
 }
