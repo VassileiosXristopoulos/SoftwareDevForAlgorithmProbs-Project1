@@ -7,7 +7,7 @@
 #include "../../header/Util.h"
 AHypercube::AHypercube(int d) {
     this->d = d;
-    for(  int i = 0 ;i< pow(2,d) ; i++){
+    for( int i = 0 ;i< pow(2,d) ; i++){
         edges.push_back(new CubeEdge(Util::intToIntVector(i,d)));
     }
 }
@@ -41,7 +41,7 @@ vector<CubeEdge *> AHypercube::getHamingCLose(int hammingDist, CubeEdge *edge) {
 
 pair<string, double> AHypercube::findCloser(Item *item, int max, int probes) {
     vector<int>bitVector = getBitVector(item); //getBitvector returns the right vector
-    std::reverse(bitVector.begin(),bitVector.end());//intVectortoInteger computes int with reversed bitVector
+    std::reverse(bitVector.begin(),bitVector.end());
     CubeEdge * currentEdge = edges[Util::intVectortoInteger(bitVector)];
     vector<Item*>elements = currentEdge->Elements();
     pair<string,double>min_item("",-1);
@@ -82,7 +82,7 @@ pair<string, double> AHypercube::findCloser(Item *item, int max, int probes) {
 
 vector<string> AHypercube::findRCloser(Item *item, int max, int probes, int radius) {
     vector<int>bitVector = getBitVector(item); //getBitvector returns the right vector
-    std::reverse(bitVector.begin(),bitVector.end());//intVectortoInteger computes int with reversed bitVector
+    std::reverse(bitVector.begin(),bitVector.end());
     CubeEdge * currentEdge = edges[Util::intVectortoInteger(bitVector)];
     vector<Item*>elements = currentEdge->Elements();
     vector <string> rNearest;
@@ -122,7 +122,7 @@ vector<string> AHypercube::findRCloser(Item *item, int max, int probes, int radi
 
 void AHypercube::add(Item *item) {
     vector<int>bitVector = getBitVector(item);
-    std::reverse(bitVector.begin(),bitVector.end());//intVectortoInteger computes int with reversed bitVector
+    std::reverse(bitVector.begin(),bitVector.end());
     edges[Util::intVectortoInteger(bitVector)]->add(item);
 }
 

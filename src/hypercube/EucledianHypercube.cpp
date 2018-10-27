@@ -3,6 +3,7 @@
 //
 
 #include <cmath>
+#include <algorithm>
 #include "../../header/hypercube/EucledianHypercube.h"
 #include "../../header/Util.h"
 
@@ -26,7 +27,7 @@ vector<int> EucledianHypercube::getBitVector(Item *item) {
     //  the right number off the conversion from vector to int
     int nextPowof2dimensions = static_cast<int>(Util::upper_power_of_two(dimensions));
     vector<int> bitVector((unsigned long)(nextPowof2dimensions));
-    // std::reverse(bitVector.begin(),bitVector.end());
+  //  std::reverse(bitVector.begin(),bitVector.end());
     for(int i=0; i< dimensions ; i++){
         int key = Hi[i]->hash(item);
         if(binaryMap.inMap(key)){
@@ -38,7 +39,7 @@ vector<int> EucledianHypercube::getBitVector(Item *item) {
             bitVector[i] = val;
         }
     }
-    // std::reverse(bitVector.begin(),bitVector.end());
+   //  std::reverse(bitVector.begin(),bitVector.end());
     return  bitVector;
 }
 

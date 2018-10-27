@@ -188,7 +188,7 @@ Cube_arguments Util::getCubeArguments(int argv,char*argc[]) {
             }
             args.inputFile = "../Input/" + string(argc[2]);
             args.queryFile = "../Input/" + string(argc[4]);
-            args.k = 3;
+            args.k = -1;
             args.M = 10;
             args.probes = 2;
             args.outputFIle = "../Output/" + string(argc[6]);
@@ -204,7 +204,7 @@ Cube_arguments Util::getCubeArguments(int argv,char*argc[]) {
             args.probes = atoi(argc[6]);
 
         } else if (argv == 1) {
-            args.k = 3;
+            args.k = -1;
             args.M = 10;
             args.probes = 2;
         } else {

@@ -16,8 +16,8 @@ extern int r,L;
 EucledianHashTable::EucledianHashTable(int k, int size): AHashTable(size,k) {
 
     for(  int a=0; a<k; a++){
-       r_vector.push_back(rand()%10+1);
-       H_vector.push_back(new hashFunction());
+       r_vector.push_back(rand()%10+1); //construct an array with constants r
+       H_vector.push_back(new hashFunction()); //construct the h(i) hash functions
     }
 }
 
@@ -61,19 +61,19 @@ vector< string > EucledianHashTable::findNcloserNeighbors(Item *item){
     for(unsigned int i=0; i<Table[bucket].size(); i++) {
         bool match = true;
 
-        for (unsigned int j = 0; j < item->getGVector().size(); j++) {
-            if (item->getGVector()[j] != Table[bucket][i]->getGvector()[j]) {
+        for (unsigned int j = 0; j < item->getGVector().size(); j++) {  //for each item of the bucket
+            if (item->getGVector()[j] != Table[bucket][i]->getGvector()[j]) { //check if g(p)==g(q)
                 match = false;
                 break;
             }
         }
-        if (match) {
+        if (match) { // if  g(p)==g(q)
             Item * datasetItem = Table[bucket][i]->getItem();
 
             double distance = Util::EucledianDistance(item->getContent(), Table[bucket][i]->getItem()
-                    ->getContent());
+                    ->getContent()); //compute distance of items
             if (item->getName().compare(datasetItem->getName()) != 0) {
-                if (distance < r ) {
+                if (distance < r ) { //if distance < radius
                     ret.push_back(datasetItem->getName());
                 }
             }
@@ -93,7 +93,7 @@ pair<Item*,double> EucledianHashTable::findCloserNeighbor(Item *item){
     for(unsigned int i=0; i<Table[bucket].size(); i++) {
         bool match = true;
         if(retrieved == 2*L) return min_pair;
-        for (unsigned int j = 0; j < item->getGVector().size(); j++) {
+        for (unsigned int j = 0; j < item->getGVector().size(); j++) { //same logic with R nearest
             if (item->getGVector()[j] != Table[bucket][i]->getGvector()[j]) {
                 match = false;
                 break;

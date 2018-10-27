@@ -18,14 +18,14 @@
 #include "../../header/Util.h"
 
 using namespace std;
-int r,M,k,w=100;
+int r,k,w=100;
 default_random_engine generator;
 normal_distribution<float> distribution(0,1);
 extern int d,n;
 
 int main(int argv,char **argc) {
     srand(time(NULL));
-    int probes;
+    int probes, M;
     string FileLine;
     string inputFile, queryFile, outputFile;
     while(1) {
@@ -42,9 +42,9 @@ int main(int argv,char **argc) {
         //(int)log2(n)
         AHypercube *hypercube;
         if (mode.compare("eucledian") == 0) {
-            hypercube = new EucledianHypercube(4);
+            hypercube = new EucledianHypercube(k);
         } else {
-            hypercube = new CosineHypercube(4);
+            hypercube = new CosineHypercube(k);
         }
 
         for (int i = 0; i < Map.size(); i++) {
@@ -65,6 +65,7 @@ int main(int argv,char **argc) {
             istringstream iss(FileLine);
 
             string line = FileLine.substr(0, FileLine.size() - 1);
+
             vector<string> element = Util::Split(line);
 
             Item *item = new Item(element);
@@ -76,10 +77,10 @@ int main(int argv,char **argc) {
 
             clock_t nearest_start = clock();
             probes = 1;
-            closer_item = hypercube->findCloser(item, 10000, probes);
+            closer_item = hypercube->findCloser(item, M, probes);
             clock_t nearest_end = clock();
             tHupercube = (nearest_end - nearest_start) / (double) CLOCKS_PER_SEC;
-            vector<string> Rnearest = hypercube->findRCloser(item, 100, 5, r);
+            vector<string> Rnearest = hypercube->findRCloser(item, M, probes, r);
             output << "Query item: " << item->getName() << endl;
             output << "R-nearest neighbor:" << endl;
             for (unsigned int i = 0; i < Rnearest.size(); i++) {

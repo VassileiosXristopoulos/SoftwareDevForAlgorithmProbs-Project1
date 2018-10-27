@@ -4,10 +4,13 @@
 
 #include <sstream>
 #include <fstream>
+#include <cmath>
+#include <algorithm>
 #include "../header/DataSetMap.h"
 #include "../header/Util.h"
 
 int d,n;
+extern int k;
 DataSetMap::DataSetMap() = default;
 
 DataSetMap::~DataSetMap() {
@@ -49,9 +52,15 @@ Item *DataSetMap::at(int index) {
 
 string DataSetMap::InsertFile(string inputFile) {
     string FileLine;
-    ifstream input(inputFile);
-    n=0;
+    ifstream file(inputFile);
 
+    //count lines of file -- if k = default then k = log2(n) -- for hypercube
+    n = (int)std::count(std::istreambuf_iterator<char>(file),
+               std::istreambuf_iterator<char>(), '\n') - 1;
+    if(k==-1) k = (int)log2(n);
+    file.close();
+
+    ifstream input(inputFile);
     string mode;
     std::getline(input,mode); //get mode (i.e. first line)
     cout<<"mode:"<<mode<<endl;
@@ -69,8 +78,6 @@ string DataSetMap::InsertFile(string inputFile) {
         Map.push_back(item);
 
         d = static_cast<int>(element.size());
-        n++;
-     //   free(FileLine);
 
     }
     return mode;

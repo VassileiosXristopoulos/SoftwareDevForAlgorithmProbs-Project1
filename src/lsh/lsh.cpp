@@ -36,11 +36,13 @@ int main(int argv,char **argc){ //TODO: check lsh again for results
         queryFile = arguments.queryFile;
         outputFile = arguments.outputFIle;
 
-        // cout << inputFile << "  " << queryFile<<endl;
+
         DataSetMap Map;
+        //read dataset file and save it to a structure with all the dataset items.
+        // every entry in the HashTables will be a pointer to this Map
         string mode = Map.InsertFile(inputFile);
         AHashTable *TableArray[L];
-        for (int i = 0; i < L; i++) {
+        for (int i = 0; i < L; i++) { //construct the L HashTables
             if (mode.compare("eucledian") == 0) {
                 TableArray[i] = new EucledianHashTable(k, n / 2);
             } else {
@@ -64,25 +66,27 @@ int main(int argv,char **argc){ //TODO: check lsh again for results
             cout << "Output file given does not exist"<<endl;
             exit(0);
         }
-        for (std::string FileLine; getline(input_q, FileLine);) {
+        for (std::string FileLine; getline(input_q, FileLine);) { //for each line of the query file
             double tLSH, tTrue;
 
-            line = FileLine.substr(0, FileLine.size() - 1);
-            vector<string> element = Util::Split(line);
+            line = FileLine.substr(0, FileLine.size() - 1); //trim the last character of line -- get pure the id's
+            // and the coordinates
+            vector<string> element = Util::Split(line); // get string vector which has at index 0 the id and then the
+            // coordinates
 
-            Item *item = new Item(element);
+            Item *item = new Item(element); //construct an object with information about the query item
             pair<Item *, double> closestNeighboor(NULL, -1.0);
             vector<string> closerNneighboors;
 
-            for (int i = 0; i < L; i++) {
+            for (int i = 0; i < L; i++) { //for each hashtable
                 vector<string> Nneighboors = TableArray[i]->findNcloserNeighbors(item);
 
                 clock_t nearest_start = clock();
                 pair<Item *, double> neighboor = TableArray[i]->findCloserNeighbor(item);
                 clock_t nearest_end = clock();
-                tLSH = (nearest_end - nearest_start) / (double) CLOCKS_PER_SEC;
+                tLSH = (nearest_end - nearest_start) / (double) CLOCKS_PER_SEC; //count time to find the closest neighbor
 
-                if (neighboor.second > 0) { //last item is the closest neighboor
+                if (neighboor.second > 0) {
 
                     if (closestNeighboor.second == -1 || neighboor.second < closestNeighboor.second) {
                         closestNeighboor = neighboor;

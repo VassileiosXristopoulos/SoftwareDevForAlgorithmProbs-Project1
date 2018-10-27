@@ -8,7 +8,7 @@
 extern int r,L;
 CosineHashTable::CosineHashTable(int size, int k) : AHashTable(size,k){
     for(  int a=0; a<k; a++){
-        cosine_vector.push_back(new cosineHashfunction());
+        cosine_vector.push_back(new cosineHashfunction()); //construct the h(i) for the hashTable
     }
     this->k = k;
 }
@@ -34,29 +34,21 @@ void CosineHashTable::add(Item *item) {
 
 vector<string>  CosineHashTable::findNcloserNeighbors(Item *item) {
     int bucket = hash(item);
-    vector<int>item_gVector=computeGVector(item);
-    item->setGVector(item_gVector);
+
     vector <string> ret;
-    for(unsigned int i=0; i<Table[bucket].size(); i++) {
-        bool match = true;
+    for(unsigned int i=0; i<Table[bucket].size(); i++) { //compute distance within all items of the same bucket
+                                                        // because hashfunction returns bitset, so all g(i)'s are the
+                                                        // same
 
-        for (unsigned int j = 0; j < item->getGVector().size(); j++) {
-            if (item->getGVector()[j] != Table[bucket][i]->getGvector()[j]) {
-                match = false;
-                break;
+        Item * datasetItem = Table[bucket][i]->getItem();
+        double distance = Util::cosineDistance(item->getContent(), datasetItem->getContent());
+
+        if (item->getName().compare(datasetItem->getName()) != 0) {
+            if (distance < r ) {
+                ret.push_back(datasetItem->getName());
             }
         }
-        if (match) {
-            Item * datasetItem = Table[bucket][i]->getItem();
 
-            double distance = Util::cosineDistance(item->getContent(), Table[bucket][i]->getItem()
-                    ->getContent());
-            if (item->getName().compare(datasetItem->getName()) != 0) {
-                if (distance < r ) {
-                    ret.push_back(datasetItem->getName());
-                }
-            }
-        }
 
     }
     return ret;
@@ -64,31 +56,20 @@ vector<string>  CosineHashTable::findNcloserNeighbors(Item *item) {
 
 pair<Item *, double> CosineHashTable::findCloserNeighbor(Item *item) {
     int bucket = hash(item);
-    vector<int>item_gVector=computeGVector(item);
-    item->setGVector(item_gVector);
+
     vector< pair<Item*,double> >ret;
     pair<Item*,double>min_pair(NULL,-1);
     int retrieved=0;
-    for(unsigned int i=0; i<Table[bucket].size(); i++) {
-        bool match = true;
-        if(retrieved == 2*L) return min_pair;
-        for (unsigned int j = 0; j < item->getGVector().size(); j++) {
-            if (item->getGVector()[j] != Table[bucket][i]->getGvector()[j]) {
-                match = false;
-                break;
-            }
-        }
-        if (match) {
-            Item *datasetItem = Table[bucket][i]->getItem();
+    for(unsigned int i=0; i<Table[bucket].size(); i++) { //same logic with find R-nearest
 
-            double distance = Util::cosineDistance(item->getContent(), Table[bucket][i]->getItem()
-                    ->getContent());
-            if (item->getName().compare(datasetItem->getName()) != 0) {
-                if (min_pair.second == -1 || min_pair.second > distance ) {
-                    min_pair.second = distance;
-                    min_pair.first = datasetItem;
-                    retrieved++;
-                }
+       Item *datasetItem = Table[bucket][i]->getItem();
+       double distance = Util::cosineDistance(item->getContent(), datasetItem->getContent());
+
+       if (item->getName().compare(datasetItem->getName()) != 0) {
+           if (min_pair.second == -1 || min_pair.second > distance ) {
+               min_pair.second = distance;
+               min_pair.first = datasetItem;
+               retrieved++;
             }
         }
     }
