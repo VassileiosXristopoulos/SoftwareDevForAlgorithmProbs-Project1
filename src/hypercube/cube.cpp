@@ -18,7 +18,7 @@
 #include "../../header/Util.h"
 
 using namespace std;
-int r,k,w=100;
+int r,k,w=400;
 default_random_engine generator;
 normal_distribution<float> distribution(0,1);
 extern int d,n;
@@ -38,8 +38,10 @@ int main(int argv,char **argc) {
         outputFile = arguments.outputFIle;
 
         DataSetMap Map;
+        //read dataset file and save it to a structure with all the dataset items.
+        // every entry in the HashTables will be a pointer to this Map
         string mode = Map.InsertFile(inputFile);
-        //(int)log2(n)
+
         AHypercube *hypercube;
         if (mode.compare("eucledian") == 0) {
             hypercube = new EucledianHypercube(k);
@@ -56,30 +58,32 @@ int main(int argv,char **argc) {
 
         r = stoi(radius.substr(radius.find(":") + 1));
         cout << radius << endl;
-        r = stoi(radius.substr(radius.find(":") + 1));
-        double max_div = 0;
+        double max_div = 0, avg_tHypercube=0;
         ofstream output;
         output.open(outputFile);
-        while (getline(input_q, FileLine)) {
+        while (getline(input_q, FileLine)) { //for each line of query set
             double tHupercube, tTrue;
             istringstream iss(FileLine);
 
-            string line = FileLine.substr(0, FileLine.size() - 1);
+            string line = FileLine.substr(0, FileLine.size() - 1);//trim the last character of line -- get pure the id's
 
-            vector<string> element = Util::Split(line);
+            vector<string> element = Util::Split(line);// get string vector which has at index 0 the id and then the
+            // coordinates
 
-            Item *item = new Item(element);
+            Item *item = new Item(element);  //construct an object with information about the query item
             pair<string, double> closer_item;
             clock_t true_start = clock();
             double trueDist = Map.TrueDistance(item, mode);
             clock_t true_end = clock();
-            tTrue = (true_end - true_start) / (double) CLOCKS_PER_SEC;
+            tTrue = (true_end - true_start) / (double) CLOCKS_PER_SEC;  //count time to find the true closest distance
+
 
             clock_t nearest_start = clock();
             probes = 1;
             closer_item = hypercube->findCloser(item, M, probes);
             clock_t nearest_end = clock();
-            tHupercube = (nearest_end - nearest_start) / (double) CLOCKS_PER_SEC;
+            tHupercube = (nearest_end - nearest_start) / (double) CLOCKS_PER_SEC;  //count time to find the closest neighbor
+
             vector<string> Rnearest = hypercube->findRCloser(item, M, probes, r);
             output << "Query item: " << item->getName() << endl;
             output << "R-nearest neighbor:" << endl;
@@ -91,14 +95,18 @@ int main(int argv,char **argc) {
                    "distanceTrue: " << trueDist << endl;
             output << "tHupercube: " << tHupercube << endl;
             output << "tTrue: " << tTrue << endl << endl;
+            avg_tHypercube+=tHupercube;
+
             double div = closer_item.second / trueDist;
             if (div > max_div)
                 max_div = div;
             delete (item);
         }
+
         output << "Max Div: " << max_div << endl;
         int total_size = hypercube->size();
         output << "Total size of " << mode << " hypercube = " << total_size << endl;
+        output << "Average tHypercube: "<< avg_tHypercube/n << endl;
         delete (hypercube);
 
         output.close();

@@ -22,8 +22,6 @@ public:
     string getName();
     void setGVector(vector<int>& h_i);
     vector<int>& getGVector();
-    void printContent();
-    void printGVector();
     int size();
 };
 

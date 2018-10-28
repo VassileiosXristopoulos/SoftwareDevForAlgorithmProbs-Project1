@@ -23,7 +23,7 @@ extern int d,n;
 int r,L,k,w=400;
 default_random_engine generator;
 normal_distribution<float> distribution(0,1);
-int main(int argv,char **argc){ //TODO: check lsh again for results
+int main(int argv,char **argc){
     srand(time(NULL));
 
     string inputFile, queryFile, outputFile,radius;
@@ -58,7 +58,7 @@ int main(int argv,char **argc){ //TODO: check lsh again for results
         getline(input_q, radius); // get radius (i.e. first line)
         r = stoi(radius.substr(radius.find(":") + 1));
 
-        double max_div = 0;
+        double max_div = 0, avg_tLSH = 0;
         string line;
         ofstream output;
         output.open(outputFile);
@@ -127,6 +127,7 @@ int main(int argv,char **argc){ //TODO: check lsh again for results
                 output << "tLSH: " << tLSH << endl;
                 output << "tTrue: " << tTrue << endl;
                 output << endl;
+                avg_tLSH += tLSH;
                 double div = closestNeighboor.second / trueDist;
                 if (div > max_div) {
                     max_div = div;
@@ -148,7 +149,7 @@ int main(int argv,char **argc){ //TODO: check lsh again for results
         output << "Total size of " << mode << " hashtable = " << total_size << endl;
         for (int i = 0; i < L; i++)
             delete (TableArray[i]);
-
+        output << "Average tLSH: "<< avg_tLSH/n << endl;
         output.close();
         cout<<"Program finished! Results at "<<outputFile<<endl;
         cout<<"Please select your choise:"<<endl;

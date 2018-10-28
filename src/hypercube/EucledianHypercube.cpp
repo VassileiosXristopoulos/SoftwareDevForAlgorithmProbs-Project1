@@ -27,19 +27,19 @@ vector<int> EucledianHypercube::getBitVector(Item *item) {
     //  the right number off the conversion from vector to int
     int nextPowof2dimensions = static_cast<int>(Util::upper_power_of_two(dimensions));
     vector<int> bitVector((unsigned long)(nextPowof2dimensions));
-  //  std::reverse(bitVector.begin(),bitVector.end());
+
     for(int i=0; i< dimensions ; i++){
-        int key = Hi[i]->hash(item);
-        if(binaryMap.inMap(key)){
+        int key = Hi[i]->hash(item); //get the gey
+        if(binaryMap.inMap(key)){ //if we have already generated a binary value for this key, get it
             bitVector[i] = binaryMap.get(key);
         }
-        else{
+        else{ // generate a default binary value for this key, add it to the map
             char val = static_cast<char>(rand() % 2);
             binaryMap.add(key,val);
             bitVector[i] = val;
         }
     }
-   //  std::reverse(bitVector.begin(),bitVector.end());
+
     return  bitVector;
 }
 

@@ -10,7 +10,7 @@
 #include "../../header/hypercube/AHypercube.h"
 
 CosineHypercube::CosineHypercube(int d) : AHypercube(d) {
-    cosine_vector = vector<cosineHashfunction *>(d);
+    cosine_vector = vector<cosineHashfunction *>(d); //construct the hashfunction for hi()
     for( int i=0; i<d ;i++){
         cosine_vector[i] = new cosineHashfunction();
     }

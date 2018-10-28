@@ -22,7 +22,7 @@ EucledianHashTable::EucledianHashTable(int k, int size): AHashTable(size,k) {
 }
 
 
-EucledianHashTable::~EucledianHashTable() { //TODO: implement destructor
+EucledianHashTable::~EucledianHashTable() {
     for(unsigned int i=0;i<Table.size();i++){
         for(unsigned int j=0;j<Table[i].size();j++){
             delete(Table[i][j]);

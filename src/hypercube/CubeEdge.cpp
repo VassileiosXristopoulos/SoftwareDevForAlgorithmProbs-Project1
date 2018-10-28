@@ -6,7 +6,7 @@
 
 #include "../../header/hypercube/CubeEdge.h"
 #include "../../header/Util.h"
-CubeEdge::CubeEdge(vector<int> index) {
+CubeEdge::CubeEdge(vector<int> index) { //it has it's unique index, and a vector of items
     this->index = index;
 }
 

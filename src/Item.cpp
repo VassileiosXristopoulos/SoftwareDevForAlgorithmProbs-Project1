@@ -28,28 +28,14 @@ void Item::setGVector(vector<int>& h_i) {
     }
 }
 
-Item::~Item() {
-    for(unsigned int i=0; i<content.size() ; i++){
-       // delete(content[i]);
-    }
-}
+Item::~Item() {}
 
-void Item::printContent() {
-    for(unsigned int i=0;i<content.size();i++){
-        cout<<content[i]<<" ";
-    }
 
-}
 
 vector<int>& Item::getGVector() {
     return g_vector;
 }
 
-void Item::printGVector(){
-    for(int i=0;i< 4 ; i++){
-        cout << g_vector[i] << " ";
-    }
-}
 
 int Item::size() {
     int size=(int)name.size();
